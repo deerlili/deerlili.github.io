@@ -399,6 +399,550 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/python字符串/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Deerlili">
+      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deerlili">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/30/python字符串/" class="post-title-link" itemprop="url">python字符串</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-30 11:34:40 / 修改时间：11:38:36" itemprop="dateCreated datePublished" datetime="2019-07-30T11:34:40+08:00">2019-07-30</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="字符串的申明：单引号-双引号，三引号"><a href="#字符串的申明：单引号-双引号，三引号" class="headerlink" title="字符串的申明：单引号,双引号，三引号"></a>字符串的申明：单引号,双引号，三引号</h3><ul>
+<li><code>s = &#39;Hello Python!&#39;</code></li>
+<li><code>s = &quot;Hello Python!&quot;</code></li>
+<li><code>s = &#39;&#39;&#39;Hello Python!&#39;&#39;&#39;</code></li>
+<li><code>s = &quot;&quot;&quot;Hello Python!&quot;&quot;&quot;</code></li>
+<li><code>字符串中有单引号用双引号包裹，有双引号用单引号包裹，有换行用三引号（单引号，双引号）包裹</code><h3 id="字符串的操作"><a href="#字符串的操作" class="headerlink" title="字符串的操作"></a>字符串的操作</h3></li>
+</ul>
+<ol>
+<li>单个访问字符串中的字符</li>
+</ol>
+<ul>
+<li><code>s = &#39;Hello Python!&#39;</code></li>
+<li><code>print(s[0]) 输出为：H</code></li>
+</ul>
+<ol start="2">
+<li>访问字符串的子串（切片操作）</li>
+</ol>
+<ul>
+<li><code>print(s[0:5]) 输出为：Hello</code></li>
+</ul>
+<ol start="3">
+<li>字符串相加</li>
+</ol>
+<ul>
+<li><code>s1 = &#39;Hello&#39;</code></li>
+<li><code>s2 = &#39; Python!&#39;</code></li>
+<li><code>print(s1+s2) 输出为：Hello Python!</code></li>
+</ul>
+<ol start="4">
+<li>字符串更新操作</li>
+</ol>
+<ul>
+<li><code>s1 = &#39;Hello&#39;</code></li>
+<li><code>s2 = &#39;Python&#39;</code></li>
+<li><code>print(s1[:2]+s2) 输出为：HePython</code></li>
+</ul>
+<ol start="5">
+<li>字符串的成员运输</li>
+</ol>
+<ul>
+<li>包含运算：in，不包含：not in</li>
+<li><code>s1 = &#39;Hello&#39;</code></li>
+<li><code>s2 = &#39;H&#39;</code></li>
+<li><code>print(s2 in s1) 输出为：True</code></li>
+</ul>
+<ol start="6">
+<li>转义字符（换行符号：\n 制表符：\t  回车：\r 这个只打印\r之后的）</li>
+</ol>
+<ul>
+<li><code>print(&quot;\&quot;&quot;)</code></li>
+</ul>
+<ol start="7">
+<li>原始字符串</li>
+</ol>
+<ul>
+<li><code>print(r&quot;hello\nPython&quot;)</code></li>
+<li><code>print(R&quot;hello\nPython&quot;)</code></li>
+</ul>
+<ol start="8">
+<li>字符串的格式化输出 </li>
+</ol>
+<ul>
+<li><code>print(&quot;我是%s&quot;,第%d天学习&quot; %(&#39;小明&#39;,10))</code></li>
+</ul>
+<ol start="9">
+<li>字符串的内建函数</li>
+</ol>
+<ul>
+<li>查找字符串</li>
+<li><code>s = &quot;Hello Python&quot;.find(&quot;He&quot;) 范围位置</code></li>
+<li>转换为大小写字母</li>
+<li><code>s = &quot;Hello Python&quot;.upper()</code></li>
+<li><code>s = &quot;Hello Python&quot;.lower()</code></li>
+<li>字符串的长度</li>
+<li><code>s = &quot;Hello Python&quot;.__len__()</code></li>
+<li>判断字符串是否只包含空格</li>
+<li><code>print(&quot;a &quot;.isspace())</code></li>
+<li>字符串替换</li>
+<li><code>print(&quot;Hello Python&quot;.replace(&quot;o&quot;,&quot;ee&quot;))</code></li>
+<li>输出20次</li>
+<li><code>print(&quot;he&quot;*20)</code></li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/python集合/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Deerlili">
+      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deerlili">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/30/python集合/" class="post-title-link" itemprop="url">python集合</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-30 11:33:01 / 修改时间：11:38:46" itemprop="dateCreated datePublished" datetime="2019-07-30T11:33:01+08:00">2019-07-30</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="名称：set"><a href="#名称：set" class="headerlink" title="名称：set"></a>名称：set</h3><blockquote>
+<p>定义：是一个无序的不重复的元素序列,集合就是没有value的字典</p>
+<ol>
+<li>声明方式</li>
+</ol>
+<ul>
+<li><code>{}  {&quot;你好&quot;,123}</code></li>
+<li><code>set()  set(&#39;123qasd&#39;)</code></li>
+</ul>
+<ol start="2">
+<li>实例</li>
+</ol>
+<ul>
+<li><code>a = [1,2,3,4,5,5]</code></li>
+<li><code>b = set(a)</code></li>
+<li><code>c = set(&#39;abcdef&#39;)</code></li>
+<li><code>d = set(&#39;abcxyz&#39;)</code></li>
+<li><code>共同包含的元素：print(c &amp; d) 输出：{&#39;a&#39;,&#39;b&#39;,&#39;c&#39;}</code></li>
+<li><code>都包含的元素：print(c | d) 输出：{&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;e&#39;,&#39;f&#39;,&#39;d&#39;,&#39;x&#39;,&#39;y&#39;,&#39;z&#39;}</code></li>
+<li>`不同包含的元素：print(c ^ d) 输出：{‘e’,’f’,’d’,’x’,’y’,’z’}``</li>
+</ul>
+<ol start="3">
+<li>集合添加</li>
+</ol>
+<ul>
+<li>b.add(‘XXX’)``</li>
+</ul>
+<ol start="4">
+<li>移除</li>
+</ol>
+<ul>
+<li>b.remove(‘’)</li>
+</ul>
+<ol start="5">
+<li>随机移除</li>
+</ol>
+<ul>
+<li>b.pop() 返回值：移除的值</li>
+</ul>
+<ol start="6">
+<li>集合的长度个数</li>
+</ol>
+<ul>
+<li>len(b)</li>
+</ul>
+<ol start="7">
+<li>清空集合</li>
+</ol>
+<ul>
+<li>b.clear</li>
+</ul>
+<ol start="8">
+<li>包含 in</li>
+</ol>
+</blockquote>
+<h3 id="名称：tuple"><a href="#名称：tuple" class="headerlink" title="名称：tuple"></a>名称：tuple</h3><blockquote>
+<p> 定义：元祖里面的内容不能修改，在小括号包裹，用逗号分割元素的数据结构,元组里的元素可以是任何数据类型，元组里面可以嵌套元组</p>
+<ul>
+<li><code>t  = (1,2,3)</code></li>
+</ul>
+</blockquote>
+<h3 id="dict"><a href="#dict" class="headerlink" title="dict"></a>dict</h3><blockquote>
+<p> 定义：基本的容器-字典，大括号包括起来的KV,可以CRUD</p>
+<ol>
+<li>实例</li>
+</ol>
+<ul>
+<li><code>a = {&#39;name&#39;:&#39;li&#39;,&#39;age&#39;:23}</code></li>
+</ul>
+<ol start="2">
+<li>取值</li>
+</ol>
+<ul>
+<li><code>print(a[&#39;name&#39;])</code></li>
+</ul>
+<ol start="3">
+<li>添加</li>
+</ol>
+<ul>
+<li><code>a[&#39;title&#39;]=&#39;master&#39;</code></li>
+</ul>
+<ol start="4">
+<li>修改</li>
+</ol>
+<ul>
+<li><code>a[&#39;name&#39;]=&#39;lll&#39;</code></li>
+</ul>
+<ol start="5">
+<li>删除</li>
+</ol>
+<ul>
+<li><code>a.pop(&#39;name&#39;)</code></li>
+</ul>
+</blockquote>
+<h3 id="字典：可变容器类型，可以存储任意类型的对象。KV对"><a href="#字典：可变容器类型，可以存储任意类型的对象。KV对" class="headerlink" title="字典：可变容器类型，可以存储任意类型的对象。KV对"></a>字典：可变容器类型，可以存储任意类型的对象。KV对</h3><blockquote>
+<p>dict</p>
+<ol>
+<li>样例</li>
+</ol>
+<ul>
+<li>d = {‘安金国’:12,’tetle’:1212}</li>
+</ul>
+<ol start="2">
+<li>访问</li>
+</ol>
+<ul>
+<li>keys = d.keys()</li>
+<li>d[‘安金国’]</li>
+</ul>
+<ol start="3">
+<li>添加</li>
+</ol>
+<ul>
+<li>d[‘小米’] = 14</li>
+</ul>
+<ol start="4">
+<li>更新</li>
+</ol>
+<ul>
+<li>d[‘安金国’] = 34</li>
+</ul>
+<ol start="5">
+<li>删除</li>
+</ol>
+<ul>
+<li>del d[‘安金国’]</li>
+</ul>
+<ol start="6">
+<li>函数</li>
+</ol>
+<ul>
+<li>d.clear()  in  d.values()</li>
+</ul>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/python列表/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -785,7 +1329,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -814,7 +1358,9 @@
         
           
         
-        <span class="site-state-item-count">6</span>
+          
+        
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -1040,6 +1586,10 @@
 
   
   
+    
+      
+    
+      
     
       
     
