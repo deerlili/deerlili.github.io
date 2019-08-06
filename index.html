@@ -399,6 +399,689 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/08/06/oracle自增ID/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Deerlili">
+      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deerlili">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/06/oracle自增ID/" class="post-title-link" itemprop="url">oracle自增ID</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-06 22:35:42 / 修改时间：22:36:31" itemprop="dateCreated datePublished" datetime="2019-08-06T22:35:42+08:00">2019-08-06</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/oracle/" itemprop="url" rel="index"><span itemprop="name">oracle</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="建序列"><a href="#建序列" class="headerlink" title="建序列"></a>建序列</h3><ul>
+<li>查询序列</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select * from user_sequences</span><br><span class="line">select * from all_sequences</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>删除序列</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP SEQUENCE EX.T1;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>建序列</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE SEQUENCE EX.T1</span><br><span class="line">INCREMENT BY 1 -- 每次加几个</span><br><span class="line">START WITH 1 -- 从1开始计数</span><br><span class="line">NOMAXVALUE -- 不设置最大值</span><br><span class="line">NOCYCLE -- 一直累加，不循环</span><br><span class="line">NOCACHE ;-- 不建缓冲区;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>建触发器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create or replace trigger 触发器名称 </span><br><span class="line">	before insert on 要插入数据的表名</span><br><span class="line">for each row</span><br><span class="line">	begin</span><br><span class="line">		select T1.nextval into :new.id from dual;</span><br><span class="line">	end;</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/08/06/oracle权限用户操作/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Deerlili">
+      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deerlili">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/06/oracle权限用户操作/" class="post-title-link" itemprop="url">oracle权限用户操作</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-06 22:28:03 / 修改时间：22:29:04" itemprop="dateCreated datePublished" datetime="2019-08-06T22:28:03+08:00">2019-08-06</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/oracle/" itemprop="url" rel="index"><span itemprop="name">oracle</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h3><ul>
+<li>sqlplus / as sysdba</li>
+<li>sqlplus sys/SysPassOracle2017SecretToken as sysdba</li>
+<li>sqlplus system/SystemPassword2017SecretToken as sysdba</li>
+</ul>
+<h3 id="查看表空间"><a href="#查看表空间" class="headerlink" title="查看表空间"></a>查看表空间</h3><ul>
+<li>select tablespace_name from dba_tablespaces;</li>
+</ul>
+<h3 id="查看表空间位置和大小"><a href="#查看表空间位置和大小" class="headerlink" title="查看表空间位置和大小"></a>查看表空间位置和大小</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"> select b.file_name 物理文件名,</span><br><span class="line">    b.tablespace_name 表空间,</span><br><span class="line">    b.bytes/1024/1024 大小M,</span><br><span class="line">    (b.bytes-sum(nvl(a.bytes,0)))/1024/1024 已使用M,　</span><br><span class="line">    substr((b.bytes-sum(nvl(a.bytes,0)))/(b.bytes)*100,1,5) 利用率　</span><br><span class="line">    from dba_free_space a,dba_data_files b　</span><br><span class="line">where </span><br><span class="line">    a.file_id=b.file_id </span><br><span class="line">    group by b.tablespace_name,b.file_name,b.bytes　</span><br><span class="line">    order by b.tablespace_name;</span><br><span class="line"></span><br><span class="line"> select </span><br><span class="line">    t.tablespace_name,</span><br><span class="line">    round(sum(bytes/(1024*1024)),0) ts_size </span><br><span class="line">from </span><br><span class="line">    dba_tablespaces t, dba_data_files d </span><br><span class="line">where </span><br><span class="line">    t.tablespace_name = d.tablespace_name </span><br><span class="line">group by t.tablespace_name;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> select </span><br><span class="line">    tablespace_name,</span><br><span class="line">    file_id, </span><br><span class="line">    file_name, </span><br><span class="line">    round(bytes/(1024*1024),0) total_space  </span><br><span class="line">from </span><br><span class="line">    dba_data_files </span><br><span class="line">order by tablespace_name;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> select </span><br><span class="line">    sum(bytes)/(1024*1024) as free_space,</span><br><span class="line">    tablespace_name </span><br><span class="line">from dba_free_space </span><br><span class="line">group by tablespace_name;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看表空间是否自增长"><a href="#查看表空间是否自增长" class="headerlink" title="查看表空间是否自增长"></a>查看表空间是否自增长</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT </span><br><span class="line">    FILE_NAME,TABLESPACE_NAME,AUTOEXTENSIBLE </span><br><span class="line">FROM dba_data_files;</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create user 用户 identified by password default tablespace USERS;</span><br><span class="line">create user gw_data identified by gw_data default tablespace USERS;</span><br><span class="line">create user gw_bi identified by gw_bipwd default tablespace USERS;</span><br><span class="line">create user ship_info identified by ship_infopwd default tablespace USERS;</span><br><span class="line">create user ex identified by ex123qwe123 default tablespace USERS;</span><br></pre></td></tr></table></figure>
+
+<h3 id="权限"><a href="#权限" class="headerlink" title="权限"></a>权限</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">grant connect,resource,dba to oracle;</span><br><span class="line">grant connect,resource to ex;</span><br><span class="line"></span><br><span class="line">grant dba to oracle;</span><br><span class="line">grant connect,resource to ex;</span><br><span class="line">grant select,connect any table to ex;</span><br><span class="line"></span><br><span class="line">grant delete any table to ex;</span><br><span class="line">grant update any table to ex;</span><br><span class="line">grant insert any table to ex;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">create user GYJSH identified by GYJSH123;</span><br><span class="line">grant connect to GYJSH;</span><br><span class="line">grant select on &quot;EX&quot;.&quot;GY_TRAIN_INFO&quot; to GYJSH;</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/08/06/python-基础语法-02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Deerlili">
+      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deerlili">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/06/python-基础语法-02/" class="post-title-link" itemprop="url">python-基础语法-02</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-06 21:59:52" itemprop="dateCreated datePublished" datetime="2019-08-06T21:59:52+08:00">2019-08-06</time>
+            </span>
+          
+
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/08/04/python文件操作/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Deerlili">
+      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deerlili">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/04/python文件操作/" class="post-title-link" itemprop="url">python文件操作</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-04 21:43:06 / 修改时间：21:47:45" itemprop="dateCreated datePublished" datetime="2019-08-04T21:43:06+08:00">2019-08-04</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h3><blockquote>
+<p>文件用open的w模式，文件不存在会自动创建</p>
+<ul>
+<li>mkdir只能创建单级目录，不用同时多级,如果目录存在，创建会失败</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line"></span><br><span class="line">os.mkdir(r&quot;E:\python&quot;)</span><br><span class="line">content = &apos;123&apos;</span><br><span class="line"></span><br><span class="line">file = open(r&quot;E:\python\t1.txt&quot;,&apos;w&apos;)</span><br><span class="line">file.write(content)</span><br><span class="line">file.close()</span><br></pre></td></tr></table></figure>
+
+<h3 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">fr = open(r&quot;E:\python\t1.txt&quot;)</span><br><span class="line">while True:</span><br><span class="line">    line = fr.readline()</span><br><span class="line">    if len(line) == 0:</span><br><span class="line">        break</span><br><span class="line">    print line</span><br><span class="line">    fr.close</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">fr = open(r&quot;E:\python\t1.txt&quot;)</span><br><span class="line">for u in fr:</span><br><span class="line">    print(u)</span><br><span class="line">fr.close</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/08/04/python异常处理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1541,710 +2224,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/sqoop2错误/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Deerlili">
-      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Deerlili">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/30/sqoop2错误/" class="post-title-link" itemprop="url">sqoop2错误</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-30 23:04:18 / 修改时间：23:16:08" itemprop="dateCreated datePublished" datetime="2019-07-30T23:04:18+08:00">2019-07-30</time>
-            </span>
-          
-
-          
-            
-
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/错误/" itemprop="url" rel="index"><span itemprop="name">错误</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h4><p>启动sqoop2 server<br><code>Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /var/lib/sqoop2/repository/db</code></p>
-<blockquote>
-<p>解决办法：</p>
-<ol>
-<li>查找进程：<code>ps -aux|grep sqoop2</code></li>
-<li>kill进程号：<code>kill -9 ...</code></li>
-<li>重新启动</li>
-</ol>
-</blockquote>
-<h3 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h3><p><code>/usr/bdp/1.0.0-1/sqoop2/bin/sqoop.sh: line 202: /var/run/sqoop2/sqoop-sqoop2-jetty-server.pid: No such file or directory
-ERROR:  Cannot write pid</code></p>
-<blockquote>
-<p>解决办法：</p>
-<ol>
-<li>在安装server的机器上建目录和文件</li>
-<li><code>cd /var/run/</code></li>
-<li><code>mkdir sqoop2</code></li>
-<li><code>chown sqoop2:hadoop sqoop2</code></li>
-<li><code>cd sqoop2</code></li>
-<li><code>touch sqoop-sqoop2-jetty-server.pid</code></li>
-<li><code>chown sqoop2:hadoop *</code></li>
-<li>重启</li>
-</ol>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/ansible自动化运维-day01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Deerlili">
-      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Deerlili">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/30/ansible自动化运维-day01/" class="post-title-link" itemprop="url">ansible自动化运维-day01</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-30 17:44:45 / 修改时间：17:56:39" itemprop="dateCreated datePublished" datetime="2019-07-30T17:44:45+08:00">2019-07-30</time>
-            </span>
-          
-
-          
-            
-
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/运维/" itemprop="url" rel="index"><span itemprop="name">运维</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/ansible自动化运维-day00/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Deerlili">
-      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Deerlili">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/30/ansible自动化运维-day00/" class="post-title-link" itemprop="url">ansible自动化运维</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-30 14:32:03 / 修改时间：17:55:22" itemprop="dateCreated datePublished" datetime="2019-07-30T14:32:03+08:00">2019-07-30</time>
-            </span>
-          
-
-          
-            
-
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ansible/" itemprop="url" rel="index"><span itemprop="name">ansible</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/python安装/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Deerlili">
-      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Deerlili">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/30/python安装/" class="post-title-link" itemprop="url">python安装</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-30 14:19:22" itemprop="dateCreated datePublished" datetime="2019-07-30T14:19:22+08:00">2019-07-30</time>
-            </span>
-          
-
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-08-03 09:05:34" itemprop="dateModified" datetime="2019-08-03T09:05:34+08:00">2019-08-03</time>
-              </span>
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="windows-环境"><a href="#windows-环境" class="headerlink" title="windows 环境"></a>windows 环境</h4><blockquote>
-<p>下载地址: <a href="https://www.python.org" target="_blank" rel="noopener">python</a></p>
-</blockquote>
-<h4 id="linux-环境"><a href="#linux-环境" class="headerlink" title="linux 环境"></a>linux 环境</h4><ul>
-<li>查看python版本: <code>python -v</code> </li>
-<li>python官网：<code>https://www.python.org/</code></li>
-<li>这里介绍：安装python3.7系统默认的就是python2</li>
-<li><a href="https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz</a><h5 id="linux上执行命令"><a href="#linux上执行命令" class="headerlink" title="linux上执行命令"></a>linux上执行命令</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">yum install wget</span><br><span class="line">yum install nano</span><br><span class="line">wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz</span><br><span class="line">tar xvJf Python-3.7.1.tar.xz</span><br><span class="line">cd Python-3.7.1</span><br><span class="line">mv Python-3.7.1 python3</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h5 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc zlib* libffi-devel</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br><span class="line">./python -V</span><br></pre></td></tr></table></figure>
-
-<h5 id="建立软连接"><a href="#建立软连接" class="headerlink" title="建立软连接"></a>建立软连接</h5><p>· python3.7 位置：/usr/local/bin/python3.7<br>· python2.7 位置：/usr/bin/python</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/bin</span><br><span class="line">grep python</span><br><span class="line">./python -V</span><br><span class="line">方案1：建立软连接：ln -s /root/Python-3.7.1/python /usr/bin/python3</span><br><span class="line">方案2：也可以把命令：mv python python.bak</span><br><span class="line">ln -s /root/Python-3.7.1/python /usr/bin/python</span><br><span class="line">这里要看自己的需要了</span><br><span class="line">如果用方案1：进入python2可以用命令：python</span><br><span class="line"> 进入python3可以用命令：python3</span><br><span class="line">如果用方案2：进入python2可以用命令：python2</span><br><span class="line"> 进入python3可以用命令：python</span><br><span class="line">若用方案2需要修改参数：</span><br><span class="line">cd /root/Python-3.7.1</span><br><span class="line">nano /usr/bin/yum</span><br><span class="line">把第一行#!/usr/bin/python改成#!/usr/bin/python2.7 保存按ctrl+x选择Y回车</span><br><span class="line">nano /usr/libexec/urlgrabber-ext-down</span><br><span class="line">把第一行#!/usr/bin/python改成#!/usr/bin/python2.7 保存按ctrl+x选择Y回车</span><br><span class="line">nano命令是会把缓存区的文件也改动，vi只会改本地文件</span><br><span class="line">测试一下：yum install -y nginx能安装就成功了。</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2294,7 +2273,7 @@ ERROR:  Cannot write pid</code></p>
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -2323,9 +2302,7 @@ ERROR:  Cannot write pid</code></p>
         
           
         
-          
-        
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>

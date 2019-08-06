@@ -399,6 +399,382 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/sqoop2错误/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Deerlili">
+      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deerlili">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/30/sqoop2错误/" class="post-title-link" itemprop="url">sqoop2错误</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-30 23:04:18 / 修改时间：23:16:08" itemprop="dateCreated datePublished" datetime="2019-07-30T23:04:18+08:00">2019-07-30</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/错误/" itemprop="url" rel="index"><span itemprop="name">错误</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h4><p>启动sqoop2 server<br><code>Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /var/lib/sqoop2/repository/db</code></p>
+<blockquote>
+<p>解决办法：</p>
+<ol>
+<li>查找进程：<code>ps -aux|grep sqoop2</code></li>
+<li>kill进程号：<code>kill -9 ...</code></li>
+<li>重新启动</li>
+</ol>
+</blockquote>
+<h3 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h3><p><code>/usr/bdp/1.0.0-1/sqoop2/bin/sqoop.sh: line 202: /var/run/sqoop2/sqoop-sqoop2-jetty-server.pid: No such file or directory
+ERROR:  Cannot write pid</code></p>
+<blockquote>
+<p>解决办法：</p>
+<ol>
+<li>在安装server的机器上建目录和文件</li>
+<li><code>cd /var/run/</code></li>
+<li><code>mkdir sqoop2</code></li>
+<li><code>chown sqoop2:hadoop sqoop2</code></li>
+<li><code>cd sqoop2</code></li>
+<li><code>touch sqoop-sqoop2-jetty-server.pid</code></li>
+<li><code>chown sqoop2:hadoop *</code></li>
+<li>重启</li>
+</ol>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/python安装/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Deerlili">
+      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deerlili">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/30/python安装/" class="post-title-link" itemprop="url">python安装</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-30 14:19:22" itemprop="dateCreated datePublished" datetime="2019-07-30T14:19:22+08:00">2019-07-30</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-03 09:05:34" itemprop="dateModified" datetime="2019-08-03T09:05:34+08:00">2019-08-03</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="windows-环境"><a href="#windows-环境" class="headerlink" title="windows 环境"></a>windows 环境</h4><blockquote>
+<p>下载地址: <a href="https://www.python.org" target="_blank" rel="noopener">python</a></p>
+</blockquote>
+<h4 id="linux-环境"><a href="#linux-环境" class="headerlink" title="linux 环境"></a>linux 环境</h4><ul>
+<li>查看python版本: <code>python -v</code> </li>
+<li>python官网：<code>https://www.python.org/</code></li>
+<li>这里介绍：安装python3.7系统默认的就是python2</li>
+<li><a href="https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz</a><h5 id="linux上执行命令"><a href="#linux上执行命令" class="headerlink" title="linux上执行命令"></a>linux上执行命令</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">yum install wget</span><br><span class="line">yum install nano</span><br><span class="line">wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz</span><br><span class="line">tar xvJf Python-3.7.1.tar.xz</span><br><span class="line">cd Python-3.7.1</span><br><span class="line">mv Python-3.7.1 python3</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h5 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc zlib* libffi-devel</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br><span class="line">./python -V</span><br></pre></td></tr></table></figure>
+
+<h5 id="建立软连接"><a href="#建立软连接" class="headerlink" title="建立软连接"></a>建立软连接</h5><p>· python3.7 位置：/usr/local/bin/python3.7<br>· python2.7 位置：/usr/bin/python</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/bin</span><br><span class="line">grep python</span><br><span class="line">./python -V</span><br><span class="line">方案1：建立软连接：ln -s /root/Python-3.7.1/python /usr/bin/python3</span><br><span class="line">方案2：也可以把命令：mv python python.bak</span><br><span class="line">ln -s /root/Python-3.7.1/python /usr/bin/python</span><br><span class="line">这里要看自己的需要了</span><br><span class="line">如果用方案1：进入python2可以用命令：python</span><br><span class="line"> 进入python3可以用命令：python3</span><br><span class="line">如果用方案2：进入python2可以用命令：python2</span><br><span class="line"> 进入python3可以用命令：python</span><br><span class="line">若用方案2需要修改参数：</span><br><span class="line">cd /root/Python-3.7.1</span><br><span class="line">nano /usr/bin/yum</span><br><span class="line">把第一行#!/usr/bin/python改成#!/usr/bin/python2.7 保存按ctrl+x选择Y回车</span><br><span class="line">nano /usr/libexec/urlgrabber-ext-down</span><br><span class="line">把第一行#!/usr/bin/python改成#!/usr/bin/python2.7 保存按ctrl+x选择Y回车</span><br><span class="line">nano命令是会把缓存区的文件也改动，vi只会改本地文件</span><br><span class="line">测试一下：yum install -y nginx能安装就成功了。</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/python字符串/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1329,7 +1705,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1358,9 +1734,7 @@
         
           
         
-          
-        
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -1586,6 +1960,10 @@
 
   
   
+    
+      
+    
+      
     
       
     
