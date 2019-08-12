@@ -135,7 +135,7 @@
 <meta property="og:site_name" content="Deerlili">
 <meta property="og:description" content="建序列 查询序列  12select * from user_sequencesselect * from all_sequences   删除序列  1DROP SEQUENCE EX.T1;   建序列  123456CREATE SEQUENCE EX.T1INCREMENT BY 1 -- 每次加几个START WITH 1 -- 从1开始计数NOMAXVALUE -- 不设置最大值NOC">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-06T14:36:31.511Z">
+<meta property="og:updated_time" content="2019-08-06T14:44:07.464Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="oracle自增ID">
 <meta name="twitter:description" content="建序列 查询序列  12select * from user_sequencesselect * from all_sequences   删除序列  1DROP SEQUENCE EX.T1;   建序列  123456CREATE SEQUENCE EX.T1INCREMENT BY 1 -- 每次加几个START WITH 1 -- 从1开始计数NOMAXVALUE -- 不设置最大值NOC">
@@ -443,7 +443,7 @@
                 
               
 
-              <time title="创建时间：2019-08-06 22:35:42 / 修改时间：22:36:31" itemprop="dateCreated datePublished" datetime="2019-08-06T22:35:42+08:00">2019-08-06</time>
+              <time title="创建时间：2019-08-06 22:35:42 / 修改时间：22:44:07" itemprop="dateCreated datePublished" datetime="2019-08-06T22:35:42+08:00">2019-08-06</time>
             </span>
           
 
@@ -521,6 +521,8 @@
 <li>建触发器</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create or replace trigger 触发器名称 </span><br><span class="line">	before insert on 要插入数据的表名</span><br><span class="line">for each row</span><br><span class="line">	begin</span><br><span class="line">		select T1.nextval into :new.id from dual;</span><br><span class="line">	end;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询表对应的触发器名"><a href="#查询表对应的触发器名" class="headerlink" title="查询表对应的触发器名"></a>查询表对应的触发器名</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select trigger_name from all_triggers where table_name=&apos;T_NAME&apos;;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -608,6 +610,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/08/12/oralce基本用法/" rel="prev" title="oralce基本用法">
+                oralce基本用法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -678,7 +684,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -707,7 +713,9 @@
         
           
         
-        <span class="site-state-item-count">6</span>
+          
+        
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -736,7 +744,9 @@
         
           
         
-        <span class="site-state-item-count">6</span>
+          
+        
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -797,7 +807,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#建序列"><span class="nav-number">1.</span> <span class="nav-text">建序列</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#建序列"><span class="nav-number">1.</span> <span class="nav-text">建序列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询表对应的触发器名"><span class="nav-number">2.</span> <span class="nav-text">查询表对应的触发器名</span></a></li></ol></div>
             
 
           </div>
