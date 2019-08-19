@@ -399,6 +399,380 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/08/04/python异常处理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Deerlili">
+      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deerlili">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/04/python异常处理/" class="post-title-link" itemprop="url">python异常处理</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-04 20:50:03 / 修改时间：21:05:16" itemprop="dateCreated datePublished" datetime="2019-08-04T20:50:03+08:00">2019-08-04</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/异常/" itemprop="url" rel="index"><span itemprop="name">异常</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="python异常处理"><a href="#python异常处理" class="headerlink" title="python异常处理"></a>python异常处理</h3><blockquote>
+<p>使用try-except语句，假如try出现的某种异常，则只需except下面的语句</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># i = 77</span><br><span class="line">try:</span><br><span class="line">    print i</span><br><span class="line">except:</span><br><span class="line">    i = 9</span><br><span class="line">    i += 10</span><br><span class="line">    print &quot;刚才没有定义i，处理异常后i的值为：&quot;+str(i)</span><br></pre></td></tr></table></figure>
+
+<h3 id="处理多种异常"><a href="#处理多种异常" class="headerlink" title="处理多种异常"></a>处理多种异常</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">i = 10</span><br><span class="line"># j = &quot;a&quot;</span><br><span class="line">try:</span><br><span class="line">    print i+j</span><br><span class="line">except NameError:</span><br><span class="line">    i = j = 0</span><br><span class="line">    print &quot;i或者j没有初始化，现在初始化为0&quot;</span><br><span class="line">    print i+j</span><br><span class="line">except TypeError:</span><br><span class="line">    print &quot;i和j类型对应不上,处理后：&quot;+str(i)+str(j)</span><br></pre></td></tr></table></figure>
+
+<h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3><blockquote>
+<p>python中，要想实现让某种情况下引发自定义的异常这个功能，可以使用raise语句实现。</p>
+</blockquote>
+<blockquote>
+<p>引发异常 用raise引发一个系统的错误类</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">i = 8</span><br><span class="line">print i</span><br><span class="line">if i &gt; 7:</span><br><span class="line">    print 9</span><br><span class="line">    raise NameError</span><br><span class="line">    print 10</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>定义一个异常并用raise引发</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 按照命名规范，以Error结尾，自定义异常需要继承Exception类</span><br><span class="line">class RhhError(Exception):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        Exception.__init__(self)</span><br><span class="line">        </span><br><span class="line">try:</span><br><span class="line">    i = 8</span><br><span class="line">    if i &gt; 7:</span><br><span class="line">        raise RhhError()</span><br><span class="line">except RhhError:</span><br><span class="line">    print &quot;RhhError:错误&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="try…finally"><a href="#try…finally" class="headerlink" title="try…finally"></a>try…finally</h3><blockquote>
+<p>假如要实现不管中间是否发生异常，都要输出一串字符串</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">try：</span><br><span class="line">    print i</span><br><span class="line">finally:</span><br><span class="line">    print &quot;不管上面发生什么，这里都输出！&quot;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>实现将一串字符串输出10次，假如发生异常，判断前面已经输出多少次</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try:</span><br><span class="line">    for i in range(10):</span><br><span class="line">        print &quot;输出10次，不知道是第几次&quot;</span><br><span class="line">finally:</span><br><span class="line">    print &quot;此i次是：&quot;+str(i)+&quot;---未完成全部输出&quot;</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/08/03/awk统计ip访问/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Deerlili">
+      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Deerlili">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/03/awk统计ip访问/" class="post-title-link" itemprop="url">awk统计ip访问</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-03 09:04:41 / 修改时间：09:07:02" itemprop="dateCreated datePublished" datetime="2019-08-03T09:04:41+08:00">2019-08-03</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="统计IP访问情况并分析访问日志"><a href="#统计IP访问情况并分析访问日志" class="headerlink" title="统计IP访问情况并分析访问日志"></a>统计IP访问情况并分析访问日志</h3><blockquote>
+<p>日志</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">112.111.12.248 – [25/Sep/2013:16:08:31 +0800]formula-x.haotui.com“/seccode.php?update=0.5593110133088248″ 200″http://formula�x.haotui.com/registerbbs.php” “Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1;)”61.147.76.51 – [25/Sep/2013:16:08:31 +0800]xyzdiy.5d6d.com“/attachment.php?aid=4554&amp;k=9ce51e2c376bc861603c7689d97c04a1&amp;t=1334564048&amp;fid=9&amp;sid=zgohwYoLZq2qPW233ZIRsJiUeu22XqE8f49jY9mouRSoE71″301″http://xyzdiy.5d6d.com/thread-1435-1-23.html” “Mozilla/4.0 (compatible; MSIE 6.0;Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)”</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>统计出每个 IP 的访问量有多少</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">awk &apos;&#123;print $1&#125;&apos; 1.log |sort -n |uniq -c |sort -n</span><br></pre></td></tr></table></figure>
+
+<h3 id="解析命令"><a href="#解析命令" class="headerlink" title="解析命令"></a>解析命令</h3><ol>
+<li>awk 命令在分段方面还是比较有优势的，这里的{print $1}讲第一段打印出来，awk 可以用-F 指定分隔符，如果不指定分隔符，默认就以空白字符(比如空格、Tab 等)，本题中，IP 地址就是在第一段。</li>
+<li>sort 命令是排序的命令，-n 选项表示以数字的形式排序，如果不加-n，则以 ASCII 排序，本题中的 IP 地址以数字的形式排序更容易区分。</li>
+<li>uniq 命令是用来去重复的，一个文本中如果有多行内容是一模一样的，使用 uniq 命令就可以把相同内容的行给删除掉，只留一行。而-c 选项的作用是计算重复的行数，所以在此题中使用 uniq -c 正好可以计算 IP 地址的访问数量。不过，大家一定要注意，uniq 去重的前提是首先要排序。</li>
+<li>最后没得 sort -n 意思是按访问量大小来排序，请求量越大的 IP 排在越后面，如果要想排在前面，可以加一个-r 选项，即 sort –nr</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/08/03/centos安装epel外部源/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2087,363 +2461,11 @@ ERROR:  Cannot write pid</code></p>
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/python列表/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Deerlili">
-      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Deerlili">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/30/python列表/" class="post-title-link" itemprop="url">python列表</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-30 11:30:06 / 修改时间：11:38:58" itemprop="dateCreated datePublished" datetime="2019-07-30T11:30:06+08:00">2019-07-30</time>
-            </span>
-          
-
-          
-            
-
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="定义：是一组有序的序列"><a href="#定义：是一组有序的序列" class="headerlink" title="定义：是一组有序的序列"></a>定义：是一组有序的序列</h3><p>list ：是用 [] 包起来的，用逗号分割元素的数据结构，列表里的元素可以是任何数据类型，可以改变，列表里面可以嵌套列表</p>
-<ol>
-<li>列表实例 <code>a = [&#39;123&#39;,12,&#39;你好&#39;]</code> <code>print(type(a))</code></li>
-<li>访问列表,切片 <code>print(a[0])</code> <code>print(a[0:1])</code></li>
-<li>列表更新 <code>a[1] = 14</code></li>
-<li>列表添加 <code>a.append(&#39;lo&#39;)</code>  <code>a = a + [&#39;尔雅&#39;]</code></li>
-<li>删除  <code>del a[3]</code></li>
-<li>嵌套列表 <code>list1 = [[1,&#39;爱国&#39;],[2,&#39;建设&#39;]]</code> <code>list1[0]   lis1t[0][0]</code></li>
-<li>列表长度 <code>len(list1)</code></li>
-<li>移除,返回的是移除的值 </li>
-</ol>
-<ul>
-<li><code>通过序列 l = list1.pop(1)</code> <code>print(list1)</code> </li>
-<li><code>通过名称 list1.remove(&#39;建设&#39;)</code></li>
-</ul>
-<ol start="9">
-<li>列表中的元素进行排序 <code>a.sort()</code></li>
-<li>查找列表第一个匹配的元素的索引值 <code>list1.index(1)</code></li>
-</ol>
-<ul>
-<li><code>station = input(&quot;输入车站名称：&quot;)</code></li>
-<li><code>bus_list = [&#39;小李&#39;,&#39;小王&#39;]</code></li>
-<li><code>if station == &#39;石家庄&#39;:</code></li>
-<li><code>bus_list.append(&#39;李二&#39;)</code></li>
-<li><code>bus_list.remove(&#39;小王&#39;)</code></li>
-<li><code>elif station == &#39;郑州&#39;:</code></li>
-<li><code>bus_list.append(&#39;李三&#39;)</code></li>
-<li><code>bus_list.remove(&#39;李二&#39;)</code></li>
-<li><code>print(bus_list)</code></li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/23/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Deerlili">
-      <meta itemprop="description" content="男儿不展风云志-空负天生八尺躯">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Deerlili">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/23/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-23 23:03:29" itemprop="dateCreated datePublished" datetime="2019-07-23T23:03:29+08:00">2019-07-23</time>
-            </span>
-          
-
-          
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -2488,7 +2510,7 @@ ERROR:  Cannot write pid</code></p>
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
