@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[python控制台输入]]></title>
+    <url>%2F2019%2F08%2F19%2Fpython%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%85%A5%2F</url>
+    <content type="text"><![CDATA[输入 raw_input()直接读取控制台的输入（任何类型的输入它都可以接收） input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError 123456789101112#!/usr/bin/python# -*- coding:utf8 -*-a = input("请输入第一个值:")b = raw_input("请输入运算符号:")c = input("请输入第二个值:")if b == "+": result = a + cprint("结果是："+str(result))上面也可以： int(input("请输入第一个值:"))上面也可以： eval(input("请输入第一个值:"))]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python简介]]></title>
+    <url>%2F2019%2F08%2F19%2Fpython%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"><![CDATA[简介 拥有简单脚本语言和解释型程序语言的易用性 拥有传统编译型程序语言所通用的功能 python是一种解释性的、面向对象的、带有动态语义的高级程序设计语言 介于C和Shell之间 胶水语言-很容易和其他语言集成封装 脚本语言-面向对象 python2和python3 大多数的python3 pyhton的应用 web开发 python定义了WSGI标准应用接口来协调HTTP服务器于基于python开发的web程序之间的沟通 gui开发 用wxPython 或者 PyQt来开发跨平台的桌面软件 操作系统 多媒体-可用于计算机游戏的三维场景制作]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python循环和判断]]></title>
+    <url>%2F2019%2F08%2F19%2Fpython%E5%BE%AA%E7%8E%AF%E5%92%8C%E5%88%A4%E6%96%AD%2F</url>
+    <content type="text"><![CDATA[if控制流123456if ...: ... elif ...: .... else: .... 1234567891011x = 1# 第一种方法if x == 1: print('a')else: print('c')# 第二种方法if x == 1: print('12')if x != 1: print('wq') 12345a = 80if 0 &lt; a &lt;= 80: print "差"elif 80 &lt;= a &lt;= 100: print "好" while控制流 while例子: 非零都是true 1234a = 3 while a: print(a) a = a - 1 while语句使用结构 12345while 条件为真: 循环执行这部分语句else： 条件为假执行#else部分可以省略 123456789a = 1while a &lt; 10: if a &lt;= 5: print a else: print "Hello" a += 1else: print "test" for range(1,5,2) 步长2 12for k in range(0,3) print(k) 12345for语句格式：for i in 集合： 执行该部分else： 执行该部分 1234567#常见集合char1 = u"你好世界" #u代表这是Unicode编码tem1 = ("元祖:你好","元祖:世界")list1 = ["列表:你好","列表:世界"]dict1 = &#123;"first":"列表:你好","second":"列表:世界"&#125;for i in dict1: print i 1234567891011a = 1while a &lt;= 7: a = a +1 if a == 4: continue #暂时不知道写什么逻辑可言先占位 for i in range(7,10) if i == 9: continue print(i) 输出为：7878787878 break：跳出循环 continue：跳过后面要执行的 break 跳出循环 continue 跳过后面要执行的 range() list = range(10) 0到9 [x*x for x in list] 列表生成式 0 1 4 9. [x*x for x in list if x % 3] 1 4 16 25 range(2,9) 2到9 range(2,9,2) 步长为2]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python命名规范]]></title>
+    <url>%2F2019%2F08%2F19%2Fpython%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83%2F</url>
+    <content type="text"><![CDATA[标识符 常量，变量就是标识符的一种 变量命名规则 不能以数字开头 只能包含字母、数字和下划线 区分字母大小写 禁止使用保留字 见名知意 命名惯例 以单一下划线开头变量名（_x）不会被from module import * 语句导入，是私有的 前后有下划线的变量名（x）是系统定义的变量名，对python解释器有特殊意义 以两个下划线开头但结尾没有下划线的变量名（__x）是类的本地变量 交互式模式下，变量名“_”用于保存最后表达式的结果 变量名没有类型，对象才有 一般全大写的为常量 python常用关键字12import keywordprint(keyword.kwlist) [&#39;and&#39;, &#39;as&#39;, &#39;assert&#39;, &#39;break&#39;, &#39;class&#39;, &#39;continue&#39;, &#39;def&#39;, &#39;del&#39;, &#39;elif&#39;, &#39;else&#39;, &#39;except&#39;, &#39;exec&#39;, &#39;finally&#39;, &#39;for&#39;, &#39;from&#39;, &#39;global&#39;, &#39;if&#39;, &#39;import&#39;, &#39;in&#39;, &#39;is&#39;, &#39;lambda&#39;, &#39;not&#39;, &#39;or&#39;, &#39;pass&#39;, &#39;print&#39;, &#39;raise&#39;, &#39;return&#39;, &#39;try&#39;, &#39;while&#39;, &#39;with&#39;, &#39;yield&#39;]]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[oracle问题]]></title>
+    <url>%2F2019%2F08%2F12%2Foracle%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[问题11ora-00054:resource busy and acquire with NOWAIT specified 是由于大量的插入导致大被锁了 在DBA权限下执行，不要选择数据库 1234567891011select t2.username, t2.sid, t2.serial#, t2.logon_timefrom v$locked_object t1, v$session t2where t1.session_id = t2.sid order by t2.logon_time 查询出来的SID和serial写成下面格式 1alter system kill session '232,19627';]]></content>
+      <categories>
+        <category>oracle</category>
+      </categories>
+      <tags>
+        <tag>oracle</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[oracle时间操作]]></title>
+    <url>%2F2019%2F08%2F12%2Foracle%E6%97%B6%E9%97%B4%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[TO_CHAR(SYSDATE, ‘YYYYMM’) = 201902 replace(substr(SYSDATE,0,7),’-‘,’’) = 201902 replace(substr(SYSDATE,0,10),’-‘,’’) = 20190202 TO_CHAR(a.FaHangDate,’YY-MM-dd HH24:mi’) long时间类型转换 1TO_CHAR(UTC/(60*60*24)+ TO_DATE('1970-01-01 08:00:00', 'YYYY-MM-DD HH:MI:SS'), 'YYYY-MM-DD HH24:MI:SS') 1TO_CHAR(UTC/(60*60*24)+ TO_DATE('1970-01-01 08:00:00', 'YYYY-MM-DD HH:MI:SS'), 'YYYY-MM-DD') 1TO_CHAR(UTC/(60*60*24)+ TO_DATE('1970-01-01 08:00:00', 'YYYY-MM-DD HH:MI:SS'), 'HH24') 时间转换成long 1TO_NUMBER(SYSDATE-TO_DATE('1970-01-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'))*24*60 *60 字符串拼接和截取 12把 20190706 12:12:23 转换成 2019-07-06 12:12:23SUBSTR(RKSJ,0,4)||'-'||SUBSTR(RKSJ,5,2)||'-'||SUBSTR(RKSJ,7,2)||SUBSTR(RKSJ,9,9)]]></content>
+      <categories>
+        <category>oracle</category>
+      </categories>
+      <tags>
+        <tag>oracle</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[oracle基本用法]]></title>
+    <url>%2F2019%2F08%2F12%2Foracle%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[建表123456789101112CREATE TABLE GY_FREIGHT_INFO( BILLING_WEIGHT NUMBER(8), BILL_NO VARCHAR(100), CONTAINER_NO VARCHAR(100));alter table EX.GY_FREIGHT_INFO add constraint tb_gy_freight_info_pk primary key (BILL_NO,CONTAINER_NO);comment on table GY_FREIGHT_INFO is '列车货物信息';comment on column GY_FREIGHT_INFO.BILL_NO is '运单号';comment on column GY_FREIGHT_INFO.PRIVATE_LINE_NO1 is '始发站专线号';comment on column GY_FREIGHT_INFO.PRIVATE_LINE_NO3 is '到站专用线号'; 视图123456789CREATE OR REPLACE VIEW EX.GY_FREIGHT_INFO AS SELECT BILL_NO,CONTAINER_NO,CONTAINER_TYPE,DETERMINE_WEIGHT,FILING_DATE, FREIGHT_NO,GOODS_NAME,NUM,PACKING,PRIVATE_LINE_NO1,PRIVATE_LINE_NO3, VOLUME,WEIGHT,BILLING_WEIGHTFROM EX.FREIGHT_INFO WHERE PRIVATE_LINE_NO3='35148001'WITH READ ONLY 从命名表12alter table 旧表名 rename to 新表名; rename 旧表名 to 新表名;]]></content>
+      <categories>
+        <category>oracle</category>
+      </categories>
+      <tags>
+        <tag>oracle</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[oracle自增ID]]></title>
+    <url>%2F2019%2F08%2F06%2Foracle%E8%87%AA%E5%A2%9EID%2F</url>
+    <content type="text"><![CDATA[建序列 查询序列 12select * from user_sequencesselect * from all_sequences 删除序列 1DROP SEQUENCE EX.T1; 建序列 123456CREATE SEQUENCE EX.T1INCREMENT BY 1 -- 每次加几个START WITH 1 -- 从1开始计数NOMAXVALUE -- 不设置最大值NOCYCLE -- 一直累加，不循环NOCACHE ;-- 不建缓冲区; 建触发器 123456create or replace trigger 触发器名称 before insert on 要插入数据的表名for each row begin select T1.nextval into :new.id from dual; end; 查询表对应的触发器名1select trigger_name from all_triggers where table_name='T_NAME';]]></content>
+      <categories>
+        <category>oracle</category>
+      </categories>
+      <tags>
+        <tag>oralce</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[oracle权限用户操作]]></title>
+    <url>%2F2019%2F08%2F06%2Foracle%E6%9D%83%E9%99%90%E7%94%A8%E6%88%B7%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[登录 sqlplus / as sysdba sqlplus sys/SysPassOracle2017SecretToken as sysdba sqlplus system/SystemPassword2017SecretToken as sysdba 查看表空间 select tablespace_name from dba_tablespaces; 查看表空间位置和大小123456789101112131415161718192021222324252627282930313233343536 select b.file_name 物理文件名, b.tablespace_name 表空间, b.bytes/1024/1024 大小M, (b.bytes-sum(nvl(a.bytes,0)))/1024/1024 已使用M, substr((b.bytes-sum(nvl(a.bytes,0)))/(b.bytes)*100,1,5) 利用率 from dba_free_space a,dba_data_files b where a.file_id=b.file_id group by b.tablespace_name,b.file_name,b.bytes order by b.tablespace_name; select t.tablespace_name, round(sum(bytes/(1024*1024)),0) ts_size from dba_tablespaces t, dba_data_files d where t.tablespace_name = d.tablespace_name group by t.tablespace_name; select tablespace_name, file_id, file_name, round(bytes/(1024*1024),0) total_space from dba_data_files order by tablespace_name; select sum(bytes)/(1024*1024) as free_space, tablespace_name from dba_free_space group by tablespace_name; 查看表空间是否自增长123SELECT FILE_NAME,TABLESPACE_NAME,AUTOEXTENSIBLE FROM dba_data_files; 创建用户12345create user 用户 identified by password default tablespace USERS;create user gw_data identified by gw_data default tablespace USERS;create user gw_bi identified by gw_bipwd default tablespace USERS;create user ship_info identified by ship_infopwd default tablespace USERS;create user ex identified by ex123qwe123 default tablespace USERS; 权限123456789101112131415grant connect,resource,dba to oracle;grant connect,resource to ex;grant dba to oracle;grant connect,resource to ex;grant select,connect any table to ex;grant delete any table to ex;grant update any table to ex;grant insert any table to ex;create user GYJSH identified by GYJSH123;grant connect to GYJSH;grant select on "EX"."GY_TRAIN_INFO" to GYJSH;]]></content>
+      <categories>
+        <category>oracle</category>
+      </categories>
+      <tags>
+        <tag>oralce</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python-基础语法-02]]></title>
+    <url>%2F2019%2F08%2F06%2Fpython-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-02%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[python文件操作]]></title>
+    <url>%2F2019%2F08%2F04%2Fpython%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[创建文件夹 文件用open的w模式，文件不存在会自动创建 mkdir只能创建单级目录，不用同时多级,如果目录存在，创建会失败 12345678import osos.mkdir(r"E:\python")content = '123'file = open(r"E:\python\t1.txt",'w')file.write(content)file.close() 读取文件1234567891011121314fr = open(r"E:\python\t1.txt")while True: line = fr.readline() if len(line) == 0: break print line fr.close fr = open(r"E:\python\t1.txt")for u in fr: print(u)fr.close]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>file</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python异常处理]]></title>
+    <url>%2F2019%2F08%2F04%2Fpython%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%2F</url>
+    <content type="text"><![CDATA[python异常处理 使用try-except语句，假如try出现的某种异常，则只需except下面的语句 1234567# i = 77try: print iexcept: i = 9 i += 10 print "刚才没有定义i，处理异常后i的值为："+str(i) 处理多种异常12345678910i = 10# j = "a"try: print i+jexcept NameError: i = j = 0 print "i或者j没有初始化，现在初始化为0" print i+jexcept TypeError: print "i和j类型对应不上,处理后："+str(i)+str(j) 自定义异常 python中，要想实现让某种情况下引发自定义的异常这个功能，可以使用raise语句实现。 引发异常 用raise引发一个系统的错误类 123456i = 8print iif i &gt; 7: print 9 raise NameError print 10 定义一个异常并用raise引发 1234567891011# 按照命名规范，以Error结尾，自定义异常需要继承Exception类class RhhError(Exception): def __init__(self): Exception.__init__(self) try: i = 8 if i &gt; 7: raise RhhError()except RhhError: print "RhhError:错误" try…finally 假如要实现不管中间是否发生异常，都要输出一串字符串 1234try： print ifinally: print "不管上面发生什么，这里都输出！" 实现将一串字符串输出10次，假如发生异常，判断前面已经输出多少次 12345try: for i in range(10): print "输出10次，不知道是第几次"finally: print "此i次是："+str(i)+"---未完成全部输出"]]></content>
+      <categories>
+        <category>异常</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[awk统计ip访问]]></title>
+    <url>%2F2019%2F08%2F03%2Fawk%E7%BB%9F%E8%AE%A1ip%E8%AE%BF%E9%97%AE%2F</url>
+    <content type="text"><![CDATA[统计IP访问情况并分析访问日志 日志 1112.111.12.248 – [25/Sep/2013:16:08:31 +0800]formula-x.haotui.com“/seccode.php?update=0.5593110133088248″ 200″http://formula�x.haotui.com/registerbbs.php” “Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1;)”61.147.76.51 – [25/Sep/2013:16:08:31 +0800]xyzdiy.5d6d.com“/attachment.php?aid=4554&amp;k=9ce51e2c376bc861603c7689d97c04a1&amp;t=1334564048&amp;fid=9&amp;sid=zgohwYoLZq2qPW233ZIRsJiUeu22XqE8f49jY9mouRSoE71″301″http://xyzdiy.5d6d.com/thread-1435-1-23.html” “Mozilla/4.0 (compatible; MSIE 6.0;Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)” 统计出每个 IP 的访问量有多少 1awk '&#123;print $1&#125;' 1.log |sort -n |uniq -c |sort -n 解析命令 awk 命令在分段方面还是比较有优势的，这里的{print $1}讲第一段打印出来，awk 可以用-F 指定分隔符，如果不指定分隔符，默认就以空白字符(比如空格、Tab 等)，本题中，IP 地址就是在第一段。 sort 命令是排序的命令，-n 选项表示以数字的形式排序，如果不加-n，则以 ASCII 排序，本题中的 IP 地址以数字的形式排序更容易区分。 uniq 命令是用来去重复的，一个文本中如果有多行内容是一模一样的，使用 uniq 命令就可以把相同内容的行给删除掉，只留一行。而-c 选项的作用是计算重复的行数，所以在此题中使用 uniq -c 正好可以计算 IP 地址的访问数量。不过，大家一定要注意，uniq 去重的前提是首先要排序。 最后没得 sort -n 意思是按访问量大小来排序，请求量越大的 IP 排在越后面，如果要想排在前面，可以加一个-r 选项，即 sort –nr]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[centos安装epel外部源]]></title>
+    <url>%2F2019%2F08%2F03%2Fcentos%E5%AE%89%E8%A3%85epel%E5%A4%96%E9%83%A8%E6%BA%90%2F</url>
+    <content type="text"><![CDATA[介绍 自己安装系统的时候，系统自带的有本地yum源，但是里面的工具有限有时候安装时候出现没有可用软件包，这时候就需要安装epel外部源 查看本地源 12345ls /etc/yum.repos.d/CentOS-Base.repo CentOS-fasttrack.repo CentOS-Vault.repoCentOS-CR.repo CentOS-Media.repo CentOS-Debuginfo.repo CentOS-Sources.repo 安装软件 出现没有可用软件包 123456789101112[root@node2 ~]# yum install jq已加载插件：fastestmirrorbase | 3.6 kB 00:00 extras | 3.4 kB 00:00 updates | 3.4 kB 00:00 updates/7/x86_64/primary_db | 7.4 MB 00:04 Determining fastest mirrors * base: mirror.lzu.edu.cn * extras: mirrors.aliyun.com * updates: mirrors.aliyun.com没有可用软件包 jq。错误：无须任何处理 安装流程 先安装wget，避免安装epel源导致不能获取外部源 1yum install wget 卸载以前安装的epel以免影响 1rpm -e epel-release 下载阿里提供的epel,根据不同的版本安装不同的epel版本,centos7就改为epel-7 123wget -P /etc/yum.repos.d/ http://mirrors.aliyun.com/repo/epel-7.repoyum clean allyum makecache 这样就完成了安装 如果要全部替换成阿里的源，可以先备份一下自己的源，然后操作，根据操作系统的版本调整参数 123rm -rf /etc/yum.repos.d/*wget -P /etc/yum.repos.d/ http://mirrors.aliyun.com/repo/epel-6.repo http://mirrors.aliyun.com/repo/Centos-6.repoyum repolist]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python基于腾讯大数据平台爬取移动定位数据]]></title>
+    <url>%2F2019%2F08%2F02%2Fpython%E5%9F%BA%E4%BA%8E%E8%85%BE%E8%AE%AF%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0%E7%88%AC%E5%8F%96%E7%A7%BB%E5%8A%A8%E5%AE%9A%E4%BD%8D%E6%95%B0%E6%8D%AE%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[python使用redis的消息队列]]></title>
+    <url>%2F2019%2F08%2F01%2Fpython%E4%BD%BF%E7%94%A8redis%E7%9A%84%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%2F</url>
+    <content type="text"><![CDATA[Redis服务 安装 1yum install redis python安装支持模块 1/opt/python2.7/bin/pip install redis 和redis的简单直接交互 123456In [1]: import redisIn [2]: rc = redis.Redis(host='192.168.63.130',port=6379,decode_responses=True)In [3]: rc.set('imoocc','jeson')In [4]: TrueIn [5]: rc.set('imoocc')In [6]: u'jeson' Redis简单操作 对于和Redis的交互，Redis的类中提供了连接池的方式，我们可以通过连接池管理并操作Redis。 建立连接池，利用连接池连接 123456In [1]: connpool = redis.ConnectionPool(host='192.168.63.130',port=6379,decode_responses=True)In [2]: rc = redis.Redis(connection_pool=connpool)In [3]: rc = set('imooccp','123456')Out[3]: TrueIn [4]: rc.get('imooccp')Out[4]: u'123456' redis中DB，指定数据存取的DB redis.conf中配置了db的数量，那么redis的数据库也命名为 0 到 15，如下：databases 16 指定使用哪个数据库名，我们通过如下方式，就可以了。 12connpool = redis.ConnectionPool(host='192.168.63.130',port=6379,decode_responses=True,db=3)rc.set('test2','1111') 这样就将数据写入db3了，如何验证呢？我们从服务端来认证最直接，如下： 用redis-cli(redis自带的工具)登录服务端，查看写入的key。 1234127.0.0.1:6379&gt; SELECT 3OK127.0.0.1:6379[3]&gt; KEYS * //查看db 3这个库下所有的key1) "test2" 那么接下来介绍redis详细项目使用的内容，大家不要觉得介绍的内容扩散太大。 最近在做一个任务系统，任务写入是不定时的，我们需要用一个程序去定期消费这些任务，必须是有先后顺序的，而且是前一个任务确认执行完后，才去执行下一个。 那么怎么办？用队列呀，对吧？用什么队列，怎么用？ 介绍下为什么要用redis来作消息处理：123简单来说，redis支持两种消息模式一种发布-订阅模式，及一个消息会被多个消费者处理（简单说类似是一个广播消息，所有人都会接收）。很明显我的系统中不需要这么用，系统里边就需要队列模式，及先到的任务优先处理。那么队列用什么类型的数据库结构来作呢？ 先得聊聊list list 这个数据类型，在python里面是一个列表，在redis里就是一个有序队列（或者说数据链表）。 类型图示如下： 大家看了这个结构就可以清楚了，我们可以利用list的数据接口模式，设计从左端和右端都可以对list进行元素的同向处理（满足队列的特性先进先出）。 从左端插入数据 12345678In [10]: rc.lpush('tasklist',1,2,3)Out[10]: 3L打印输出内容如下:print(rc.lrange('tasklist',0,2))[u'3', u'2', u'1']类似的从左侧插入的方法还有lpushx(name,value)区别只有当name存在才将value插入到最左边。 从右端插入数据 123rc.rpush('tasklist','5')print(rc.lrange('tasklist',0,4))[u'4', u'3', u'2', u'1', u'5'] 从左边取数据 1234567rc.lpop("tasklist")Out[23]: u'4'rc.lpop("tasklist")Out[24]: u'3'print(rc.lrange('tasklist',0,4))[u'2', u'1', u'5']我们会看到从左侧已经取出了两个元素了。剩下来[u'2', u'1', u'5'] 从右侧取数据 1当然就是rc.rpop()了 python对于redis的基础使用和Redis作为队列的简单使用就介绍这些]]></content>
+      <categories>
+        <category>python</category>
+        <category>redis</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[awk处理文本]]></title>
+    <url>%2F2019%2F08%2F01%2Fawk%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC%2F</url>
+    <content type="text"><![CDATA[awk脚本 awk脚本通常由3部分构成 123BEGIN&#123; 这里面放的是执行前的语句 &#125;END&#123; 这里面放的是处理完所有的行后要执行的语句 &#125;&#123; 这里面放的是处理每一行要执行的语句 &#125; 假如有一下表： 123456cat score.txtMarry 2143 78 84 77Jack 2321 66 78 45Tom 2122 48 77 71Mike 2537 87 97 95Bob 2415 40 57 62 统计所有人的总分数，以及平均情况的awk脚本 12345678910111213141516171819202122232425#!/bin/awk -f# 运行前BEGIN &#123; math = 0 english = 0 computer = 0 printf "NAME NO. MATH COMPUTER TOTAL\n" printf "----------------------------\n"&#125;# 运行中&#123; math += $3 english += $4 computer += $5 printf "%-6s %-6s %4d %8d %8d %8d", $1, $2, $3, $4, $5, $3+$4+$5&#125;# 运行后END &#123; printf "----------------------------\n" printf " TOTAL:%10d %8d %8d\n", math, english, computer printf " AVERAGE:%10.2f %8.2f %8.2f\n", math/NR, english/NR, computer/NR&#125; 输出 12345678910NAME NO. MATH ENGLISH COMPUTER TOTAL--------------------------------------------------Marry 2143 78 84 77 239Jack 2321 66 78 45 189Tom 2122 48 77 71 196Mike 2537 87 97 95 279Bob 2415 40 57 62 159-------------------------------------------------- TOTAL: 319 393 350 AVERAGE: 63.80 78.60 70.00]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[sqoop2错误]]></title>
+    <url>%2F2019%2F07%2F30%2Fsqoop2%E9%94%99%E8%AF%AF%2F</url>
+    <content type="text"><![CDATA[问题1启动sqoop2 serverCaused by: ERROR XSDB6: Another instance of Derby may have already booted the database /var/lib/sqoop2/repository/db 解决办法： 查找进程：ps -aux|grep sqoop2 kill进程号：kill -9 ... 重新启动 问题2/usr/bdp/1.0.0-1/sqoop2/bin/sqoop.sh: line 202: /var/run/sqoop2/sqoop-sqoop2-jetty-server.pid: No such file or directory ERROR: Cannot write pid 解决办法： 在安装server的机器上建目录和文件 cd /var/run/ mkdir sqoop2 chown sqoop2:hadoop sqoop2 cd sqoop2 touch sqoop-sqoop2-jetty-server.pid chown sqoop2:hadoop * 重启]]></content>
+      <categories>
+        <category>错误</category>
+      </categories>
+      <tags>
+        <tag>sqoop2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python安装]]></title>
+    <url>%2F2019%2F07%2F30%2Fpython%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"><![CDATA[windows 环境 下载地址: python linux 环境 查看python版本: python -v python官网：https://www.python.org/ 这里介绍：安装python3.7系统默认的就是python2 https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xzlinux上执行命令123456yum install wgetyum install nanowget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xztar xvJf Python-3.7.1.tar.xzcd Python-3.7.1mv Python-3.7.1 python3 安装依赖12345yum -y install gcc zlib* libffi-devel./configuremakemake install./python -V 建立软连接· python3.7 位置：/usr/local/bin/python3.7· python2.7 位置：/usr/bin/python 12345678910111213141516171819cd /usr/bingrep python./python -V方案1：建立软连接：ln -s /root/Python-3.7.1/python /usr/bin/python3方案2：也可以把命令：mv python python.bakln -s /root/Python-3.7.1/python /usr/bin/python这里要看自己的需要了如果用方案1：进入python2可以用命令：python 进入python3可以用命令：python3如果用方案2：进入python2可以用命令：python2 进入python3可以用命令：python若用方案2需要修改参数：cd /root/Python-3.7.1nano /usr/bin/yum把第一行#!/usr/bin/python改成#!/usr/bin/python2.7 保存按ctrl+x选择Y回车nano /usr/libexec/urlgrabber-ext-down把第一行#!/usr/bin/python改成#!/usr/bin/python2.7 保存按ctrl+x选择Y回车nano命令是会把缓存区的文件也改动，vi只会改本地文件测试一下：yum install -y nginx能安装就成功了。]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python字符串]]></title>
+    <url>%2F2019%2F07%2F30%2Fpython%E5%AD%97%E7%AC%A6%E4%B8%B2%2F</url>
+    <content type="text"><![CDATA[字符串的申明：单引号,双引号，三引号 s = &#39;Hello Python!&#39; s = &quot;Hello Python!&quot; s = &#39;&#39;&#39;Hello Python!&#39;&#39;&#39; s = &quot;&quot;&quot;Hello Python!&quot;&quot;&quot; 字符串中有单引号用双引号包裹，有双引号用单引号包裹，有换行用三引号（单引号，双引号）包裹字符串的操作 单个访问字符串中的字符 s = &#39;Hello Python!&#39; print(s[0]) 输出为：H 访问字符串的子串（切片操作） print(s[0:5]) 输出为：Hello 字符串相加 s1 = &#39;Hello&#39; s2 = &#39; Python!&#39; print(s1+s2) 输出为：Hello Python! 字符串更新操作 s1 = &#39;Hello&#39; s2 = &#39;Python&#39; print(s1[:2]+s2) 输出为：HePython 字符串的成员运输 包含运算：in，不包含：not in s1 = &#39;Hello&#39; s2 = &#39;H&#39; print(s2 in s1) 输出为：True 转义字符（换行符号：\n 制表符：\t 回车：\r 这个只打印\r之后的） print(&quot;\&quot;&quot;) 原始字符串 print(r&quot;hello\nPython&quot;) print(R&quot;hello\nPython&quot;) 字符串的格式化输出 print(&quot;我是%s&quot;,第%d天学习&quot; %(&#39;小明&#39;,10)) 字符串的内建函数 查找字符串 s = &quot;Hello Python&quot;.find(&quot;He&quot;) 范围位置 转换为大小写字母 s = &quot;Hello Python&quot;.upper() s = &quot;Hello Python&quot;.lower() 字符串的长度 s = &quot;Hello Python&quot;.__len__() 判断字符串是否只包含空格 print(&quot;a &quot;.isspace()) 字符串替换 print(&quot;Hello Python&quot;.replace(&quot;o&quot;,&quot;ee&quot;)) 输出20次 print(&quot;he&quot;*20)]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python集合]]></title>
+    <url>%2F2019%2F07%2F30%2Fpython%E9%9B%86%E5%90%88%2F</url>
+    <content type="text"><![CDATA[名称：set 定义：是一个无序的不重复的元素序列,集合就是没有value的字典 声明方式 {} {&quot;你好&quot;,123} set() set(&#39;123qasd&#39;) 实例 a = [1,2,3,4,5,5] b = set(a) c = set(&#39;abcdef&#39;) d = set(&#39;abcxyz&#39;) 共同包含的元素：print(c &amp; d) 输出：{&#39;a&#39;,&#39;b&#39;,&#39;c&#39;} 都包含的元素：print(c | d) 输出：{&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;e&#39;,&#39;f&#39;,&#39;d&#39;,&#39;x&#39;,&#39;y&#39;,&#39;z&#39;} `不同包含的元素：print(c ^ d) 输出：{‘e’,’f’,’d’,’x’,’y’,’z’}`` 集合添加 b.add(‘XXX’)`` 移除 b.remove(‘’) 随机移除 b.pop() 返回值：移除的值 集合的长度个数 len(b) 清空集合 b.clear 包含 in 名称：tuple 定义：元祖里面的内容不能修改，在小括号包裹，用逗号分割元素的数据结构,元组里的元素可以是任何数据类型，元组里面可以嵌套元组 t = (1,2,3) dict 定义：基本的容器-字典，大括号包括起来的KV,可以CRUD 实例 a = {&#39;name&#39;:&#39;li&#39;,&#39;age&#39;:23} 取值 print(a[&#39;name&#39;]) 添加 a[&#39;title&#39;]=&#39;master&#39; 修改 a[&#39;name&#39;]=&#39;lll&#39; 删除 a.pop(&#39;name&#39;) 字典：可变容器类型，可以存储任意类型的对象。KV对 dict 样例 d = {‘安金国’:12,’tetle’:1212} 访问 keys = d.keys() d[‘安金国’] 添加 d[‘小米’] = 14 更新 d[‘安金国’] = 34 删除 del d[‘安金国’] 函数 d.clear() in d.values()]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python列表]]></title>
+    <url>%2F2019%2F07%2F30%2Fpython%E5%88%97%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[定义：是一组有序的序列list ：是用 [] 包起来的，用逗号分割元素的数据结构，列表里的元素可以是任何数据类型，可以改变，列表里面可以嵌套列表 列表实例 a = [&#39;123&#39;,12,&#39;你好&#39;] print(type(a)) 访问列表,切片 print(a[0]) print(a[0:1]) 列表更新 a[1] = 14 列表添加 a.append(&#39;lo&#39;) a = a + [&#39;尔雅&#39;] 删除 del a[3] 嵌套列表 list1 = [[1,&#39;爱国&#39;],[2,&#39;建设&#39;]] list1[0] lis1t[0][0] 列表长度 len(list1) 移除,返回的是移除的值 通过序列 l = list1.pop(1) print(list1) 通过名称 list1.remove(&#39;建设&#39;) 列表中的元素进行排序 a.sort() 查找列表第一个匹配的元素的索引值 list1.index(1) station = input(&quot;输入车站名称：&quot;) bus_list = [&#39;小李&#39;,&#39;小王&#39;] if station == &#39;石家庄&#39;: bus_list.append(&#39;李二&#39;) bus_list.remove(&#39;小王&#39;) elif station == &#39;郑州&#39;: bus_list.append(&#39;李三&#39;) bus_list.remove(&#39;李二&#39;) print(bus_list)]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F07%2F23%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>

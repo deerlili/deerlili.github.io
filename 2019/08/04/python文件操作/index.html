@@ -127,18 +127,18 @@
   };
 </script>
 
-  <meta name="description" content="创建文件夹 文件用open的w模式，文件不存在会自动创建   mkdir只能创建单级目录，不用同时多级,如果目录存在，创建会失败  12345678import osos.mkdir(r&amp;quot;E:\python&amp;quot;)content = &amp;apos;123&amp;apos;file = open(r&amp;quot;E:\python\t1.txt&amp;quot;,&amp;apos;w&amp;apos;)file">
+  <meta name="description" content="创建文件夹 文件用open的w模式，文件不存在会自动创建   mkdir只能创建单级目录，不用同时多级,如果目录存在，创建会失败  12345678import osos.mkdir(r&quot;E:\python&quot;)content = &apos;123&apos;file = open(r&quot;E:\python\t1.txt&quot;,&apos;w&apos;)file.write(content)file.close()  读取文件1234567">
 <meta name="keywords" content="file">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python文件操作">
 <meta property="og:url" content="https://deerlili.github.io/2019/08/04/python文件操作/index.html">
 <meta property="og:site_name" content="Deerlili">
-<meta property="og:description" content="创建文件夹 文件用open的w模式，文件不存在会自动创建   mkdir只能创建单级目录，不用同时多级,如果目录存在，创建会失败  12345678import osos.mkdir(r&amp;quot;E:\python&amp;quot;)content = &amp;apos;123&amp;apos;file = open(r&amp;quot;E:\python\t1.txt&amp;quot;,&amp;apos;w&amp;apos;)file">
+<meta property="og:description" content="创建文件夹 文件用open的w模式，文件不存在会自动创建   mkdir只能创建单级目录，不用同时多级,如果目录存在，创建会失败  12345678import osos.mkdir(r&quot;E:\python&quot;)content = &apos;123&apos;file = open(r&quot;E:\python\t1.txt&quot;,&apos;w&apos;)file.write(content)file.close()  读取文件1234567">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-08-06T14:44:11.926Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python文件操作">
-<meta name="twitter:description" content="创建文件夹 文件用open的w模式，文件不存在会自动创建   mkdir只能创建单级目录，不用同时多级,如果目录存在，创建会失败  12345678import osos.mkdir(r&amp;quot;E:\python&amp;quot;)content = &amp;apos;123&amp;apos;file = open(r&amp;quot;E:\python\t1.txt&amp;quot;,&amp;apos;w&amp;apos;)file">
+<meta name="twitter:description" content="创建文件夹 文件用open的w模式，文件不存在会自动创建   mkdir只能创建单级目录，不用同时多级,如果目录存在，创建会失败  12345678import osos.mkdir(r&quot;E:\python&quot;)content = &apos;123&apos;file = open(r&quot;E:\python\t1.txt&quot;,&apos;w&apos;)file.write(content)file.close()  读取文件1234567">
 
 
 
@@ -540,9 +540,9 @@
 <blockquote>
 <p>mkdir只能创建单级目录，不用同时多级,如果目录存在，创建会失败</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line"></span><br><span class="line">os.mkdir(r&quot;E:\python&quot;)</span><br><span class="line">content = &apos;123&apos;</span><br><span class="line"></span><br><span class="line">file = open(r&quot;E:\python\t1.txt&quot;,&apos;w&apos;)</span><br><span class="line">file.write(content)</span><br><span class="line">file.close()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">os.mkdir(<span class="string">r"E:\python"</span>)</span><br><span class="line">content = <span class="string">'123'</span></span><br><span class="line"></span><br><span class="line">file = open(<span class="string">r"E:\python\t1.txt"</span>,<span class="string">'w'</span>)</span><br><span class="line">file.write(content)</span><br><span class="line">file.close()</span><br></pre></td></tr></table></figure>
 
-<h3 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">fr = open(r&quot;E:\python\t1.txt&quot;)</span><br><span class="line">while True:</span><br><span class="line">    line = fr.readline()</span><br><span class="line">    if len(line) == 0:</span><br><span class="line">        break</span><br><span class="line">    print line</span><br><span class="line">    fr.close</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">fr = open(r&quot;E:\python\t1.txt&quot;)</span><br><span class="line">for u in fr:</span><br><span class="line">    print(u)</span><br><span class="line">fr.close</span><br></pre></td></tr></table></figure>
+<h3 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">fr = open(<span class="string">r"E:\python\t1.txt"</span>)</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    line = fr.readline()</span><br><span class="line">    <span class="keyword">if</span> len(line) == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">print</span> line</span><br><span class="line">    fr.close</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">fr = open(<span class="string">r"E:\python\t1.txt"</span>)</span><br><span class="line"><span class="keyword">for</span> u <span class="keyword">in</span> fr:</span><br><span class="line">    print(u)</span><br><span class="line">fr.close</span><br></pre></td></tr></table></figure>
 
 
       
@@ -1039,7 +1039,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {

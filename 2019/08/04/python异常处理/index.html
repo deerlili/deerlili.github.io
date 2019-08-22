@@ -127,18 +127,18 @@
   };
 </script>
 
-  <meta name="description" content="python异常处理 使用try-except语句，假如try出现的某种异常，则只需except下面的语句  1234567# i = 77try:    print iexcept:    i = 9    i += 10    print &amp;quot;刚才没有定义i，处理异常后i的值为：&amp;quot;+str(i)  处理多种异常12345678910i = 10# j = &amp;quot;a&amp;qu">
+  <meta name="description" content="python异常处理 使用try-except语句，假如try出现的某种异常，则只需except下面的语句  1234567# i = 77try:    print iexcept:    i = 9    i += 10    print &quot;刚才没有定义i，处理异常后i的值为：&quot;+str(i)  处理多种异常12345678910i = 10# j = &quot;a&quot;try:    print i+j">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python异常处理">
 <meta property="og:url" content="https://deerlili.github.io/2019/08/04/python异常处理/index.html">
 <meta property="og:site_name" content="Deerlili">
-<meta property="og:description" content="python异常处理 使用try-except语句，假如try出现的某种异常，则只需except下面的语句  1234567# i = 77try:    print iexcept:    i = 9    i += 10    print &amp;quot;刚才没有定义i，处理异常后i的值为：&amp;quot;+str(i)  处理多种异常12345678910i = 10# j = &amp;quot;a&amp;qu">
+<meta property="og:description" content="python异常处理 使用try-except语句，假如try出现的某种异常，则只需except下面的语句  1234567# i = 77try:    print iexcept:    i = 9    i += 10    print &quot;刚才没有定义i，处理异常后i的值为：&quot;+str(i)  处理多种异常12345678910i = 10# j = &quot;a&quot;try:    print i+j">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-08-04T13:05:16.449Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python异常处理">
-<meta name="twitter:description" content="python异常处理 使用try-except语句，假如try出现的某种异常，则只需except下面的语句  1234567# i = 77try:    print iexcept:    i = 9    i += 10    print &amp;quot;刚才没有定义i，处理异常后i的值为：&amp;quot;+str(i)  处理多种异常12345678910i = 10# j = &amp;quot;a&amp;qu">
+<meta name="twitter:description" content="python异常处理 使用try-except语句，假如try出现的某种异常，则只需except下面的语句  1234567# i = 77try:    print iexcept:    i = 9    i += 10    print &quot;刚才没有定义i，处理异常后i的值为：&quot;+str(i)  处理多种异常12345678910i = 10# j = &quot;a&quot;try:    print i+j">
 
 
 
@@ -527,9 +527,9 @@
         <h3 id="python异常处理"><a href="#python异常处理" class="headerlink" title="python异常处理"></a>python异常处理</h3><blockquote>
 <p>使用try-except语句，假如try出现的某种异常，则只需except下面的语句</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># i = 77</span><br><span class="line">try:</span><br><span class="line">    print i</span><br><span class="line">except:</span><br><span class="line">    i = 9</span><br><span class="line">    i += 10</span><br><span class="line">    print &quot;刚才没有定义i，处理异常后i的值为：&quot;+str(i)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># i = 77</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="keyword">print</span> i</span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">    i = <span class="number">9</span></span><br><span class="line">    i += <span class="number">10</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"刚才没有定义i，处理异常后i的值为："</span>+str(i)</span><br></pre></td></tr></table></figure>
 
-<h3 id="处理多种异常"><a href="#处理多种异常" class="headerlink" title="处理多种异常"></a>处理多种异常</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">i = 10</span><br><span class="line"># j = &quot;a&quot;</span><br><span class="line">try:</span><br><span class="line">    print i+j</span><br><span class="line">except NameError:</span><br><span class="line">    i = j = 0</span><br><span class="line">    print &quot;i或者j没有初始化，现在初始化为0&quot;</span><br><span class="line">    print i+j</span><br><span class="line">except TypeError:</span><br><span class="line">    print &quot;i和j类型对应不上,处理后：&quot;+str(i)+str(j)</span><br></pre></td></tr></table></figure>
+<h3 id="处理多种异常"><a href="#处理多种异常" class="headerlink" title="处理多种异常"></a>处理多种异常</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">i = 10</span><br><span class="line"><span class="comment"># j = "a"</span></span><br><span class="line">try:</span><br><span class="line">    <span class="builtin-name">print</span> i+j</span><br><span class="line">except NameError:</span><br><span class="line">    i = j = 0</span><br><span class="line">    <span class="builtin-name">print</span> <span class="string">"i或者j没有初始化，现在初始化为0"</span></span><br><span class="line">    <span class="builtin-name">print</span> i+j</span><br><span class="line">except TypeError:</span><br><span class="line">    <span class="builtin-name">print</span> <span class="string">"i和j类型对应不上,处理后："</span>+str(i)+str(j)</span><br></pre></td></tr></table></figure>
 
 <h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3><blockquote>
 <p>python中，要想实现让某种情况下引发自定义的异常这个功能，可以使用raise语句实现。</p>
@@ -537,22 +537,22 @@
 <blockquote>
 <p>引发异常 用raise引发一个系统的错误类</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">i = 8</span><br><span class="line">print i</span><br><span class="line">if i &gt; 7:</span><br><span class="line">    print 9</span><br><span class="line">    raise NameError</span><br><span class="line">    print 10</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">i = 8</span><br><span class="line"><span class="builtin-name">print</span> i</span><br><span class="line"><span class="keyword">if</span> i &gt; 7:</span><br><span class="line">    <span class="builtin-name">print</span> 9</span><br><span class="line">    raise NameError</span><br><span class="line">    <span class="builtin-name">print</span> 10</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>定义一个异常并用raise引发</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 按照命名规范，以Error结尾，自定义异常需要继承Exception类</span><br><span class="line">class RhhError(Exception):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        Exception.__init__(self)</span><br><span class="line">        </span><br><span class="line">try:</span><br><span class="line">    i = 8</span><br><span class="line">    if i &gt; 7:</span><br><span class="line">        raise RhhError()</span><br><span class="line">except RhhError:</span><br><span class="line">    print &quot;RhhError:错误&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 按照命名规范，以Error结尾，自定义异常需要继承Exception类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RhhError</span><span class="params">(Exception)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        Exception.__init__(self)</span><br><span class="line">        </span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    i = <span class="number">8</span></span><br><span class="line">    <span class="keyword">if</span> i &gt; <span class="number">7</span>:</span><br><span class="line">        <span class="keyword">raise</span> RhhError()</span><br><span class="line"><span class="keyword">except</span> RhhError:</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"RhhError:错误"</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="try…finally"><a href="#try…finally" class="headerlink" title="try…finally"></a>try…finally</h3><blockquote>
 <p>假如要实现不管中间是否发生异常，都要输出一串字符串</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">try：</span><br><span class="line">    print i</span><br><span class="line">finally:</span><br><span class="line">    print &quot;不管上面发生什么，这里都输出！&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>：</span><br><span class="line">    <span class="built_in">print</span> i</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    <span class="built_in">print</span> <span class="string">"不管上面发生什么，这里都输出！"</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>实现将一串字符串输出10次，假如发生异常，判断前面已经输出多少次</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try:</span><br><span class="line">    for i in range(10):</span><br><span class="line">        print &quot;输出10次，不知道是第几次&quot;</span><br><span class="line">finally:</span><br><span class="line">    print &quot;此i次是：&quot;+str(i)+&quot;---未完成全部输出&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">        <span class="built_in">print</span> <span class="string">"输出10次，不知道是第几次"</span></span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    <span class="built_in">print</span> <span class="string">"此i次是："</span>+str(i)+<span class="string">"---未完成全部输出"</span></span><br></pre></td></tr></table></figure>
 
 
       
@@ -1049,7 +1049,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {

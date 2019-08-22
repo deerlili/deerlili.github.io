@@ -127,18 +127,18 @@
   };
 </script>
 
-  <meta name="description" content="输入 raw_input()直接读取控制台的输入（任何类型的输入它都可以接收）   input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError  123456789101112#!/usr/bin/python# -*- coding:utf8 -*-a = input(&amp;quot;请输入第一个值:&amp;quot;">
+  <meta name="description" content="输入 raw_input()直接读取控制台的输入（任何类型的输入它都可以接收）   input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError  123456789101112#!/usr/bin/python# -*- coding:utf8 -*-a = input(&quot;请输入第一个值:&quot;)b = raw_i">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python控制台输入">
 <meta property="og:url" content="https://deerlili.github.io/2019/08/19/python控制台输入/index.html">
 <meta property="og:site_name" content="Deerlili">
-<meta property="og:description" content="输入 raw_input()直接读取控制台的输入（任何类型的输入它都可以接收）   input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError  123456789101112#!/usr/bin/python# -*- coding:utf8 -*-a = input(&amp;quot;请输入第一个值:&amp;quot;">
+<meta property="og:description" content="输入 raw_input()直接读取控制台的输入（任何类型的输入它都可以接收）   input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError  123456789101112#!/usr/bin/python# -*- coding:utf8 -*-a = input(&quot;请输入第一个值:&quot;)b = raw_i">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-08-19T14:02:40.302Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python控制台输入">
-<meta name="twitter:description" content="输入 raw_input()直接读取控制台的输入（任何类型的输入它都可以接收）   input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError  123456789101112#!/usr/bin/python# -*- coding:utf8 -*-a = input(&amp;quot;请输入第一个值:&amp;quot;">
+<meta name="twitter:description" content="输入 raw_input()直接读取控制台的输入（任何类型的输入它都可以接收）   input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError  123456789101112#!/usr/bin/python# -*- coding:utf8 -*-a = input(&quot;请输入第一个值:&quot;)b = raw_i">
 
 
 
@@ -530,7 +530,7 @@
 <blockquote>
 <p>input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python</span><br><span class="line"># -*- coding:utf8 -*-</span><br><span class="line"></span><br><span class="line">a = input(&quot;请输入第一个值:&quot;)</span><br><span class="line">b = raw_input(&quot;请输入运算符号:&quot;)</span><br><span class="line">c = input(&quot;请输入第二个值:&quot;)</span><br><span class="line"></span><br><span class="line">if b == &quot;+&quot;:</span><br><span class="line">    result = a + c</span><br><span class="line">print(&quot;结果是：&quot;+str(result))</span><br><span class="line">上面也可以： int(input(&quot;请输入第一个值:&quot;))</span><br><span class="line">上面也可以： eval(input(&quot;请输入第一个值:&quot;))</span><br></pre></td></tr></table></figure>
+<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/python</span></span><br><span class="line"><span class="meta"># -*- coding:utf8 -*-</span></span><br><span class="line"></span><br><span class="line">a = <span class="keyword">input</span>(<span class="string">"请输入第一个值:"</span>)</span><br><span class="line">b = raw_input(<span class="string">"请输入运算符号:"</span>)</span><br><span class="line">c = <span class="keyword">input</span>(<span class="string">"请输入第二个值:"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> b == <span class="string">"+"</span>:</span><br><span class="line">    result = a + c</span><br><span class="line"><span class="keyword">print</span>(<span class="string">"结果是："</span>+<span class="keyword">str</span>(result))</span><br><span class="line">上面也可以： <span class="keyword">int</span>(<span class="keyword">input</span>(<span class="string">"请输入第一个值:"</span>))</span><br><span class="line">上面也可以： eval(<span class="keyword">input</span>(<span class="string">"请输入第一个值:"</span>))</span><br></pre></td></tr></table></figure>
 
 
       
@@ -1023,7 +1023,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {

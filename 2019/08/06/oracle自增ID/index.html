@@ -527,24 +527,24 @@
         <h3 id="建序列"><a href="#建序列" class="headerlink" title="建序列"></a>建序列</h3><ul>
 <li>查询序列</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select * from user_sequences</span><br><span class="line">select * from all_sequences</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> user_sequences</span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> all_sequences</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>删除序列</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP SEQUENCE EX.T1;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">SEQUENCE</span> EX.T1;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>建序列</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE SEQUENCE EX.T1</span><br><span class="line">INCREMENT BY 1 -- 每次加几个</span><br><span class="line">START WITH 1 -- 从1开始计数</span><br><span class="line">NOMAXVALUE -- 不设置最大值</span><br><span class="line">NOCYCLE -- 一直累加，不循环</span><br><span class="line">NOCACHE ;-- 不建缓冲区;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">SEQUENCE</span> EX.T1</span><br><span class="line"><span class="keyword">INCREMENT</span> <span class="keyword">BY</span> <span class="number">1</span> <span class="comment">-- 每次加几个</span></span><br><span class="line"><span class="keyword">START</span> <span class="keyword">WITH</span> <span class="number">1</span> <span class="comment">-- 从1开始计数</span></span><br><span class="line"><span class="keyword">NOMAXVALUE</span> <span class="comment">-- 不设置最大值</span></span><br><span class="line"><span class="keyword">NOCYCLE</span> <span class="comment">-- 一直累加，不循环</span></span><br><span class="line">NOCACHE ;<span class="comment">-- 不建缓冲区;</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>建触发器</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create or replace trigger 触发器名称 </span><br><span class="line">	before insert on 要插入数据的表名</span><br><span class="line">for each row</span><br><span class="line">	begin</span><br><span class="line">		select T1.nextval into :new.id from dual;</span><br><span class="line">	end;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">or</span> <span class="keyword">replace</span> <span class="keyword">trigger</span> 触发器名称 </span><br><span class="line">	<span class="keyword">before</span> <span class="keyword">insert</span> <span class="keyword">on</span> 要插入数据的表名</span><br><span class="line"><span class="keyword">for</span> <span class="keyword">each</span> <span class="keyword">row</span></span><br><span class="line">	<span class="keyword">begin</span></span><br><span class="line">		<span class="keyword">select</span> T1.nextval <span class="keyword">into</span> :new.id <span class="keyword">from</span> dual;</span><br><span class="line">	<span class="keyword">end</span>;</span><br></pre></td></tr></table></figure>
 
-<h3 id="查询表对应的触发器名"><a href="#查询表对应的触发器名" class="headerlink" title="查询表对应的触发器名"></a>查询表对应的触发器名</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select trigger_name from all_triggers where table_name=&apos;T_NAME&apos;;</span><br></pre></td></tr></table></figure>
+<h3 id="查询表对应的触发器名"><a href="#查询表对应的触发器名" class="headerlink" title="查询表对应的触发器名"></a>查询表对应的触发器名</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> trigger_name <span class="keyword">from</span> all_triggers <span class="keyword">where</span> table_name=<span class="string">'T_NAME'</span>;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -1041,7 +1041,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
