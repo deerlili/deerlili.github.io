@@ -478,6 +478,16 @@
 
           
           
+            <span id="/2019/08/19/python控制台输入/" class="post-meta-item leancloud_visitors" data-flag-title="python控制台输入">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
 
           
 
@@ -649,6 +659,16 @@
           
 
           
+          
+            <span id="/2019/08/19/python简介/" class="post-meta-item leancloud_visitors" data-flag-title="python简介">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -836,6 +856,16 @@
           
 
           
+          
+            <span id="/2019/08/19/python循环和判断/" class="post-meta-item leancloud_visitors" data-flag-title="python循环和判断">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1043,6 +1073,16 @@
 
           
           
+            <span id="/2019/08/19/python命名规范/" class="post-meta-item leancloud_visitors" data-flag-title="python命名规范">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
 
           
 
@@ -1238,6 +1278,16 @@
 
           
           
+            <span id="/2019/08/12/oracle问题/" class="post-meta-item leancloud_visitors" data-flag-title="oracle问题">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
 
           
 
@@ -1426,6 +1476,16 @@
           
 
           
+          
+            <span id="/2019/08/12/oracle时间操作/" class="post-meta-item leancloud_visitors" data-flag-title="oracle时间操作">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1626,6 +1686,16 @@
 
           
           
+            <span id="/2019/08/12/oracle基本用法/" class="post-meta-item leancloud_visitors" data-flag-title="oracle基本用法">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
 
           
 
@@ -1795,6 +1865,16 @@
           
 
           
+          
+            <span id="/2019/08/06/oracle自增ID/" class="post-meta-item leancloud_visitors" data-flag-title="oracle自增ID">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1982,6 +2062,16 @@
 
           
           
+            <span id="/2019/08/06/oracle权限用户操作/" class="post-meta-item leancloud_visitors" data-flag-title="oracle权限用户操作">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
 
           
 
@@ -2142,6 +2232,16 @@
           
 
           
+          
+            <span id="/2019/08/06/python-基础语法-02/" class="post-meta-item leancloud_visitors" data-flag-title="python-基础语法-02">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -2554,6 +2654,74 @@
 
 
 
+
+
+  
+  <script>
+    
+    function showTime(Counter) {
+      var entries = [];
+      var $visitors = $('.leancloud_visitors');
+
+      $visitors.each(function() {
+        entries.push( $(this).attr('id').trim() );
+      });
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+        .done(function({ results }) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.url;
+            var time = item.time;
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for (var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if (countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'sLMR2MSzKqw2JfyuL6oMIPJg-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': 'sLMR2MSzKqw2JfyuL6oMIPJg-gzGzoHsz',
+                'X-LC-Key': 'Pgc1UyszBtAlKbDtNT2X7pRt',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            if ($('.post-title-link').length >= 1) {
+              showTime(Counter);
+            }
+          
+        });
+    });
+  </script>
 
 
 
