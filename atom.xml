@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Deerlili</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://deerlili.github.io/"/>
+  <updated>2019-08-19T14:02:40.302Z</updated>
+  <id>https://deerlili.github.io/</id>
+  
+  <author>
+    <name>Deerlili</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python控制台输入</title>
+    <link href="https://deerlili.github.io/2019/08/19/python%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%85%A5/"/>
+    <id>https://deerlili.github.io/2019/08/19/python控制台输入/</id>
+    <published>2019-08-19T14:01:29.000Z</published>
+    <updated>2019-08-19T14:02:40.302Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote><p>raw_input()直接读取控制台的输入（任何类型的输入它都可以接收）</p></blockquote><blockquote><p>input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError</p></blockquote><figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/python</span></span><br><span class="line"><span class="meta"># -*- coding:utf8 -*-</span></span><br><span class="line"></span><br><span class="line">a = <span class="keyword">input</span>(<span class="string">"请输入第一个值:"</span>)</span><br><span class="line">b = raw_input(<span class="string">"请输入运算符号:"</span>)</span><br><span class="line">c = <span class="keyword">input</span>(<span class="string">"请输入第二个值:"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> b == <span class="string">"+"</span>:</span><br><span class="line">    result = a + c</span><br><span class="line"><span class="keyword">print</span>(<span class="string">"结果是："</span>+<span class="keyword">str</span>(result))</span><br><span class="line">上面也可以： <span class="keyword">int</span>(<span class="keyword">input</span>(<span class="string">"请输入第一个值:"</span>))</span><br><span class="line">上面也可以： eval(<span class="keyword">input</span>(<span class="string">"请输入第一个值:"</span>))</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;输入&quot;&gt;&lt;a href=&quot;#输入&quot; class=&quot;headerlink&quot; title=&quot;输入&quot;&gt;&lt;/a&gt;输入&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;raw_input()直接读取控制台的输入（任何类型的输入它都可以接收）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;b
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python简介</title>
+    <link href="https://deerlili.github.io/2019/08/19/python%E7%AE%80%E4%BB%8B/"/>
+    <id>https://deerlili.github.io/2019/08/19/python简介/</id>
+    <published>2019-08-19T13:51:41.000Z</published>
+    <updated>2019-08-19T13:59:58.320Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ul><li>拥有简单脚本语言和解释型程序语言的易用性</li><li>拥有传统编译型程序语言所通用的功能</li><li>python是一种解释性的、面向对象的、带有动态语义的高级程序设计语言</li><li>介于C和Shell之间</li><li>胶水语言-很容易和其他语言集成封装</li><li>脚本语言-面向对象</li></ul><h3 id="python2和python3"><a href="#python2和python3" class="headerlink" title="python2和python3"></a>python2和python3</h3><ul><li>大多数的python3</li></ul><h3 id="pyhton的应用"><a href="#pyhton的应用" class="headerlink" title="pyhton的应用"></a>pyhton的应用</h3><ol><li>web开发<blockquote><p>python定义了WSGI标准应用接口来协调HTTP服务器于基于python开发的web程序之间的沟通</p></blockquote></li><li>gui开发<blockquote><p>用wxPython 或者 PyQt来开发跨平台的桌面软件</p></blockquote></li><li>操作系统</li><li>多媒体-可用于计算机游戏的三维场景制作</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;拥有简单脚本语言和解释型程序语言的易用性&lt;/li&gt;
+&lt;li&gt;拥有传统编译型程序语言所通用的功能&lt;/li&gt;
+&lt;li&gt;python是
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python循环和判断</title>
+    <link href="https://deerlili.github.io/2019/08/19/python%E5%BE%AA%E7%8E%AF%E5%92%8C%E5%88%A4%E6%96%AD/"/>
+    <id>https://deerlili.github.io/2019/08/19/python循环和判断/</id>
+    <published>2019-08-19T13:50:49.000Z</published>
+    <updated>2019-08-19T13:53:32.678Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="if控制流"><a href="#if控制流" class="headerlink" title="if控制流"></a>if控制流</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>  <span class="built_in">..</span>.:  </span><br><span class="line">    <span class="built_in">..</span>. </span><br><span class="line">elif <span class="built_in">..</span>.: </span><br><span class="line">    <span class="built_in">..</span><span class="built_in">..</span> </span><br><span class="line"><span class="keyword">else</span>: </span><br><span class="line">    <span class="built_in">..</span><span class="built_in">..</span></span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">x = 1</span><br><span class="line"><span class="comment"># 第一种方法</span></span><br><span class="line"><span class="keyword">if</span> x == 1:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'a'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'c'</span>)</span><br><span class="line"><span class="comment"># 第二种方法</span></span><br><span class="line"><span class="keyword">if</span> x == 1:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'12'</span>)</span><br><span class="line"><span class="keyword">if</span> x != 1:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'wq'</span>)</span><br></pre></td></tr></table></figure><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> = <span class="number">80</span></span><br><span class="line"><span class="keyword">if</span> <span class="number">0</span> &lt; <span class="selector-tag">a</span> &lt;= <span class="number">80</span>:</span><br><span class="line">    print <span class="string">"差"</span></span><br><span class="line">elif <span class="number">80</span> &lt;= <span class="selector-tag">a</span> &lt;= <span class="number">100</span>:</span><br><span class="line">    print <span class="string">"好"</span></span><br></pre></td></tr></table></figure><h3 id="while控制流"><a href="#while控制流" class="headerlink" title="while控制流"></a>while控制流</h3><blockquote><p>while例子:  非零都是true</p></blockquote><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> = <span class="number">3</span> </span><br><span class="line">while <span class="selector-tag">a</span>:</span><br><span class="line">    print(a)</span><br><span class="line">    <span class="selector-tag">a</span> = <span class="selector-tag">a</span> - <span class="number">1</span></span><br></pre></td></tr></table></figure><blockquote><p>while语句使用结构</p></blockquote><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">while</span> 条件为真:</span><br><span class="line">    循环执行这部分语句</span><br><span class="line"><span class="built_in">else</span>：</span><br><span class="line">    条件为假执行</span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span>部分可以省略</span></span><br></pre></td></tr></table></figure><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> = <span class="number">1</span></span><br><span class="line">while <span class="selector-tag">a</span> &lt; <span class="number">10</span>:</span><br><span class="line">    <span class="keyword">if</span> <span class="selector-tag">a</span> &lt;= <span class="number">5</span>:</span><br><span class="line">        print a</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print <span class="string">"Hello"</span></span><br><span class="line">    <span class="selector-tag">a</span> += <span class="number">1</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print <span class="string">"test"</span></span><br></pre></td></tr></table></figure><h3 id="for"><a href="#for" class="headerlink" title="for"></a>for</h3><blockquote><p>range(1,5,2) 步长2</p></blockquote><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">3</span>)</span><br><span class="line">    <span class="built_in">print</span>(k)</span><br></pre></td></tr></table></figure><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>语句格式：</span><br><span class="line"><span class="keyword">for</span> <span class="selector-tag">i</span> <span class="keyword">in</span> 集合：</span><br><span class="line">    执行该部分</span><br><span class="line"><span class="keyword">else</span>：</span><br><span class="line">    执行该部分</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#常见集合</span></span><br><span class="line">char1 = <span class="string">u"你好世界"</span> <span class="comment">#u代表这是Unicode编码</span></span><br><span class="line">tem1 = (<span class="string">"元祖:你好"</span>,<span class="string">"元祖:世界"</span>)</span><br><span class="line">list1 = [<span class="string">"列表:你好"</span>,<span class="string">"列表:世界"</span>]</span><br><span class="line">dict1 = &#123;<span class="string">"first"</span>:<span class="string">"列表:你好"</span>,<span class="string">"second"</span>:<span class="string">"列表:世界"</span>&#125;</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> dict1:</span><br><span class="line">    <span class="keyword">print</span> i</span><br></pre></td></tr></table></figure><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> = <span class="number">1</span></span><br><span class="line">while <span class="selector-tag">a</span> &lt;= <span class="number">7</span>:</span><br><span class="line">    <span class="selector-tag">a</span> = <span class="selector-tag">a</span> +<span class="number">1</span> </span><br><span class="line">    <span class="keyword">if</span> <span class="selector-tag">a</span> == <span class="number">4</span>:</span><br><span class="line">        continue  #暂时不知道写什么逻辑可言先占位</span><br><span class="line">    <span class="keyword">for</span> <span class="selector-tag">i</span> <span class="keyword">in</span> range(<span class="number">7</span>,<span class="number">10</span>)</span><br><span class="line">        <span class="keyword">if</span> <span class="selector-tag">i</span> == <span class="number">9</span>:</span><br><span class="line">            continue</span><br><span class="line">        print(i)  输出为：<span class="number">7878787878</span></span><br><span class="line">    break：跳出循环</span><br><span class="line">    continue：跳过后面要执行的</span><br></pre></td></tr></table></figure><h3 id="break"><a href="#break" class="headerlink" title="break"></a>break</h3><blockquote><p>跳出循环</p></blockquote><h3 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h3><blockquote><p>跳过后面要执行的</p></blockquote><h3 id="range"><a href="#range" class="headerlink" title="range()"></a>range()</h3><ul><li>list = range(10)  0到9</li><li>[x*x for x in list] 列表生成式 0 1 4 9.</li><li>[x*x for x in list if x % 3]      1 4 16 25</li><li>range(2,9)   2到9</li><li>range(2,9,2) 步长为2</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;if控制流&quot;&gt;&lt;a href=&quot;#if控制流&quot; class=&quot;headerlink&quot; title=&quot;if控制流&quot;&gt;&lt;/a&gt;if控制流&lt;/h3&gt;&lt;figure class=&quot;highlight routeros&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutt
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python命名规范</title>
+    <link href="https://deerlili.github.io/2019/08/19/python%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/"/>
+    <id>https://deerlili.github.io/2019/08/19/python命名规范/</id>
+    <published>2019-08-19T13:36:10.000Z</published>
+    <updated>2019-08-19T13:41:33.801Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><blockquote><p>常量，变量就是标识符的一种</p></blockquote><h3 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则"></a>变量命名规则</h3><ol><li>不能以数字开头</li><li>只能包含字母、数字和下划线</li><li>区分字母大小写</li><li>禁止使用保留字</li><li>见名知意</li></ol><h3 id="命名惯例"><a href="#命名惯例" class="headerlink" title="命名惯例"></a>命名惯例</h3><ul><li>以单一下划线开头变量名（_x）不会被from module import * 语句导入，是私有的</li><li>前后有下划线的变量名（<em>x</em>）是系统定义的变量名，对python解释器有特殊意义</li><li>以两个下划线开头但结尾没有下划线的变量名（__x）是类的本地变量</li><li>交互式模式下，变量名“_”用于保存最后表达式的结果</li><li>变量名没有类型，对象才有</li><li>一般全大写的为常量</li></ul><h3 id="python常用关键字"><a href="#python常用关键字" class="headerlink" title="python常用关键字"></a>python常用关键字</h3><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="built_in">keyword</span></span><br><span class="line">print(<span class="built_in">keyword</span>.kwlist)</span><br></pre></td></tr></table></figure><p><code>[&#39;and&#39;, &#39;as&#39;, &#39;assert&#39;, &#39;break&#39;, &#39;class&#39;, &#39;continue&#39;, &#39;def&#39;, &#39;del&#39;, &#39;elif&#39;, &#39;else&#39;, &#39;except&#39;, &#39;exec&#39;, &#39;finally&#39;, &#39;for&#39;, &#39;from&#39;, &#39;global&#39;, &#39;if&#39;, &#39;import&#39;, &#39;in&#39;, &#39;is&#39;, &#39;lambda&#39;, &#39;not&#39;, &#39;or&#39;, &#39;pass&#39;, &#39;print&#39;, &#39;raise&#39;, &#39;return&#39;, &#39;try&#39;, &#39;while&#39;, &#39;with&#39;, &#39;yield&#39;]</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;标识符&quot;&gt;&lt;a href=&quot;#标识符&quot; class=&quot;headerlink&quot; title=&quot;标识符&quot;&gt;&lt;/a&gt;标识符&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;常量，变量就是标识符的一种&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;变量命名规则&quot;&gt;&lt;a hr
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>oracle问题</title>
+    <link href="https://deerlili.github.io/2019/08/12/oracle%E9%97%AE%E9%A2%98/"/>
+    <id>https://deerlili.github.io/2019/08/12/oracle问题/</id>
+    <published>2019-08-12T07:02:51.000Z</published>
+    <updated>2019-08-20T01:49:15.973Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ora-00054:resource </span><span class="keyword">busy </span><span class="keyword">and </span>acquire with NOWAIT specified</span><br></pre></td></tr></table></figure><blockquote><p>是由于大量的插入导致大被锁了</p></blockquote><blockquote><p>在DBA权限下执行，不要选择数据库</p></blockquote><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">    <span class="built_in">t2</span>.username, </span><br><span class="line">    <span class="built_in">t2</span>.sid, </span><br><span class="line">    <span class="built_in">t2</span>.serial<span class="comment">#, </span></span><br><span class="line">    <span class="built_in">t2</span>.logon_time</span><br><span class="line">from </span><br><span class="line">    v$locked_object <span class="built_in">t1</span>, </span><br><span class="line">    v$session <span class="built_in">t2</span></span><br><span class="line">where </span><br><span class="line">    <span class="built_in">t1</span>.session_id = <span class="built_in">t2</span>.sid</span><br><span class="line">    <span class="keyword">order </span><span class="keyword">by </span><span class="built_in">t2</span>.logon_time</span><br></pre></td></tr></table></figure><blockquote><p>查询出来的SID和serial写成下面格式</p></blockquote><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">system</span> <span class="keyword">kill</span> <span class="keyword">session</span> <span class="string">'232,19627'</span>;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;问题1&quot;&gt;&lt;a href=&quot;#问题1&quot; class=&quot;headerlink&quot; title=&quot;问题1&quot;&gt;&lt;/a&gt;问题1&lt;/h3&gt;&lt;figure class=&quot;highlight mipsasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;
+      
+    
+    </summary>
+    
+      <category term="oracle" scheme="https://deerlili.github.io/categories/oracle/"/>
+    
+    
+      <category term="oracle" scheme="https://deerlili.github.io/tags/oracle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>oracle时间操作</title>
+    <link href="https://deerlili.github.io/2019/08/12/oracle%E6%97%B6%E9%97%B4%E6%93%8D%E4%BD%9C/"/>
+    <id>https://deerlili.github.io/2019/08/12/oracle时间操作/</id>
+    <published>2019-08-12T07:01:50.000Z</published>
+    <updated>2019-08-20T01:49:43.611Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>TO_CHAR(SYSDATE, ‘YYYYMM’) = 201902</li><li>replace(substr(SYSDATE,0,7),’-‘,’’)  = 201902</li><li>replace(substr(SYSDATE,0,10),’-‘,’’) = 20190202</li><li>TO_CHAR(a.FaHangDate,’YY-MM-dd HH24:mi’)</li></ul><blockquote><p>long时间类型转换</p></blockquote><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_CHAR(<span class="name">UTC/</span>(<span class="number">60</span>*60*<span class="number">24</span>)+ TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH<span class="symbol">:MI</span><span class="symbol">:SS</span>'), 'YYYY-MM-DD HH24<span class="symbol">:MI</span><span class="symbol">:SS</span>')</span><br></pre></td></tr></table></figure><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_CHAR(<span class="name">UTC/</span>(<span class="number">60</span>*60*<span class="number">24</span>)+ TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH<span class="symbol">:MI</span><span class="symbol">:SS</span>'), 'YYYY-MM-DD')</span><br></pre></td></tr></table></figure><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_CHAR(<span class="name">UTC/</span>(<span class="number">60</span>*60*<span class="number">24</span>)+ TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH<span class="symbol">:MI</span><span class="symbol">:SS</span>'), 'HH24')</span><br></pre></td></tr></table></figure><blockquote><p>时间转换成long</p></blockquote><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_NUMBER(<span class="name">SYSDATE-TO_DATE</span>('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH24<span class="symbol">:MI</span><span class="symbol">:SS</span>'))*24*60 *60</span><br></pre></td></tr></table></figure><blockquote><p>字符串拼接和截取</p></blockquote><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">把 <span class="number">20190706</span> <span class="number">12</span><span class="symbol">:</span><span class="number">12</span><span class="symbol">:</span><span class="number">23</span> 转换成 <span class="number">2019</span>-<span class="number">07</span>-<span class="number">06</span> <span class="number">12</span><span class="symbol">:</span><span class="number">12</span><span class="symbol">:</span><span class="number">23</span></span><br><span class="line">SUBSTR(RKSJ,<span class="number">0</span>,<span class="number">4</span>)<span class="params">||</span><span class="string">'-'</span><span class="params">||</span>SUBSTR(RKSJ,<span class="number">5</span>,<span class="number">2</span>)<span class="params">||</span><span class="string">'-'</span><span class="params">||</span>SUBSTR(RKSJ,<span class="number">7</span>,<span class="number">2</span>)<span class="params">||</span>SUBSTR(RKSJ,<span class="number">9</span>,<span class="number">9</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;TO_CHAR(SYSDATE, ‘YYYYMM’) = 201902&lt;/li&gt;
+&lt;li&gt;replace(substr(SYSDATE,0,7),’-‘,’’)  = 201902&lt;/li&gt;
+&lt;li&gt;replace(substr(SYSDATE,0,10),’-
+      
+    
+    </summary>
+    
+      <category term="oracle" scheme="https://deerlili.github.io/categories/oracle/"/>
+    
+    
+      <category term="oracle" scheme="https://deerlili.github.io/tags/oracle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>oracle基本用法</title>
+    <link href="https://deerlili.github.io/2019/08/12/oracle%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/"/>
+    <id>https://deerlili.github.io/2019/08/12/oracle基本用法/</id>
+    <published>2019-08-12T06:52:45.000Z</published>
+    <updated>2019-08-20T01:44:01.067Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> GY_FREIGHT_INFO(</span><br><span class="line">  BILLING_WEIGHT     <span class="built_in">NUMBER</span>(<span class="number">8</span>),</span><br><span class="line">  BILL_NO            <span class="built_in">VARCHAR</span>(<span class="number">100</span>),</span><br><span class="line">  CONTAINER_NO       <span class="built_in">VARCHAR</span>(<span class="number">100</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> EX.GY_FREIGHT_INFO <span class="keyword">add</span> <span class="keyword">constraint</span> tb_gy_freight_info_pk primary <span class="keyword">key</span> (BILL_NO,CONTAINER_NO);</span><br><span class="line"></span><br><span class="line"><span class="keyword">comment</span> <span class="keyword">on</span> <span class="keyword">table</span> GY_FREIGHT_INFO <span class="keyword">is</span> <span class="string">'列车货物信息'</span>;</span><br><span class="line"><span class="keyword">comment</span> <span class="keyword">on</span> <span class="keyword">column</span> GY_FREIGHT_INFO.BILL_NO <span class="keyword">is</span> <span class="string">'运单号'</span>;</span><br><span class="line"><span class="keyword">comment</span> <span class="keyword">on</span> <span class="keyword">column</span> GY_FREIGHT_INFO.PRIVATE_LINE_NO1 <span class="keyword">is</span> <span class="string">'始发站专线号'</span>;</span><br><span class="line"><span class="keyword">comment</span> <span class="keyword">on</span> <span class="keyword">column</span> GY_FREIGHT_INFO.PRIVATE_LINE_NO3 <span class="keyword">is</span> <span class="string">'到站专用线号'</span>;</span><br></pre></td></tr></table></figure><h3 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> <span class="keyword">REPLACE</span> <span class="keyword">VIEW</span> EX.GY_FREIGHT_INFO</span><br><span class="line">    <span class="keyword">AS</span> </span><br><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    BILL_NO,CONTAINER_NO,CONTAINER_TYPE,DETERMINE_WEIGHT,FILING_DATE,</span><br><span class="line">    FREIGHT_NO,GOODS_NAME,<span class="keyword">NUM</span>,PACKING,PRIVATE_LINE_NO1,PRIVATE_LINE_NO3,</span><br><span class="line">    VOLUME,WEIGHT,BILLING_WEIGHT</span><br><span class="line"><span class="keyword">FROM</span> EX.FREIGHT_INFO </span><br><span class="line"><span class="keyword">WHERE</span> PRIVATE_LINE_NO3=<span class="string">'35148001'</span></span><br><span class="line"><span class="keyword">WITH</span> <span class="keyword">READ</span> <span class="keyword">ONLY</span></span><br></pre></td></tr></table></figure><h3 id="从命名表"><a href="#从命名表" class="headerlink" title="从命名表"></a>从命名表</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 旧表名 <span class="keyword">rename</span> <span class="keyword">to</span> 新表名; </span><br><span class="line"><span class="keyword">rename</span> 旧表名 <span class="keyword">to</span> 新表名;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;建表&quot;&gt;&lt;a href=&quot;#建表&quot; class=&quot;headerlink&quot; title=&quot;建表&quot;&gt;&lt;/a&gt;建表&lt;/h3&gt;&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span cl
+      
+    
+    </summary>
+    
+      <category term="oracle" scheme="https://deerlili.github.io/categories/oracle/"/>
+    
+    
+      <category term="oracle" scheme="https://deerlili.github.io/tags/oracle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>oracle自增ID</title>
+    <link href="https://deerlili.github.io/2019/08/06/oracle%E8%87%AA%E5%A2%9EID/"/>
+    <id>https://deerlili.github.io/2019/08/06/oracle自增ID/</id>
+    <published>2019-08-06T14:35:42.000Z</published>
+    <updated>2019-08-06T14:44:07.464Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="建序列"><a href="#建序列" class="headerlink" title="建序列"></a>建序列</h3><ul><li>查询序列</li></ul><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> user_sequences</span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> all_sequences</span><br></pre></td></tr></table></figure><ul><li>删除序列</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">SEQUENCE</span> EX.T1;</span><br></pre></td></tr></table></figure><ul><li>建序列</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">SEQUENCE</span> EX.T1</span><br><span class="line"><span class="keyword">INCREMENT</span> <span class="keyword">BY</span> <span class="number">1</span> <span class="comment">-- 每次加几个</span></span><br><span class="line"><span class="keyword">START</span> <span class="keyword">WITH</span> <span class="number">1</span> <span class="comment">-- 从1开始计数</span></span><br><span class="line"><span class="keyword">NOMAXVALUE</span> <span class="comment">-- 不设置最大值</span></span><br><span class="line"><span class="keyword">NOCYCLE</span> <span class="comment">-- 一直累加，不循环</span></span><br><span class="line">NOCACHE ;<span class="comment">-- 不建缓冲区;</span></span><br></pre></td></tr></table></figure><ul><li>建触发器</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">or</span> <span class="keyword">replace</span> <span class="keyword">trigger</span> 触发器名称 </span><br><span class="line"><span class="keyword">before</span> <span class="keyword">insert</span> <span class="keyword">on</span> 要插入数据的表名</span><br><span class="line"><span class="keyword">for</span> <span class="keyword">each</span> <span class="keyword">row</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line"><span class="keyword">select</span> T1.nextval <span class="keyword">into</span> :new.id <span class="keyword">from</span> dual;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure><h3 id="查询表对应的触发器名"><a href="#查询表对应的触发器名" class="headerlink" title="查询表对应的触发器名"></a>查询表对应的触发器名</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> trigger_name <span class="keyword">from</span> all_triggers <span class="keyword">where</span> table_name=<span class="string">'T_NAME'</span>;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;建序列&quot;&gt;&lt;a href=&quot;#建序列&quot; class=&quot;headerlink&quot; title=&quot;建序列&quot;&gt;&lt;/a&gt;建序列&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;查询序列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight cs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td 
+      
+    
+    </summary>
+    
+      <category term="oracle" scheme="https://deerlili.github.io/categories/oracle/"/>
+    
+    
+      <category term="oralce" scheme="https://deerlili.github.io/tags/oralce/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>oracle权限用户操作</title>
+    <link href="https://deerlili.github.io/2019/08/06/oracle%E6%9D%83%E9%99%90%E7%94%A8%E6%88%B7%E6%93%8D%E4%BD%9C/"/>
+    <id>https://deerlili.github.io/2019/08/06/oracle权限用户操作/</id>
+    <published>2019-08-06T14:28:03.000Z</published>
+    <updated>2019-08-06T14:29:04.673Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h3><ul><li>sqlplus / as sysdba</li><li>sqlplus sys/SysPassOracle2017SecretToken as sysdba</li><li>sqlplus system/SystemPassword2017SecretToken as sysdba</li></ul><h3 id="查看表空间"><a href="#查看表空间" class="headerlink" title="查看表空间"></a>查看表空间</h3><ul><li>select tablespace_name from dba_tablespaces;</li></ul><h3 id="查看表空间位置和大小"><a href="#查看表空间位置和大小" class="headerlink" title="查看表空间位置和大小"></a>查看表空间位置和大小</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"> select b.file_name 物理文件名,</span><br><span class="line">    b.tablespace_name 表空间,</span><br><span class="line">    b.bytes/1024/1024 大小M,</span><br><span class="line">    (b.bytes-sum(nvl(a.bytes,0)))/1024/1024 已使用M,　</span><br><span class="line">    substr((b.bytes-sum(nvl(a.bytes,0)))/(b.bytes)<span class="number">*100</span>,1,5) 利用率　</span><br><span class="line">    <span class="keyword">from</span> dba_free_space a,dba_data_files b　</span><br><span class="line">where </span><br><span class="line">    a.<span class="attribute">file_id</span>=b.file_id </span><br><span class="line">   <span class="built_in"> group </span>by b.tablespace_name,b.file_name,b.bytes　</span><br><span class="line">    order by b.tablespace_name;</span><br><span class="line"></span><br><span class="line"> select </span><br><span class="line">    t.tablespace_name,</span><br><span class="line">    round(sum(bytes/(1024<span class="number">*1024</span>)),0) ts_size </span><br><span class="line"><span class="keyword">from</span> </span><br><span class="line">    dba_tablespaces t, dba_data_files d </span><br><span class="line">where </span><br><span class="line">    t.tablespace_name = d.tablespace_name </span><br><span class="line">group by t.tablespace_name;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> select </span><br><span class="line">    tablespace_name,</span><br><span class="line">    file_id, </span><br><span class="line">    file_name, </span><br><span class="line">    round(bytes/(1024<span class="number">*1024</span>),0) total_space  </span><br><span class="line"><span class="keyword">from</span> </span><br><span class="line">    dba_data_files </span><br><span class="line">order by tablespace_name;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> select </span><br><span class="line">    sum(bytes)/(1024<span class="number">*1024</span>) as free_space,</span><br><span class="line">    tablespace_name </span><br><span class="line"><span class="keyword">from</span> dba_free_space </span><br><span class="line">group by tablespace_name;</span><br></pre></td></tr></table></figure><h3 id="查看表空间是否自增长"><a href="#查看表空间是否自增长" class="headerlink" title="查看表空间是否自增长"></a>查看表空间是否自增长</h3><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    FILE_NAME,TABLESPACE_NAME,AUTOEXTENSIBLE </span><br><span class="line"><span class="keyword">FROM</span> dba_data_files;</span><br></pre></td></tr></table></figure><h3 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create<span class="built_in"> user </span>用户 identified by password<span class="built_in"> default </span>tablespace USERS;</span><br><span class="line">create<span class="built_in"> user </span>gw_data identified by gw_data<span class="built_in"> default </span>tablespace USERS;</span><br><span class="line">create<span class="built_in"> user </span>gw_bi identified by gw_bipwd<span class="built_in"> default </span>tablespace USERS;</span><br><span class="line">create<span class="built_in"> user </span>ship_info identified by ship_infopwd<span class="built_in"> default </span>tablespace USERS;</span><br><span class="line">create<span class="built_in"> user </span>ex identified by ex123qwe123<span class="built_in"> default </span>tablespace USERS;</span><br></pre></td></tr></table></figure><h3 id="权限"><a href="#权限" class="headerlink" title="权限"></a>权限</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span>,<span class="keyword">resource</span>,dba <span class="keyword">to</span> <span class="keyword">oracle</span>;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span>,<span class="keyword">resource</span> <span class="keyword">to</span> ex;</span><br><span class="line"></span><br><span class="line"><span class="keyword">grant</span> dba <span class="keyword">to</span> <span class="keyword">oracle</span>;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span>,<span class="keyword">resource</span> <span class="keyword">to</span> ex;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">select</span>,<span class="keyword">connect</span> <span class="keyword">any</span> <span class="keyword">table</span> <span class="keyword">to</span> ex;</span><br><span class="line"></span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">delete</span> <span class="keyword">any</span> <span class="keyword">table</span> <span class="keyword">to</span> ex;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">update</span> <span class="keyword">any</span> <span class="keyword">table</span> <span class="keyword">to</span> ex;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">insert</span> <span class="keyword">any</span> <span class="keyword">table</span> <span class="keyword">to</span> ex;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> GYJSH <span class="keyword">identified</span> <span class="keyword">by</span> GYJSH123;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span> <span class="keyword">to</span> GYJSH;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">select</span> <span class="keyword">on</span> <span class="string">"EX"</span>.<span class="string">"GY_TRAIN_INFO"</span> <span class="keyword">to</span> GYJSH;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;登录&quot;&gt;&lt;a href=&quot;#登录&quot; class=&quot;headerlink&quot; title=&quot;登录&quot;&gt;&lt;/a&gt;登录&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;sqlplus / as sysdba&lt;/li&gt;
+&lt;li&gt;sqlplus sys/SysPassOracle2017Secret
+      
+    
+    </summary>
+    
+      <category term="oracle" scheme="https://deerlili.github.io/categories/oracle/"/>
+    
+    
+      <category term="oralce" scheme="https://deerlili.github.io/tags/oralce/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python-基础语法-02</title>
+    <link href="https://deerlili.github.io/2019/08/06/python-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-02/"/>
+    <id>https://deerlili.github.io/2019/08/06/python-基础语法-02/</id>
+    <published>2019-08-06T13:59:52.000Z</published>
+    <updated>2019-08-06T13:59:52.420Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python文件操作</title>
+    <link href="https://deerlili.github.io/2019/08/04/python%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
+    <id>https://deerlili.github.io/2019/08/04/python文件操作/</id>
+    <published>2019-08-04T13:43:06.000Z</published>
+    <updated>2019-08-06T14:44:11.926Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h3><blockquote><p>文件用open的w模式，文件不存在会自动创建</p></blockquote><blockquote><p>mkdir只能创建单级目录，不用同时多级,如果目录存在，创建会失败</p></blockquote><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">os.mkdir(<span class="string">r"E:\python"</span>)</span><br><span class="line">content = <span class="string">'123'</span></span><br><span class="line"></span><br><span class="line">file = open(<span class="string">r"E:\python\t1.txt"</span>,<span class="string">'w'</span>)</span><br><span class="line">file.write(content)</span><br><span class="line">file.close()</span><br></pre></td></tr></table></figure><h3 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">fr = open(<span class="string">r"E:\python\t1.txt"</span>)</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    line = fr.readline()</span><br><span class="line">    <span class="keyword">if</span> len(line) == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">print</span> line</span><br><span class="line">    fr.close</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">fr = open(<span class="string">r"E:\python\t1.txt"</span>)</span><br><span class="line"><span class="keyword">for</span> u <span class="keyword">in</span> fr:</span><br><span class="line">    print(u)</span><br><span class="line">fr.close</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;创建文件夹&quot;&gt;&lt;a href=&quot;#创建文件夹&quot; class=&quot;headerlink&quot; title=&quot;创建文件夹&quot;&gt;&lt;/a&gt;创建文件夹&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;文件用open的w模式，文件不存在会自动创建&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blo
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
+    
+    
+      <category term="file" scheme="https://deerlili.github.io/tags/file/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python异常处理</title>
+    <link href="https://deerlili.github.io/2019/08/04/python%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+    <id>https://deerlili.github.io/2019/08/04/python异常处理/</id>
+    <published>2019-08-04T12:50:03.000Z</published>
+    <updated>2019-08-04T13:05:16.449Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="python异常处理"><a href="#python异常处理" class="headerlink" title="python异常处理"></a>python异常处理</h3><blockquote><p>使用try-except语句，假如try出现的某种异常，则只需except下面的语句</p></blockquote><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># i = 77</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="keyword">print</span> i</span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">    i = <span class="number">9</span></span><br><span class="line">    i += <span class="number">10</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">"刚才没有定义i，处理异常后i的值为："</span>+str(i)</span><br></pre></td></tr></table></figure><h3 id="处理多种异常"><a href="#处理多种异常" class="headerlink" title="处理多种异常"></a>处理多种异常</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">i = 10</span><br><span class="line"><span class="comment"># j = "a"</span></span><br><span class="line">try:</span><br><span class="line">    <span class="builtin-name">print</span> i+j</span><br><span class="line">except NameError:</span><br><span class="line">    i = j = 0</span><br><span class="line">    <span class="builtin-name">print</span> <span class="string">"i或者j没有初始化，现在初始化为0"</span></span><br><span class="line">    <span class="builtin-name">print</span> i+j</span><br><span class="line">except TypeError:</span><br><span class="line">    <span class="builtin-name">print</span> <span class="string">"i和j类型对应不上,处理后："</span>+str(i)+str(j)</span><br></pre></td></tr></table></figure><h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3><blockquote><p>python中，要想实现让某种情况下引发自定义的异常这个功能，可以使用raise语句实现。</p></blockquote><blockquote><p>引发异常 用raise引发一个系统的错误类</p></blockquote><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">i = 8</span><br><span class="line"><span class="builtin-name">print</span> i</span><br><span class="line"><span class="keyword">if</span> i &gt; 7:</span><br><span class="line">    <span class="builtin-name">print</span> 9</span><br><span class="line">    raise NameError</span><br><span class="line">    <span class="builtin-name">print</span> 10</span><br></pre></td></tr></table></figure><blockquote><p>定义一个异常并用raise引发</p></blockquote><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 按照命名规范，以Error结尾，自定义异常需要继承Exception类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RhhError</span><span class="params">(Exception)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        Exception.__init__(self)</span><br><span class="line">        </span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    i = <span class="number">8</span></span><br><span class="line">    <span class="keyword">if</span> i &gt; <span class="number">7</span>:</span><br><span class="line">        <span class="keyword">raise</span> RhhError()</span><br><span class="line"><span class="keyword">except</span> RhhError:</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"RhhError:错误"</span></span><br></pre></td></tr></table></figure><h3 id="try…finally"><a href="#try…finally" class="headerlink" title="try…finally"></a>try…finally</h3><blockquote><p>假如要实现不管中间是否发生异常，都要输出一串字符串</p></blockquote><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>：</span><br><span class="line">    <span class="built_in">print</span> i</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    <span class="built_in">print</span> <span class="string">"不管上面发生什么，这里都输出！"</span></span><br></pre></td></tr></table></figure><blockquote><p>实现将一串字符串输出10次，假如发生异常，判断前面已经输出多少次</p></blockquote><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">        <span class="built_in">print</span> <span class="string">"输出10次，不知道是第几次"</span></span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    <span class="built_in">print</span> <span class="string">"此i次是："</span>+str(i)+<span class="string">"---未完成全部输出"</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;python异常处理&quot;&gt;&lt;a href=&quot;#python异常处理&quot; class=&quot;headerlink&quot; title=&quot;python异常处理&quot;&gt;&lt;/a&gt;python异常处理&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;使用try-except语句，假如try出现的某种
+      
+    
+    </summary>
+    
+      <category term="异常" scheme="https://deerlili.github.io/categories/%E5%BC%82%E5%B8%B8/"/>
+    
+    
+      <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>awk统计ip访问</title>
+    <link href="https://deerlili.github.io/2019/08/03/awk%E7%BB%9F%E8%AE%A1ip%E8%AE%BF%E9%97%AE/"/>
+    <id>https://deerlili.github.io/2019/08/03/awk统计ip访问/</id>
+    <published>2019-08-03T01:04:41.000Z</published>
+    <updated>2019-08-03T01:07:02.022Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="统计IP访问情况并分析访问日志"><a href="#统计IP访问情况并分析访问日志" class="headerlink" title="统计IP访问情况并分析访问日志"></a>统计IP访问情况并分析访问日志</h3><blockquote><p>日志</p></blockquote><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">112.111</span><span class="number">.12</span><span class="number">.248</span> – [<span class="number">25</span><span class="regexp">/Sep/</span><span class="number">2013</span>:<span class="number">16</span>:<span class="number">08</span>:<span class="number">31</span> +<span class="number">0800</span>]formula-x.haotui.com“<span class="regexp">/seccode.php?update=0.5593110133088248″ 200″http:/</span><span class="regexp">/formula�x.haotui.com/</span>registerbbs.php” “Mozilla<span class="regexp">/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1;)”61.147.76.51 – [25/</span>Sep<span class="regexp">/2013:16:08:31 +0800]xyzdiy.5d6d.com“/</span>attachment.php?aid=4554&amp;k=9ce51e2c376bc861603c7689d97c04a1&amp;t=1334564048&amp;fid=9&amp;sid=zgohwYoLZq2qPW233ZIRsJiUeu22XqE8f49jY9mouRSoE71″301″http:<span class="comment">//xyzdiy.5d6d.com/thread-1435-1-23.html” “Mozilla/4.0 (compatible; MSIE 6.0;Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)”</span></span><br></pre></td></tr></table></figure><ol><li>统计出每个 IP 的访问量有多少</li></ol><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">awk '&#123;<span class="keyword">print</span> <span class="variable">$1&#125;</span>' 1.<span class="keyword">log</span> |<span class="keyword">sort</span> -<span class="keyword">n</span> |uniq -c |<span class="keyword">sort</span> -<span class="keyword">n</span></span><br></pre></td></tr></table></figure><h3 id="解析命令"><a href="#解析命令" class="headerlink" title="解析命令"></a>解析命令</h3><ol><li>awk 命令在分段方面还是比较有优势的，这里的{print $1}讲第一段打印出来，awk 可以用-F 指定分隔符，如果不指定分隔符，默认就以空白字符(比如空格、Tab 等)，本题中，IP 地址就是在第一段。</li><li>sort 命令是排序的命令，-n 选项表示以数字的形式排序，如果不加-n，则以 ASCII 排序，本题中的 IP 地址以数字的形式排序更容易区分。</li><li>uniq 命令是用来去重复的，一个文本中如果有多行内容是一模一样的，使用 uniq 命令就可以把相同内容的行给删除掉，只留一行。而-c 选项的作用是计算重复的行数，所以在此题中使用 uniq -c 正好可以计算 IP 地址的访问数量。不过，大家一定要注意，uniq 去重的前提是首先要排序。</li><li>最后没得 sort -n 意思是按访问量大小来排序，请求量越大的 IP 排在越后面，如果要想排在前面，可以加一个-r 选项，即 sort –nr</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;统计IP访问情况并分析访问日志&quot;&gt;&lt;a href=&quot;#统计IP访问情况并分析访问日志&quot; class=&quot;headerlink&quot; title=&quot;统计IP访问情况并分析访问日志&quot;&gt;&lt;/a&gt;统计IP访问情况并分析访问日志&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;日志&lt;/p
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://deerlili.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://deerlili.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>centos安装epel外部源</title>
+    <link href="https://deerlili.github.io/2019/08/03/centos%E5%AE%89%E8%A3%85epel%E5%A4%96%E9%83%A8%E6%BA%90/"/>
+    <id>https://deerlili.github.io/2019/08/03/centos安装epel外部源/</id>
+    <published>2019-08-03T00:58:44.000Z</published>
+    <updated>2019-08-03T04:07:07.319Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><blockquote><p>自己安装系统的时候，系统自带的有本地yum源，但是里面的工具有限有时候安装时候出现没有可用软件包，这时候就需要安装epel外部源</p></blockquote><blockquote><p>查看本地源</p></blockquote><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ls /etc/yum<span class="selector-class">.repos</span><span class="selector-class">.d</span>/</span><br><span class="line"></span><br><span class="line">CentOS-Base<span class="selector-class">.repo</span>       CentOS-fasttrack<span class="selector-class">.repo</span>  CentOS-Vault.repo</span><br><span class="line">CentOS-CR<span class="selector-class">.repo</span>         CentOS-Media<span class="selector-class">.repo</span>      </span><br><span class="line">CentOS-Debuginfo<span class="selector-class">.repo</span>  CentOS-Sources.repo</span><br></pre></td></tr></table></figure><h3 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h3><blockquote><p>出现没有可用软件包</p></blockquote><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="meta">@node2</span> ~]<span class="comment"># yum install jq</span></span><br><span class="line">已加载插件：fastestmirror</span><br><span class="line">base                                                |<span class="string"> 3.6 kB     00:00     </span></span><br><span class="line"><span class="string">extras                                              </span>|<span class="string"> 3.4 kB     00:00     </span></span><br><span class="line"><span class="string">updates                                             </span>|<span class="string"> 3.4 kB     00:00     </span></span><br><span class="line"><span class="string">updates/7/x86_64/primary_db                           </span>|<span class="string"> 7.4 MB   00:04     </span></span><br><span class="line"><span class="string">Determining fastest mirrors</span></span><br><span class="line"><span class="string"> * base: mirror.lzu.edu.cn</span></span><br><span class="line"><span class="string"> * extras: mirrors.aliyun.com</span></span><br><span class="line"><span class="string"> * updates: mirrors.aliyun.com</span></span><br><span class="line"><span class="string">没有可用软件包 jq。</span></span><br><span class="line"><span class="string">错误：无须任何处理</span></span><br></pre></td></tr></table></figure><h3 id="安装流程"><a href="#安装流程" class="headerlink" title="安装流程"></a>安装流程</h3><blockquote><p>先安装wget，避免安装epel源导致不能获取外部源</p></blockquote><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> wget</span><br></pre></td></tr></table></figure><blockquote><p>卸载以前安装的epel以免影响</p></blockquote><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -e epel-<span class="built_in">release</span></span><br></pre></td></tr></table></figure><blockquote><p>下载阿里提供的epel,根据不同的版本安装不同的epel版本,centos7就改为epel-7</p></blockquote><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget -P /etc/yum<span class="selector-class">.repos</span><span class="selector-class">.d</span>/ http:<span class="comment">//mirrors.aliyun.com/repo/epel-7.repo</span></span><br><span class="line">yum clean all</span><br><span class="line">yum makecache</span><br></pre></td></tr></table></figure><blockquote><p>这样就完成了安装</p></blockquote><hr><blockquote><p>如果要全部替换成阿里的源，可以先备份一下自己的源，然后操作，根据操作系统的版本调整参数</p></blockquote><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rm -rf <span class="string">/etc/yum.repos.d/</span>*</span><br><span class="line">wget -P <span class="string">/etc/yum.repos.d/</span> http:<span class="string">//mirrors.aliyun.com/repo/epel-6.repo</span> http:<span class="string">//mirrors.aliyun.com/repo/Centos-6.repo</span></span><br><span class="line">yum repolist</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;自己安装系统的时候，系统自带的有本地yum源，但是里面的工具有限有时候安装时候出现没有可用软件包，这时候就需要安装
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://deerlili.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://deerlili.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python基于腾讯大数据平台爬取移动定位数据</title>
+    <link href="https://deerlili.github.io/2019/08/02/python%E5%9F%BA%E4%BA%8E%E8%85%BE%E8%AE%AF%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0%E7%88%AC%E5%8F%96%E7%A7%BB%E5%8A%A8%E5%AE%9A%E4%BD%8D%E6%95%B0%E6%8D%AE/"/>
+    <id>https://deerlili.github.io/2019/08/02/python基于腾讯大数据平台爬取移动定位数据/</id>
+    <published>2019-08-02T01:43:56.000Z</published>
+    <updated>2019-08-02T01:43:56.200Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python使用redis的消息队列</title>
+    <link href="https://deerlili.github.io/2019/08/01/python%E4%BD%BF%E7%94%A8redis%E7%9A%84%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
+    <id>https://deerlili.github.io/2019/08/01/python使用redis的消息队列/</id>
+    <published>2019-08-01T14:58:48.000Z</published>
+    <updated>2019-08-01T15:00:08.972Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Redis服务"><a href="#Redis服务" class="headerlink" title="Redis服务"></a>Redis服务</h3><ol><li><p>安装</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> redis</span><br></pre></td></tr></table></figure></li><li><p>python安装支持模块</p><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/<span class="meta">opt</span>/python2.<span class="number">7</span>/<span class="keyword">bin/pip </span>install redis</span><br></pre></td></tr></table></figure></li><li><p>和redis的简单直接交互</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">In [<span class="number">1</span>]: <span class="keyword">import</span> redis</span><br><span class="line">In [<span class="number">2</span>]: rc = redis.Redis(host=<span class="string">'192.168.63.130'</span>,port=<span class="number">6379</span>,decode_responses=<span class="literal">True</span>)</span><br><span class="line">In [<span class="number">3</span>]: rc.set(<span class="string">'imoocc'</span>,<span class="string">'jeson'</span>)</span><br><span class="line">In [<span class="number">4</span>]: <span class="literal">True</span></span><br><span class="line">In [<span class="number">5</span>]: rc.set(<span class="string">'imoocc'</span>)</span><br><span class="line">In [<span class="number">6</span>]: <span class="string">u'jeson'</span></span><br></pre></td></tr></table></figure></li></ol><h3 id="Redis简单操作"><a href="#Redis简单操作" class="headerlink" title="Redis简单操作"></a>Redis简单操作</h3><blockquote><p>对于和Redis的交互，Redis的类中提供了连接池的方式，我们可以通过连接池管理并操作Redis。</p></blockquote><ol><li>建立连接池，利用连接池连接</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">In [<span class="number">1</span>]: connpool = redis.ConnectionPool(host=<span class="string">'192.168.63.130'</span>,port=<span class="number">6379</span>,decode_responses=<span class="literal">True</span>)</span><br><span class="line">In [<span class="number">2</span>]: rc = redis.Redis(connection_pool=connpool)</span><br><span class="line">In [<span class="number">3</span>]: rc = set(<span class="string">'imooccp'</span>,<span class="string">'123456'</span>)</span><br><span class="line">Out[<span class="number">3</span>]: <span class="literal">True</span></span><br><span class="line">In [<span class="number">4</span>]: rc.get(<span class="string">'imooccp'</span>)</span><br><span class="line">Out[<span class="number">4</span>]: <span class="string">u'123456'</span></span><br></pre></td></tr></table></figure><ol start="2"><li>redis中DB，指定数据存取的DB<blockquote><p>redis.conf中配置了db的数量，那么redis的数据库也命名为 0 到 15，如下：databases 16</p></blockquote></li></ol><blockquote><p>指定使用哪个数据库名，我们通过如下方式，就可以了。</p></blockquote><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">connpool = redis.ConnectionPool(host='<span class="number">192.168</span><span class="number">.63</span><span class="number">.130</span>',port=<span class="number">6379</span>,decode_responses=True,db=<span class="number">3</span>)</span><br><span class="line">rc.set('test2','<span class="number">1111</span>')</span><br></pre></td></tr></table></figure><blockquote><p>这样就将数据写入db3了，如何验证呢？我们从服务端来认证最直接，如下：</p></blockquote><blockquote><p>用redis-cli(redis自带的工具)登录服务端，查看写入的key。</p></blockquote><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">127.0.0.1:6379&gt;</span> SELECT <span class="number">3</span></span><br><span class="line">OK</span><br><span class="line"><span class="meta">127.0.0.1:6379[3]&gt;</span> KEYS * <span class="regexp">//</span>查看db <span class="number">3</span>这个库下所有的key</span><br><span class="line"><span class="number">1</span>) <span class="string">"test2"</span></span><br></pre></td></tr></table></figure><blockquote><p>那么接下来介绍redis详细项目使用的内容，大家不要觉得介绍的内容扩散太大。</p></blockquote><blockquote><p>最近在做一个任务系统，任务写入是不定时的，我们需要用一个程序去定期消费这些任务，必须是有先后顺序的，而且是前一个任务确认执行完后，才去执行下一个。</p></blockquote><blockquote><p>那么怎么办？用队列呀，对吧？用什么队列，怎么用？</p></blockquote><h3 id="介绍下为什么要用redis来作消息处理："><a href="#介绍下为什么要用redis来作消息处理：" class="headerlink" title="介绍下为什么要用redis来作消息处理："></a>介绍下为什么要用redis来作消息处理：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">简单来说，redis支持两种消息模式</span><br><span class="line">一种发布-订阅模式，及一个消息会被多个消费者处理（简单说类似是一个广播消息，所有人都会接收）。</span><br><span class="line">很明显我的系统中不需要这么用，系统里边就需要队列模式，及先到的任务优先处理。那么队列用什么类型的数据库结构来作呢？</span><br></pre></td></tr></table></figure><h3 id="先得聊聊list"><a href="#先得聊聊list" class="headerlink" title="先得聊聊list"></a>先得聊聊list</h3><blockquote><p>list 这个数据类型，在python里面是一个列表，在redis里就是一个有序队列（或者说数据链表）。</p></blockquote><blockquote><p>类型图示如下：</p></blockquote><blockquote><p>大家看了这个结构就可以清楚了，我们可以利用list的数据接口模式，设计从左端和右端都可以对list进行元素的同向处理（满足队列的特性先进先出）。</p></blockquote><ol><li>从左端插入数据</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">In [<span class="number">10</span>]: rc.lpush(<span class="string">'tasklist'</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">Out[<span class="number">10</span>]: <span class="number">3L</span></span><br><span class="line">打印输出内容如下:</span><br><span class="line">print(rc.lrange(<span class="string">'tasklist'</span>,<span class="number">0</span>,<span class="number">2</span>))</span><br><span class="line">[<span class="string">u'3'</span>, <span class="string">u'2'</span>, <span class="string">u'1'</span>]</span><br><span class="line">类似的从左侧插入的方法还有</span><br><span class="line">lpushx(name,value)</span><br><span class="line">区别只有当name存在才将value插入到最左边。</span><br></pre></td></tr></table></figure><ol start="2"><li>从右端插入数据</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rc.rpush(<span class="string">'tasklist'</span>,<span class="string">'5'</span>)</span><br><span class="line">print(rc.lrange(<span class="string">'tasklist'</span>,<span class="number">0</span>,<span class="number">4</span>))</span><br><span class="line">[<span class="string">u'4'</span>, <span class="string">u'3'</span>, <span class="string">u'2'</span>, <span class="string">u'1'</span>, <span class="string">u'5'</span>]</span><br></pre></td></tr></table></figure><ol start="3"><li>从左边取数据</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">rc.lpop(<span class="string">"tasklist"</span>)</span><br><span class="line">Out[<span class="number">23</span>]: <span class="string">u'4'</span></span><br><span class="line">rc.lpop(<span class="string">"tasklist"</span>)</span><br><span class="line">Out[<span class="number">24</span>]: <span class="string">u'3'</span></span><br><span class="line">print(rc.lrange(<span class="string">'tasklist'</span>,<span class="number">0</span>,<span class="number">4</span>))</span><br><span class="line">[<span class="string">u'2'</span>, <span class="string">u'1'</span>, <span class="string">u'5'</span>]</span><br><span class="line">我们会看到从左侧已经取出了两个元素了。剩下来[<span class="string">u'2'</span>, <span class="string">u'1'</span>, <span class="string">u'5'</span>]</span><br></pre></td></tr></table></figure><ol start="4"><li>从右侧取数据</li></ol><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">当然就是<span class="selector-tag">rc</span><span class="selector-class">.rpop</span>()了</span><br></pre></td></tr></table></figure><blockquote><p>python对于redis的基础使用和Redis作为队列的简单使用就介绍这些</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Redis服务&quot;&gt;&lt;a href=&quot;#Redis服务&quot; class=&quot;headerlink&quot; title=&quot;Redis服务&quot;&gt;&lt;/a&gt;Redis服务&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安装&lt;/p&gt;
+&lt;figure class=&quot;highlight cmake&quot;&gt;&lt;t
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
+    
+      <category term="redis" scheme="https://deerlili.github.io/categories/python/redis/"/>
+    
+    
+      <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+      <category term="redis" scheme="https://deerlili.github.io/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>awk处理文本</title>
+    <link href="https://deerlili.github.io/2019/08/01/awk%E5%A4%84%E7%90%86%E6%96%87%E6%9C%AC/"/>
+    <id>https://deerlili.github.io/2019/08/01/awk处理文本/</id>
+    <published>2019-08-01T01:29:11.000Z</published>
+    <updated>2019-08-01T01:29:59.664Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="awk脚本"><a href="#awk脚本" class="headerlink" title="awk脚本"></a>awk脚本</h3><blockquote><p>awk脚本通常由3部分构成</p></blockquote><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">BEGIN</span><span class="template-variable">&#123; 这里面放的是执行前的语句 &#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">END</span><span class="template-variable">&#123; 这里面放的是处理完所有的行后要执行的语句 &#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span><span class="template-variable">&#123; 这里面放的是处理每一行要执行的语句 &#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure><blockquote><p>假如有一下表：</p></blockquote><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cat score.txt</span><br><span class="line">Marry   <span class="number">2143</span>  <span class="number">78</span>  <span class="number">84</span>  <span class="number">77</span></span><br><span class="line">Jack    <span class="number">2321</span>  <span class="number">66</span>  <span class="number">78</span>  <span class="number">45</span></span><br><span class="line">Tom     <span class="number">2122</span>  <span class="number">48</span>  <span class="number">77</span>  <span class="number">71</span></span><br><span class="line">Mike    <span class="number">2537</span>  <span class="number">87</span>  <span class="number">97</span>  <span class="number">95</span></span><br><span class="line">Bob     <span class="number">2415</span>  <span class="number">40</span>  <span class="number">57</span>  <span class="number">62</span></span><br></pre></td></tr></table></figure><blockquote><p>统计所有人的总分数，以及平均情况的awk脚本</p></blockquote><figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/bin/awk -f</span></span><br><span class="line"><span class="comment"># 运行前</span></span><br><span class="line">BEGIN &#123;</span><br><span class="line">    math = <span class="number">0</span></span><br><span class="line">    english = <span class="number">0</span></span><br><span class="line">    computer = <span class="number">0</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">printf</span> <span class="string">"NAME NO. MATH COMPUTER TOTAL\n"</span></span><br><span class="line">    <span class="keyword">printf</span> <span class="string">"----------------------------\n"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行中</span></span><br><span class="line">&#123;</span><br><span class="line">    math += $3</span><br><span class="line">    english += $4</span><br><span class="line">    computer += $5</span><br><span class="line">    <span class="keyword">printf</span> <span class="string">"%-6s %-6s %4d %8d %8d %8d"</span>, $1, $2, $3, $4, $5, $3+$4+$5</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行后</span></span><br><span class="line">END &#123;</span><br><span class="line">    <span class="keyword">printf</span> <span class="string">"----------------------------\n"</span></span><br><span class="line">    <span class="keyword">printf</span> <span class="string">" TOTAL:%10d %8d %8d\n"</span>, math, english, computer</span><br><span class="line">    <span class="keyword">printf</span> <span class="string">" AVERAGE:%10.2f %8.2f %8.2f\n"</span>, math/NR, english/NR, computer/NR</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>输出</p></blockquote><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">NAME    NO.   MATH  ENGLISH  COMPUTER   TOTAL</span><br><span class="line">--------------------------------------------------</span><br><span class="line">Marry  2143     78       84        77      239</span><br><span class="line">Jack     2321     66       78        45      189</span><br><span class="line">Tom    2122     48       77       71       196</span><br><span class="line">Mike    2537     87       97        95      279</span><br><span class="line">Bob     2415      40       57        62     159</span><br><span class="line">--------------------------------------------------</span><br><span class="line"><span class="code">  TOTAL:       319      393      350</span></span><br><span class="line"><span class="code">  AVERAGE:    63.80    78.60    70.00</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;awk脚本&quot;&gt;&lt;a href=&quot;#awk脚本&quot; class=&quot;headerlink&quot; title=&quot;awk脚本&quot;&gt;&lt;/a&gt;awk脚本&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;awk脚本通常由3部分构成&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://deerlili.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://deerlili.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sqoop2错误</title>
+    <link href="https://deerlili.github.io/2019/07/30/sqoop2%E9%94%99%E8%AF%AF/"/>
+    <id>https://deerlili.github.io/2019/07/30/sqoop2错误/</id>
+    <published>2019-07-30T15:04:18.000Z</published>
+    <updated>2019-07-30T15:16:08.852Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h4><p>启动sqoop2 server<br><code>Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /var/lib/sqoop2/repository/db</code></p><blockquote><p>解决办法：</p><ol><li>查找进程：<code>ps -aux|grep sqoop2</code></li><li>kill进程号：<code>kill -9 ...</code></li><li>重新启动</li></ol></blockquote><h3 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h3><p><code>/usr/bdp/1.0.0-1/sqoop2/bin/sqoop.sh: line 202: /var/run/sqoop2/sqoop-sqoop2-jetty-server.pid: No such file or directoryERROR:  Cannot write pid</code></p><blockquote><p>解决办法：</p><ol><li>在安装server的机器上建目录和文件</li><li><code>cd /var/run/</code></li><li><code>mkdir sqoop2</code></li><li><code>chown sqoop2:hadoop sqoop2</code></li><li><code>cd sqoop2</code></li><li><code>touch sqoop-sqoop2-jetty-server.pid</code></li><li><code>chown sqoop2:hadoop *</code></li><li>重启</li></ol></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;问题1&quot;&gt;&lt;a href=&quot;#问题1&quot; class=&quot;headerlink&quot; title=&quot;问题1&quot;&gt;&lt;/a&gt;问题1&lt;/h4&gt;&lt;p&gt;启动sqoop2 server&lt;br&gt;&lt;code&gt;Caused by: ERROR XSDB6: Another instance 
+      
+    
+    </summary>
+    
+      <category term="错误" scheme="https://deerlili.github.io/categories/%E9%94%99%E8%AF%AF/"/>
+    
+    
+      <category term="sqoop2" scheme="https://deerlili.github.io/tags/sqoop2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python安装</title>
+    <link href="https://deerlili.github.io/2019/07/30/python%E5%AE%89%E8%A3%85/"/>
+    <id>https://deerlili.github.io/2019/07/30/python安装/</id>
+    <published>2019-07-30T06:19:22.000Z</published>
+    <updated>2019-08-03T01:05:34.584Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="windows-环境"><a href="#windows-环境" class="headerlink" title="windows 环境"></a>windows 环境</h4><blockquote><p>下载地址: <a href="https://www.python.org" target="_blank" rel="noopener">python</a></p></blockquote><h4 id="linux-环境"><a href="#linux-环境" class="headerlink" title="linux 环境"></a>linux 环境</h4><ul><li>查看python版本: <code>python -v</code> </li><li>python官网：<code>https://www.python.org/</code></li><li>这里介绍：安装python3.7系统默认的就是python2</li><li><a href="https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz</a><h5 id="linux上执行命令"><a href="#linux上执行命令" class="headerlink" title="linux上执行命令"></a>linux上执行命令</h5><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">yum install wget</span><br><span class="line">yum install nano</span><br><span class="line">wget http<span class="variable">s:</span>//www.<span class="keyword">python</span>.org/ftp/<span class="keyword">python</span>/<span class="number">3.7</span>.<span class="number">1</span>/Python-<span class="number">3.7</span>.<span class="number">1</span>.tar.xz</span><br><span class="line">tar xvJf Python-<span class="number">3.7</span>.<span class="number">1</span>.tar.xz</span><br><span class="line"><span class="keyword">cd</span> Python-<span class="number">3.7</span>.<span class="number">1</span></span><br><span class="line">mv Python-<span class="number">3.7</span>.<span class="number">1</span> <span class="keyword">python3</span></span><br></pre></td></tr></table></figure></li></ul><h5 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h5><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yum -<span class="keyword">y</span> install gcc zlib* libffi-devel</span><br><span class="line">./configure</span><br><span class="line"><span class="keyword">make</span></span><br><span class="line"><span class="keyword">make</span> install</span><br><span class="line">./<span class="keyword">python</span> -V</span><br></pre></td></tr></table></figure><h5 id="建立软连接"><a href="#建立软连接" class="headerlink" title="建立软连接"></a>建立软连接</h5><p>· python3.7 位置：/usr/local/bin/python3.7<br>· python2.7 位置：/usr/bin/python</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /usr/bin</span><br><span class="line"><span class="keyword">grep</span> <span class="keyword">python</span></span><br><span class="line">./<span class="keyword">python</span> -V</span><br><span class="line">方案<span class="number">1</span>：建立软连接：<span class="keyword">ln</span> -s /root/Python-<span class="number">3.7</span>.<span class="number">1</span>/<span class="keyword">python</span> /usr/bin/<span class="keyword">python3</span></span><br><span class="line">方案<span class="number">2</span>：也可以把命令：mv <span class="keyword">python</span> <span class="keyword">python</span>.bak</span><br><span class="line"><span class="keyword">ln</span> -s /root/Python-<span class="number">3.7</span>.<span class="number">1</span>/<span class="keyword">python</span> /usr/bin/<span class="keyword">python</span></span><br><span class="line">这里要看自己的需要了</span><br><span class="line">如果用方案<span class="number">1</span>：进入python2可以用命令：<span class="keyword">python</span></span><br><span class="line"> 进入<span class="keyword">python3</span>可以用命令：<span class="keyword">python3</span></span><br><span class="line">如果用方案<span class="number">2</span>：进入python2可以用命令：python2</span><br><span class="line"> 进入<span class="keyword">python3</span>可以用命令：<span class="keyword">python</span></span><br><span class="line">若用方案<span class="number">2</span>需要修改参数：</span><br><span class="line"><span class="keyword">cd</span> /root/Python-<span class="number">3.7</span>.<span class="number">1</span></span><br><span class="line">nano /usr/bin/yum</span><br><span class="line">把第一行#!/usr/bin/<span class="keyword">python</span>改成#!/usr/bin/python2.<span class="number">7</span> 保存按ctrl+<span class="keyword">x</span>选择Y回车</span><br><span class="line">nano /usr/libexec/urlgrabber-ext-down</span><br><span class="line">把第一行#!/usr/bin/<span class="keyword">python</span>改成#!/usr/bin/python2.<span class="number">7</span> 保存按ctrl+<span class="keyword">x</span>选择Y回车</span><br><span class="line">nano命令是会把缓存区的文件也改动，<span class="keyword">vi</span>只会改本地文件</span><br><span class="line">测试一下：yum install -<span class="keyword">y</span> nginx能安装就成功了。</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;windows-环境&quot;&gt;&lt;a href=&quot;#windows-环境&quot; class=&quot;headerlink&quot; title=&quot;windows 环境&quot;&gt;&lt;/a&gt;windows 环境&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;下载地址: &lt;a href=&quot;https://ww
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python字符串</title>
+    <link href="https://deerlili.github.io/2019/07/30/python%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>https://deerlili.github.io/2019/07/30/python字符串/</id>
+    <published>2019-07-30T03:34:40.000Z</published>
+    <updated>2019-07-30T03:38:36.123Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="字符串的申明：单引号-双引号，三引号"><a href="#字符串的申明：单引号-双引号，三引号" class="headerlink" title="字符串的申明：单引号,双引号，三引号"></a>字符串的申明：单引号,双引号，三引号</h3><ul><li><code>s = &#39;Hello Python!&#39;</code></li><li><code>s = &quot;Hello Python!&quot;</code></li><li><code>s = &#39;&#39;&#39;Hello Python!&#39;&#39;&#39;</code></li><li><code>s = &quot;&quot;&quot;Hello Python!&quot;&quot;&quot;</code></li><li><code>字符串中有单引号用双引号包裹，有双引号用单引号包裹，有换行用三引号（单引号，双引号）包裹</code><h3 id="字符串的操作"><a href="#字符串的操作" class="headerlink" title="字符串的操作"></a>字符串的操作</h3></li></ul><ol><li>单个访问字符串中的字符</li></ol><ul><li><code>s = &#39;Hello Python!&#39;</code></li><li><code>print(s[0]) 输出为：H</code></li></ul><ol start="2"><li>访问字符串的子串（切片操作）</li></ol><ul><li><code>print(s[0:5]) 输出为：Hello</code></li></ul><ol start="3"><li>字符串相加</li></ol><ul><li><code>s1 = &#39;Hello&#39;</code></li><li><code>s2 = &#39; Python!&#39;</code></li><li><code>print(s1+s2) 输出为：Hello Python!</code></li></ul><ol start="4"><li>字符串更新操作</li></ol><ul><li><code>s1 = &#39;Hello&#39;</code></li><li><code>s2 = &#39;Python&#39;</code></li><li><code>print(s1[:2]+s2) 输出为：HePython</code></li></ul><ol start="5"><li>字符串的成员运输</li></ol><ul><li>包含运算：in，不包含：not in</li><li><code>s1 = &#39;Hello&#39;</code></li><li><code>s2 = &#39;H&#39;</code></li><li><code>print(s2 in s1) 输出为：True</code></li></ul><ol start="6"><li>转义字符（换行符号：\n 制表符：\t  回车：\r 这个只打印\r之后的）</li></ol><ul><li><code>print(&quot;\&quot;&quot;)</code></li></ul><ol start="7"><li>原始字符串</li></ol><ul><li><code>print(r&quot;hello\nPython&quot;)</code></li><li><code>print(R&quot;hello\nPython&quot;)</code></li></ul><ol start="8"><li>字符串的格式化输出 </li></ol><ul><li><code>print(&quot;我是%s&quot;,第%d天学习&quot; %(&#39;小明&#39;,10))</code></li></ul><ol start="9"><li>字符串的内建函数</li></ol><ul><li>查找字符串</li><li><code>s = &quot;Hello Python&quot;.find(&quot;He&quot;) 范围位置</code></li><li>转换为大小写字母</li><li><code>s = &quot;Hello Python&quot;.upper()</code></li><li><code>s = &quot;Hello Python&quot;.lower()</code></li><li>字符串的长度</li><li><code>s = &quot;Hello Python&quot;.__len__()</code></li><li>判断字符串是否只包含空格</li><li><code>print(&quot;a &quot;.isspace())</code></li><li>字符串替换</li><li><code>print(&quot;Hello Python&quot;.replace(&quot;o&quot;,&quot;ee&quot;))</code></li><li>输出20次</li><li><code>print(&quot;he&quot;*20)</code></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;字符串的申明：单引号-双引号，三引号&quot;&gt;&lt;a href=&quot;#字符串的申明：单引号-双引号，三引号&quot; class=&quot;headerlink&quot; title=&quot;字符串的申明：单引号,双引号，三引号&quot;&gt;&lt;/a&gt;字符串的申明：单引号,双引号，三引号&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+  </entry>
+  
+</feed>
