@@ -544,16 +544,25 @@
       
         
           
-            <h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote>
-<p>raw_input()直接读取控制台的输入（任何类型的输入它都可以接收）</p>
-</blockquote>
-<blockquote>
-<p>input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError</p>
-</blockquote>
-<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/python</span></span><br><span class="line"><span class="meta"># -*- coding:utf8 -*-</span></span><br><span class="line"></span><br><span class="line">a = <span class="keyword">input</span>(<span class="string">"请输入第一个值:"</span>)</span><br><span class="line">b = raw_input(<span class="string">"请输入运算符号:"</span>)</span><br><span class="line">c = <span class="keyword">input</span>(<span class="string">"请输入第二个值:"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> b == <span class="string">"+"</span>:</span><br><span class="line">    result = a + c</span><br><span class="line"><span class="keyword">print</span>(<span class="string">"结果是："</span>+<span class="keyword">str</span>(result))</span><br><span class="line">上面也可以： <span class="keyword">int</span>(<span class="keyword">input</span>(<span class="string">"请输入第一个值:"</span>))</span><br><span class="line">上面也可以： eval(<span class="keyword">input</span>(<span class="string">"请输入第一个值:"</span>))</span><br></pre></td></tr></table></figure>
+            <p>
+              输入
+raw_input()直接读取控制台的输入（任何类型的输入它都可以接收）
 
 
+input()它希望能够读取一个合法的 python 表达式,即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError
+
+#!/usr/bin/python# -*- coding:utf
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/19/python控制台输入/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -738,31 +747,30 @@
       
         
           
-            <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ul>
-<li>拥有简单脚本语言和解释型程序语言的易用性</li>
-<li>拥有传统编译型程序语言所通用的功能</li>
-<li>python是一种解释性的、面向对象的、带有动态语义的高级程序设计语言</li>
-<li>介于C和Shell之间</li>
-<li>胶水语言-很容易和其他语言集成封装</li>
-<li>脚本语言-面向对象</li>
-</ul>
-<h3 id="python2和python3"><a href="#python2和python3" class="headerlink" title="python2和python3"></a>python2和python3</h3><ul>
-<li>大多数的python3</li>
-</ul>
-<h3 id="pyhton的应用"><a href="#pyhton的应用" class="headerlink" title="pyhton的应用"></a>pyhton的应用</h3><ol>
-<li>web开发<blockquote>
-<p>python定义了WSGI标准应用接口来协调HTTP服务器于基于python开发的web程序之间的沟通</p>
-</blockquote>
-</li>
-<li>gui开发<blockquote>
-<p>用wxPython 或者 PyQt来开发跨平台的桌面软件</p>
-</blockquote>
-</li>
-<li>操作系统</li>
-<li>多媒体-可用于计算机游戏的三维场景制作</li>
-</ol>
+            <p>
+              简介
+拥有简单脚本语言和解释型程序语言的易用性
+拥有传统编译型程序语言所通用的功能
+python是一种解释性的、面向对象的、带有动态语义的高级程序设计语言
+介于C和Shell之间
+胶水语言-很容易和其他语言集成封装
+脚本语言-面向对象
 
+python2和python3
+大多数的python3
+
+py
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/19/python简介/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -947,50 +955,21 @@
       
         
           
-            <h3 id="if控制流"><a href="#if控制流" class="headerlink" title="if控制流"></a>if控制流</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>  <span class="built_in">..</span>.:  </span><br><span class="line">    <span class="built_in">..</span>. </span><br><span class="line">elif <span class="built_in">..</span>.: </span><br><span class="line">    <span class="built_in">..</span><span class="built_in">..</span> </span><br><span class="line"><span class="keyword">else</span>: </span><br><span class="line">    <span class="built_in">..</span><span class="built_in">..</span></span><br></pre></td></tr></table></figure>
+            <p>
+              if控制流if  ...:      ... elif ...:     .... else:     ....
 
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">x = 1</span><br><span class="line"><span class="comment"># 第一种方法</span></span><br><span class="line"><span class="keyword">if</span> x == 1:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'a'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'c'</span>)</span><br><span class="line"><span class="comment"># 第二种方法</span></span><br><span class="line"><span class="keyword">if</span> x == 1:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'12'</span>)</span><br><span class="line"><span class="keyword">if</span> x != 1:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'wq'</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> = <span class="number">80</span></span><br><span class="line"><span class="keyword">if</span> <span class="number">0</span> &lt; <span class="selector-tag">a</span> &lt;= <span class="number">80</span>:</span><br><span class="line">    print <span class="string">"差"</span></span><br><span class="line">elif <span class="number">80</span> &lt;= <span class="selector-tag">a</span> &lt;= <span class="number">100</span>:</span><br><span class="line">    print <span class="string">"好"</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="while控制流"><a href="#while控制流" class="headerlink" title="while控制流"></a>while控制流</h3><blockquote>
-<p>while例子:  非零都是true</p>
-</blockquote>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> = <span class="number">3</span> </span><br><span class="line">while <span class="selector-tag">a</span>:</span><br><span class="line">    print(a)</span><br><span class="line">    <span class="selector-tag">a</span> = <span class="selector-tag">a</span> - <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>while语句使用结构</p>
-</blockquote>
-<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">while</span> 条件为真:</span><br><span class="line">    循环执行这部分语句</span><br><span class="line"><span class="built_in">else</span>：</span><br><span class="line">    条件为假执行</span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span>部分可以省略</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> = <span class="number">1</span></span><br><span class="line">while <span class="selector-tag">a</span> &lt; <span class="number">10</span>:</span><br><span class="line">    <span class="keyword">if</span> <span class="selector-tag">a</span> &lt;= <span class="number">5</span>:</span><br><span class="line">        print a</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print <span class="string">"Hello"</span></span><br><span class="line">    <span class="selector-tag">a</span> += <span class="number">1</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print <span class="string">"test"</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="for"><a href="#for" class="headerlink" title="for"></a>for</h3><blockquote>
-<p>range(1,5,2) 步长2</p>
-</blockquote>
-<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">3</span>)</span><br><span class="line">    <span class="built_in">print</span>(k)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>语句格式：</span><br><span class="line"><span class="keyword">for</span> <span class="selector-tag">i</span> <span class="keyword">in</span> 集合：</span><br><span class="line">    执行该部分</span><br><span class="line"><span class="keyword">else</span>：</span><br><span class="line">    执行该部分</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#常见集合</span></span><br><span class="line">char1 = <span class="string">u"你好世界"</span> <span class="comment">#u代表这是Unicode编码</span></span><br><span class="line">tem1 = (<span class="string">"元祖:你好"</span>,<span class="string">"元祖:世界"</span>)</span><br><span class="line">list1 = [<span class="string">"列表:你好"</span>,<span class="string">"列表:世界"</span>]</span><br><span class="line">dict1 = &#123;<span class="string">"first"</span>:<span class="string">"列表:你好"</span>,<span class="string">"second"</span>:<span class="string">"列表:世界"</span>&#125;</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> dict1:</span><br><span class="line">    <span class="keyword">print</span> i</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> = <span class="number">1</span></span><br><span class="line">while <span class="selector-tag">a</span> &lt;= <span class="number">7</span>:</span><br><span class="line">    <span class="selector-tag">a</span> = <span class="selector-tag">a</span> +<span class="number">1</span> </span><br><span class="line">    <span class="keyword">if</span> <span class="selector-tag">a</span> == <span class="number">4</span>:</span><br><span class="line">        continue  #暂时不知道写什么逻辑可言先占位</span><br><span class="line">    <span class="keyword">for</span> <span class="selector-tag">i</span> <span class="keyword">in</span> range(<span class="number">7</span>,<span class="number">10</span>)</span><br><span class="line">        <span class="keyword">if</span> <span class="selector-tag">i</span> == <span class="number">9</span>:</span><br><span class="line">            continue</span><br><span class="line">        print(i)  输出为：<span class="number">7878787878</span></span><br><span class="line">    break：跳出循环</span><br><span class="line">    continue：跳过后面要执行的</span><br></pre></td></tr></table></figure>
-
-<h3 id="break"><a href="#break" class="headerlink" title="break"></a>break</h3><blockquote>
-<p>跳出循环</p>
-</blockquote>
-<h3 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h3><blockquote>
-<p>跳过后面要执行的</p>
-</blockquote>
-<h3 id="range"><a href="#range" class="headerlink" title="range()"></a>range()</h3><ul>
-<li>list = range(10)  0到9</li>
-<li>[x*x for x in list] 列表生成式 0 1 4 9.</li>
-<li>[x*x for x in list if x % 3]      1 4 16 25</li>
-<li>range(2,9)   2到9</li>
-<li>range(2,9,2) 步长为2</li>
-</ul>
-
+x = 1# 第一种方法if x == 1:    print('a')else:    print('c')# 第二种方法if x == 1:    print('12')if x 
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/19/python循环和判断/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1175,29 +1154,31 @@
       
         
           
-            <h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><blockquote>
-<p>常量，变量就是标识符的一种</p>
-</blockquote>
-<h3 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则"></a>变量命名规则</h3><ol>
-<li>不能以数字开头</li>
-<li>只能包含字母、数字和下划线</li>
-<li>区分字母大小写</li>
-<li>禁止使用保留字</li>
-<li>见名知意</li>
-</ol>
-<h3 id="命名惯例"><a href="#命名惯例" class="headerlink" title="命名惯例"></a>命名惯例</h3><ul>
-<li>以单一下划线开头变量名（_x）不会被from module import * 语句导入，是私有的</li>
-<li>前后有下划线的变量名（<em>x</em>）是系统定义的变量名，对python解释器有特殊意义</li>
-<li>以两个下划线开头但结尾没有下划线的变量名（__x）是类的本地变量</li>
-<li>交互式模式下，变量名“_”用于保存最后表达式的结果</li>
-<li>变量名没有类型，对象才有</li>
-<li>一般全大写的为常量</li>
-</ul>
-<h3 id="python常用关键字"><a href="#python常用关键字" class="headerlink" title="python常用关键字"></a>python常用关键字</h3><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="built_in">keyword</span></span><br><span class="line">print(<span class="built_in">keyword</span>.kwlist)</span><br></pre></td></tr></table></figure>
+            <p>
+              标识符
+常量，变量就是标识符的一种
 
-<p><code>[&#39;and&#39;, &#39;as&#39;, &#39;assert&#39;, &#39;break&#39;, &#39;class&#39;, &#39;continue&#39;, &#39;def&#39;, &#39;del&#39;, &#39;elif&#39;, &#39;else&#39;, &#39;except&#39;, &#39;exec&#39;, &#39;finally&#39;, &#39;for&#39;, &#39;from&#39;, &#39;global&#39;, &#39;if&#39;, &#39;import&#39;, &#39;in&#39;, &#39;is&#39;, &#39;lambda&#39;, &#39;not&#39;, &#39;or&#39;, &#39;pass&#39;, &#39;print&#39;, &#39;raise&#39;, &#39;return&#39;, &#39;try&#39;, &#39;while&#39;, &#39;with&#39;, &#39;yield&#39;]</code></p>
+变量命名规则
+不能以数字开头
+只能包含字母、数字和下划线
+区分字母大小写
+禁止使用保留字
+见名知意
 
+命名惯例
+以单一下划线开头变量名（_x）不会被from module import * 语句导入，是私有的
+前后有下划线的变量名（x）是系统定义的变量名，对py
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/19/python命名规范/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1392,23 +1373,27 @@
       
         
           
-            <h3 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ora-00054:resource </span><span class="keyword">busy </span><span class="keyword">and </span>acquire with NOWAIT specified</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>是由于大量的插入导致大被锁了</p>
-</blockquote>
-<blockquote>
-<p>在DBA权限下执行，不要选择数据库</p>
-</blockquote>
-<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">    <span class="built_in">t2</span>.username, </span><br><span class="line">    <span class="built_in">t2</span>.sid, </span><br><span class="line">    <span class="built_in">t2</span>.serial<span class="comment">#, </span></span><br><span class="line">    <span class="built_in">t2</span>.logon_time</span><br><span class="line">from </span><br><span class="line">    v$locked_object <span class="built_in">t1</span>, </span><br><span class="line">    v$session <span class="built_in">t2</span></span><br><span class="line">where </span><br><span class="line">    <span class="built_in">t1</span>.session_id = <span class="built_in">t2</span>.sid</span><br><span class="line">    <span class="keyword">order </span><span class="keyword">by </span><span class="built_in">t2</span>.logon_time</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>查询出来的SID和serial写成下面格式</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">system</span> <span class="keyword">kill</span> <span class="keyword">session</span> <span class="string">'232,19627'</span>;</span><br></pre></td></tr></table></figure>
+            <p>
+              问题1ora-00054:resource busy and acquire with NOWAIT specified
 
 
+是由于大量的插入导致大被锁了
+
+
+在DBA权限下执行，不要选择数据库
+
+select     t2.username,     t2.sid,     t2.serial#,
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/12/oracle问题/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1603,33 +1588,23 @@
       
         
           
-            <ul>
-<li>TO_CHAR(SYSDATE, ‘YYYYMM’) = 201902</li>
-<li>replace(substr(SYSDATE,0,7),’-‘,’’)  = 201902</li>
-<li>replace(substr(SYSDATE,0,10),’-‘,’’) = 20190202</li>
-<li>TO_CHAR(a.FaHangDate,’YY-MM-dd HH24:mi’)</li>
-</ul>
-<blockquote>
-<p>long时间类型转换</p>
-</blockquote>
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_CHAR(<span class="name">UTC/</span>(<span class="number">60</span>*60*<span class="number">24</span>)+ TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH<span class="symbol">:MI</span><span class="symbol">:SS</span>'), 'YYYY-MM-DD HH24<span class="symbol">:MI</span><span class="symbol">:SS</span>')</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_CHAR(<span class="name">UTC/</span>(<span class="number">60</span>*60*<span class="number">24</span>)+ TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH<span class="symbol">:MI</span><span class="symbol">:SS</span>'), 'YYYY-MM-DD')</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_CHAR(<span class="name">UTC/</span>(<span class="number">60</span>*60*<span class="number">24</span>)+ TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH<span class="symbol">:MI</span><span class="symbol">:SS</span>'), 'HH24')</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>时间转换成long</p>
-</blockquote>
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_NUMBER(<span class="name">SYSDATE-TO_DATE</span>('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH24<span class="symbol">:MI</span><span class="symbol">:SS</span>'))*24*60 *60</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>字符串拼接和截取</p>
-</blockquote>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">把 <span class="number">20190706</span> <span class="number">12</span><span class="symbol">:</span><span class="number">12</span><span class="symbol">:</span><span class="number">23</span> 转换成 <span class="number">2019</span>-<span class="number">07</span>-<span class="number">06</span> <span class="number">12</span><span class="symbol">:</span><span class="number">12</span><span class="symbol">:</span><span class="number">23</span></span><br><span class="line">SUBSTR(RKSJ,<span class="number">0</span>,<span class="number">4</span>)<span class="params">||</span><span class="string">'-'</span><span class="params">||</span>SUBSTR(RKSJ,<span class="number">5</span>,<span class="number">2</span>)<span class="params">||</span><span class="string">'-'</span><span class="params">||</span>SUBSTR(RKSJ,<span class="number">7</span>,<span class="number">2</span>)<span class="params">||</span>SUBSTR(RKSJ,<span class="number">9</span>,<span class="number">9</span>)</span><br></pre></td></tr></table></figure>
-
-
+            <p>
+              
+TO_CHAR(SYSDATE, ‘YYYYMM’) = 201902
+replace(substr(SYSDATE,0,7),’-‘,’’)  = 201902
+replace(substr(SYSDATE,0,10),’-‘,’’) = 20190202
+TO_CHAR(a.FaHangDat
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/12/oracle时间操作/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1824,14 +1799,19 @@
       
         
           
-            <h3 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> GY_FREIGHT_INFO(</span><br><span class="line">  BILLING_WEIGHT     <span class="built_in">NUMBER</span>(<span class="number">8</span>),</span><br><span class="line">  BILL_NO            <span class="built_in">VARCHAR</span>(<span class="number">100</span>),</span><br><span class="line">  CONTAINER_NO       <span class="built_in">VARCHAR</span>(<span class="number">100</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> EX.GY_FREIGHT_INFO <span class="keyword">add</span> <span class="keyword">constraint</span> tb_gy_freight_info_pk primary <span class="keyword">key</span> (BILL_NO,CONTAINER_NO);</span><br><span class="line"></span><br><span class="line"><span class="keyword">comment</span> <span class="keyword">on</span> <span class="keyword">table</span> GY_FREIGHT_INFO <span class="keyword">is</span> <span class="string">'列车货物信息'</span>;</span><br><span class="line"><span class="keyword">comment</span> <span class="keyword">on</span> <span class="keyword">column</span> GY_FREIGHT_INFO.BILL_NO <span class="keyword">is</span> <span class="string">'运单号'</span>;</span><br><span class="line"><span class="keyword">comment</span> <span class="keyword">on</span> <span class="keyword">column</span> GY_FREIGHT_INFO.PRIVATE_LINE_NO1 <span class="keyword">is</span> <span class="string">'始发站专线号'</span>;</span><br><span class="line"><span class="keyword">comment</span> <span class="keyword">on</span> <span class="keyword">column</span> GY_FREIGHT_INFO.PRIVATE_LINE_NO3 <span class="keyword">is</span> <span class="string">'到站专用线号'</span>;</span><br></pre></td></tr></table></figure>
-
-<h3 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> <span class="keyword">REPLACE</span> <span class="keyword">VIEW</span> EX.GY_FREIGHT_INFO</span><br><span class="line">    <span class="keyword">AS</span> </span><br><span class="line"><span class="keyword">SELECT</span> 	</span><br><span class="line">    BILL_NO,CONTAINER_NO,CONTAINER_TYPE,DETERMINE_WEIGHT,FILING_DATE,</span><br><span class="line">    FREIGHT_NO,GOODS_NAME,<span class="keyword">NUM</span>,PACKING,PRIVATE_LINE_NO1,PRIVATE_LINE_NO3,</span><br><span class="line">    VOLUME,WEIGHT,BILLING_WEIGHT</span><br><span class="line"><span class="keyword">FROM</span> EX.FREIGHT_INFO </span><br><span class="line"><span class="keyword">WHERE</span> PRIVATE_LINE_NO3=<span class="string">'35148001'</span></span><br><span class="line"><span class="keyword">WITH</span> <span class="keyword">READ</span> <span class="keyword">ONLY</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="从命名表"><a href="#从命名表" class="headerlink" title="从命名表"></a>从命名表</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 旧表名 <span class="keyword">rename</span> <span class="keyword">to</span> 新表名; </span><br><span class="line"><span class="keyword">rename</span> 旧表名 <span class="keyword">to</span> 新表名;</span><br></pre></td></tr></table></figure>
-
-
+            <p>
+              建表CREATE TABLE GY_FREIGHT_INFO(  BILLING_WEIGHT     NUMBER(8),  BILL_NO            VARCHAR(100),  CONTAINER_NO       VARCHAR(100));alter table EX.GY_F
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/12/oracle基本用法/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -2016,30 +1996,32 @@
       
         
           
-            <h3 id="建序列"><a href="#建序列" class="headerlink" title="建序列"></a>建序列</h3><ul>
-<li>查询序列</li>
-</ul>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> user_sequences</span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> all_sequences</span><br></pre></td></tr></table></figure>
+            <p>
+              建序列
+查询序列
 
-<ul>
-<li>删除序列</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">SEQUENCE</span> EX.T1;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>建序列</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">SEQUENCE</span> EX.T1</span><br><span class="line"><span class="keyword">INCREMENT</span> <span class="keyword">BY</span> <span class="number">1</span> <span class="comment">-- 每次加几个</span></span><br><span class="line"><span class="keyword">START</span> <span class="keyword">WITH</span> <span class="number">1</span> <span class="comment">-- 从1开始计数</span></span><br><span class="line"><span class="keyword">NOMAXVALUE</span> <span class="comment">-- 不设置最大值</span></span><br><span class="line"><span class="keyword">NOCYCLE</span> <span class="comment">-- 一直累加，不循环</span></span><br><span class="line">NOCACHE ;<span class="comment">-- 不建缓冲区;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>建触发器</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">or</span> <span class="keyword">replace</span> <span class="keyword">trigger</span> 触发器名称 </span><br><span class="line">	<span class="keyword">before</span> <span class="keyword">insert</span> <span class="keyword">on</span> 要插入数据的表名</span><br><span class="line"><span class="keyword">for</span> <span class="keyword">each</span> <span class="keyword">row</span></span><br><span class="line">	<span class="keyword">begin</span></span><br><span class="line">		<span class="keyword">select</span> T1.nextval <span class="keyword">into</span> :new.id <span class="keyword">from</span> dual;</span><br><span class="line">	<span class="keyword">end</span>;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询表对应的触发器名"><a href="#查询表对应的触发器名" class="headerlink" title="查询表对应的触发器名"></a>查询表对应的触发器名</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> trigger_name <span class="keyword">from</span> all_triggers <span class="keyword">where</span> table_name=<span class="string">'T_NAME'</span>;</span><br></pre></td></tr></table></figure>
+select * from user_sequencesselect * from all_sequences
 
 
+删除序列
+
+DROP SEQUENCE EX.T1;
+
+
+建序列
+
+CREATE SEQUENCE EX.T1INCREMENT BY 1 -- 每次加几个STAR
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/06/oracle自增ID/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -2224,24 +2206,25 @@
       
         
           
-            <h3 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h3><ul>
-<li>sqlplus / as sysdba</li>
-<li>sqlplus sys/SysPassOracle2017SecretToken as sysdba</li>
-<li>sqlplus system/SystemPassword2017SecretToken as sysdba</li>
-</ul>
-<h3 id="查看表空间"><a href="#查看表空间" class="headerlink" title="查看表空间"></a>查看表空间</h3><ul>
-<li>select tablespace_name from dba_tablespaces;</li>
-</ul>
-<h3 id="查看表空间位置和大小"><a href="#查看表空间位置和大小" class="headerlink" title="查看表空间位置和大小"></a>查看表空间位置和大小</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"> select b.file_name 物理文件名,</span><br><span class="line">    b.tablespace_name 表空间,</span><br><span class="line">    b.bytes/1024/1024 大小M,</span><br><span class="line">    (b.bytes-sum(nvl(a.bytes,0)))/1024/1024 已使用M,　</span><br><span class="line">    substr((b.bytes-sum(nvl(a.bytes,0)))/(b.bytes)<span class="number">*100</span>,1,5) 利用率　</span><br><span class="line">    <span class="keyword">from</span> dba_free_space a,dba_data_files b　</span><br><span class="line">where </span><br><span class="line">    a.<span class="attribute">file_id</span>=b.file_id </span><br><span class="line">   <span class="built_in"> group </span>by b.tablespace_name,b.file_name,b.bytes　</span><br><span class="line">    order by b.tablespace_name;</span><br><span class="line"></span><br><span class="line"> select </span><br><span class="line">    t.tablespace_name,</span><br><span class="line">    round(sum(bytes/(1024<span class="number">*1024</span>)),0) ts_size </span><br><span class="line"><span class="keyword">from</span> </span><br><span class="line">    dba_tablespaces t, dba_data_files d </span><br><span class="line">where </span><br><span class="line">    t.tablespace_name = d.tablespace_name </span><br><span class="line">group by t.tablespace_name;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> select </span><br><span class="line">    tablespace_name,</span><br><span class="line">    file_id, </span><br><span class="line">    file_name, </span><br><span class="line">    round(bytes/(1024<span class="number">*1024</span>),0) total_space  </span><br><span class="line"><span class="keyword">from</span> </span><br><span class="line">    dba_data_files </span><br><span class="line">order by tablespace_name;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> select </span><br><span class="line">    sum(bytes)/(1024<span class="number">*1024</span>) as free_space,</span><br><span class="line">    tablespace_name </span><br><span class="line"><span class="keyword">from</span> dba_free_space </span><br><span class="line">group by tablespace_name;</span><br></pre></td></tr></table></figure>
+            <p>
+              登录
+sqlplus / as sysdba
+sqlplus sys/SysPassOracle2017SecretToken as sysdba
+sqlplus system/SystemPassword2017SecretToken as sysdba
 
-<h3 id="查看表空间是否自增长"><a href="#查看表空间是否自增长" class="headerlink" title="查看表空间是否自增长"></a>查看表空间是否自增长</h3><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    FILE_NAME,TABLESPACE_NAME,AUTOEXTENSIBLE </span><br><span class="line"><span class="keyword">FROM</span> dba_data_files;</span><br></pre></td></tr></table></figure>
-
-<h3 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create<span class="built_in"> user </span>用户 identified by password<span class="built_in"> default </span>tablespace USERS;</span><br><span class="line">create<span class="built_in"> user </span>gw_data identified by gw_data<span class="built_in"> default </span>tablespace USERS;</span><br><span class="line">create<span class="built_in"> user </span>gw_bi identified by gw_bipwd<span class="built_in"> default </span>tablespace USERS;</span><br><span class="line">create<span class="built_in"> user </span>ship_info identified by ship_infopwd<span class="built_in"> default </span>tablespace USERS;</span><br><span class="line">create<span class="built_in"> user </span>ex identified by ex123qwe123<span class="built_in"> default </span>tablespace USERS;</span><br></pre></td></tr></table></figure>
-
-<h3 id="权限"><a href="#权限" class="headerlink" title="权限"></a>权限</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span>,<span class="keyword">resource</span>,dba <span class="keyword">to</span> <span class="keyword">oracle</span>;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span>,<span class="keyword">resource</span> <span class="keyword">to</span> ex;</span><br><span class="line"></span><br><span class="line"><span class="keyword">grant</span> dba <span class="keyword">to</span> <span class="keyword">oracle</span>;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span>,<span class="keyword">resource</span> <span class="keyword">to</span> ex;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">select</span>,<span class="keyword">connect</span> <span class="keyword">any</span> <span class="keyword">table</span> <span class="keyword">to</span> ex;</span><br><span class="line"></span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">delete</span> <span class="keyword">any</span> <span class="keyword">table</span> <span class="keyword">to</span> ex;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">update</span> <span class="keyword">any</span> <span class="keyword">table</span> <span class="keyword">to</span> ex;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">insert</span> <span class="keyword">any</span> <span class="keyword">table</span> <span class="keyword">to</span> ex;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> GYJSH <span class="keyword">identified</span> <span class="keyword">by</span> GYJSH123;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span> <span class="keyword">to</span> GYJSH;</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">select</span> <span class="keyword">on</span> <span class="string">"EX"</span>.<span class="string">"GY_TRAIN_INFO"</span> <span class="keyword">to</span> GYJSH;</span><br></pre></td></tr></table></figure>
-
-
+查看表空间
+select tablesp
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/06/oracle权限用户操作/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -2407,8 +2390,19 @@
       
         
           
-            
+            <p>
+              
+              
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/08/06/python-基础语法-02/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
