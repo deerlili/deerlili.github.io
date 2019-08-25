@@ -148,18 +148,18 @@
   };
 </script>
 
-  <meta name="description" content="问题1启动sqoop2 serverCaused by: ERROR XSDB6: Another instance of Derby may have already booted the database /var/lib/sqoop2/repository/db  解决办法：  查找进程：ps -aux|grep sqoop2 kill进程号：kill -9 ... 重新启动   问题2/u">
-<meta name="keywords" content="sqoop2">
+  <meta name="description" content="把HDFS上的数据通过link表把数据同步到Doris上，然后修改mysql配置表，把执行日子写入日志  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777">
+<meta name="keywords" content="python,hdfs,doris,mysql,日志">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sqoop2错误">
-<meta property="og:url" content="https://deerlili.github.io/2019/07/30/sqoop2错误/index.html">
+<meta property="og:title" content="python hdfs上数据同步到doris">
+<meta property="og:url" content="https://deerlili.github.io/2019/08/25/python-hdfs上数据同步到doris/index.html">
 <meta property="og:site_name" content="Deerlili">
-<meta property="og:description" content="问题1启动sqoop2 serverCaused by: ERROR XSDB6: Another instance of Derby may have already booted the database /var/lib/sqoop2/repository/db  解决办法：  查找进程：ps -aux|grep sqoop2 kill进程号：kill -9 ... 重新启动   问题2/u">
+<meta property="og:description" content="把HDFS上的数据通过link表把数据同步到Doris上，然后修改mysql配置表，把执行日子写入日志  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-30T15:16:08.852Z">
+<meta property="og:updated_time" content="2019-08-25T14:53:42.183Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sqoop2错误">
-<meta name="twitter:description" content="问题1启动sqoop2 serverCaused by: ERROR XSDB6: Another instance of Derby may have already booted the database /var/lib/sqoop2/repository/db  解决办法：  查找进程：ps -aux|grep sqoop2 kill进程号：kill -9 ... 重新启动   问题2/u">
+<meta name="twitter:title" content="python hdfs上数据同步到doris">
+<meta name="twitter:description" content="把HDFS上的数据通过link表把数据同步到Doris上，然后修改mysql配置表，把执行日子写入日志  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777">
 
 
 
@@ -169,7 +169,7 @@
 
   
   
-  <link rel="canonical" href="https://deerlili.github.io/2019/07/30/sqoop2错误/">
+  <link rel="canonical" href="https://deerlili.github.io/2019/08/25/python-hdfs上数据同步到doris/">
 
 
 
@@ -180,7 +180,7 @@
 </script>
 
   
-  <title>sqoop2错误 | Deerlili</title>
+  <title>python hdfs上数据同步到doris | Deerlili</title>
   
 
 
@@ -440,7 +440,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/07/30/sqoop2错误/">
+    <link itemprop="mainEntityOfPage" href="https://deerlili.github.io/2019/08/25/python-hdfs上数据同步到doris/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Deerlili">
@@ -457,7 +457,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">sqoop2错误
+          <h2 class="post-title" itemprop="name headline">python hdfs上数据同步到doris
 
               
             
@@ -483,7 +483,7 @@
                 
               
 
-              <time title="创建时间：2019-07-30 23:04:18 / 修改时间：23:16:08" itemprop="dateCreated datePublished" datetime="2019-07-30T23:04:18+08:00">2019-07-30</time>
+              <time title="创建时间：2019-08-25 22:52:25 / 修改时间：22:53:42" itemprop="dateCreated datePublished" datetime="2019-08-25T22:52:25+08:00">2019-08-25</time>
             </span>
           
 
@@ -502,7 +502,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/错误/" itemprop="url" rel="index"><span itemprop="name">错误</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
 
                 
                 
@@ -520,8 +520,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/07/30/sqoop2错误/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/30/sqoop2错误/" itemprop="commentCount"></span>
+                <a href="/2019/08/25/python-hdfs上数据同步到doris/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/25/python-hdfs上数据同步到doris/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -529,7 +529,7 @@
 
           
           
-            <span id="/2019/07/30/sqoop2错误/" class="post-meta-item leancloud_visitors" data-flag-title="sqoop2错误">
+            <span id="/2019/08/25/python-hdfs上数据同步到doris/" class="post-meta-item leancloud_visitors" data-flag-title="python hdfs上数据同步到doris">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -564,30 +564,11 @@
       
 
       
-        <h4 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h4><p>启动sqoop2 server<br><code>Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /var/lib/sqoop2/repository/db</code></p>
-<blockquote>
-<p>解决办法：</p>
-<ol>
-<li>查找进程：<code>ps -aux|grep sqoop2</code></li>
-<li>kill进程号：<code>kill -9 ...</code></li>
-<li>重新启动</li>
-</ol>
+        <blockquote>
+<p>把HDFS上的数据通过link表把数据同步到Doris上，然后修改mysql配置表，把执行日子写入日志</p>
 </blockquote>
-<h3 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h3><p><code>/usr/bdp/1.0.0-1/sqoop2/bin/sqoop.sh: line 202: /var/run/sqoop2/sqoop-sqoop2-jetty-server.pid: No such file or directory
-ERROR:  Cannot write pid</code></p>
-<blockquote>
-<p>解决办法：</p>
-<ol>
-<li>在安装server的机器上建目录和文件</li>
-<li><code>cd /var/run/</code></li>
-<li><code>mkdir sqoop2</code></li>
-<li><code>chown sqoop2:hadoop sqoop2</code></li>
-<li><code>cd sqoop2</code></li>
-<li><code>touch sqoop-sqoop2-jetty-server.pid</code></li>
-<li><code>chown sqoop2:hadoop *</code></li>
-<li>重启</li>
-</ol>
-</blockquote>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python</span><br><span class="line"># -*- coding: UTF<span class="number">-8</span> -*-</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">###ods层库**********需要根据实际情况修改</span><br><span class="line">ods_db=<span class="string">"ODS_SCAL_ICREW"</span></span><br><span class="line">###ods层表名称**********需要根据实际情况修改</span><br><span class="line">ods_table_name=<span class="string">"T_SCH_ABNORMAL"</span></span><br><span class="line">###link库**********需要根据实际情况修改</span><br><span class="line">link_db=<span class="string">"LINK_SCAL_ICREW"</span></span><br><span class="line">###抽取sql段**********需要根据实际情况修改</span><br><span class="line">sql1=<span class="string">"INSERT INTO ODS_SCAL_ICREW.T_SCH_ABNORMAL SELECT APP_ID,MSG_TYPE,OPERATORS,START_DATE,END_DATE,APP_STATUS,OP_CONTENTS,FLIGHT_DATE,FLIGHT_IDS,P_CODES,MSG_NO,DELETE_SIGN,REGEXP_REPLACE(CUR_TIME,'T',' ') CHANGE_TIME FROM ( SELECT *,RANK() OVER (PARTITION BY APP_ID ORDER BY POS_FILE DESC) RANK FROM LINK_SCAL_ICREW.T_SCH_ABNORMAL "</span></span><br><span class="line">sql2=<span class="string">" WHERE REGEXP_REPLACE(CUR_TIME,'T',' ')&gt;\""</span></span><br><span class="line">sql3=<span class="string">"\" AND REGEXP_REPLACE(CUR_TIME,'T',' ')&lt;=\""</span></span><br><span class="line">sql4=<span class="string">"\" ) A WHERE RANK=1;"</span></span><br><span class="line">###日志文件**********需要根据实际情况修改</span><br><span class="line">log_file=file(<span class="string">"/opt/scal_icrew/log/"</span>+ods_table_name.lower()+<span class="string">"_log_"</span>+datetime.datetime.now().strftime(<span class="string">'%Y-%m-%d'</span>)+<span class="string">".txt"</span>,<span class="string">"a+"</span>)</span><br><span class="line"></span><br><span class="line">###程序开始执行时间</span><br><span class="line">t1=datetime.datetime.now()</span><br><span class="line">####mysql配置信息表连接</span><br><span class="line">mysqlconn = MySQLdb.connect(host=<span class="string">""</span>, port=<span class="number">3306</span>, user=<span class="string">"root"</span>, passwd=<span class="string">""</span>, db=<span class="string">"ch_palo"</span>, charset=<span class="string">'utf8'</span>)</span><br><span class="line">mysqlcursor = mysqlconn.cursor()</span><br><span class="line">###palo ods层连接</span><br><span class="line">conn = MySQLdb.connect(host=<span class="string">""</span>, port=<span class="number">4040</span>, user=<span class="string">"root"</span>, passwd=<span class="string">""</span>, db=ods_db, charset=<span class="string">'utf8'</span>)</span><br><span class="line">cursor = conn.cursor()</span><br><span class="line"></span><br><span class="line">###通过mysql配置信息表获取上次执行时间和执行状态</span><br><span class="line">print <span class="string">"select max_change_time,execute_if_begin from etl_config where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span></span><br><span class="line">mysqlcursor.execute(<span class="string">"select max_change_time,execute_if_begin from etl_config where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">res = mysqlcursor.fetchone()</span><br><span class="line">print res</span><br><span class="line">max_change_time= str(res[<span class="number">0</span>])</span><br><span class="line">execute_if_begin=str(res[<span class="number">1</span>])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">###写入日志</span><br><span class="line">log_file.write(<span class="string">"修改last_execute_time为："</span>+t1.strftime(<span class="string">'%Y-%m-%d %H:%M:%S.%f'</span>)+<span class="string">"\n"</span>)</span><br><span class="line">###上次执行时间</span><br><span class="line">mysqlcursor.execute(<span class="string">"update etl_config set last_execute_time=\""</span>+t1.strftime(<span class="string">'%Y-%m-%d %H:%M:%S.%f'</span>)+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> execute_if_begin==<span class="string">"FINISHED"</span> :</span><br><span class="line">	###写入日志</span><br><span class="line">	log_file.write(<span class="string">"抽取任务开始\n"</span>)</span><br><span class="line">	log_file.write(<span class="string">"执行抽取时间段为："</span>+max_change_time+<span class="string">"到"</span>+datetime.datetime.now().strftime(<span class="string">'%Y-%m-%d %H:%M:%S.%f'</span>)+<span class="string">"之间\n"</span>)</span><br><span class="line"></span><br><span class="line">	###修改mysql配置信息表中的执行状态为正在执行</span><br><span class="line">	mysqlcursor.execute(<span class="string">"update etl_config set execute_if_begin=\"STARTING\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">	mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line">	###写入日志</span><br><span class="line">	log_file.write(<span class="string">"修改配置信息表中是否正在执行为STARTING\n"</span>)			</span><br><span class="line">	st_time=(datetime.datetime.strptime(max_change_time, <span class="string">"%Y-%m-%d %H:%M:%S.%f"</span>) - datetime.timedelta(minutes = <span class="number">5</span>)).strftime(<span class="string">'%Y-%m-%d %H:%M:%S.%f'</span>)</span><br><span class="line">	ed_time=datetime.datetime.now().strftime(<span class="string">'%Y-%m-%d %H:%M:%S.%f'</span>)</span><br><span class="line">	###拼接插入sql语句</span><br><span class="line">	sql=sql1+sql2+st_time+sql3+ed_time+sql4</span><br><span class="line">	###获取当前抽取是否有数据</span><br><span class="line">	count=<span class="string">'x'</span></span><br><span class="line">	try:</span><br><span class="line">		print <span class="string">"select count(1) from "</span>+link_db+<span class="string">"."</span>+ods_table_name+sql2+st_time+sql3+ed_time+<span class="string">"\";"</span></span><br><span class="line">		count_sql=<span class="string">"select count(1) from "</span>+link_db+<span class="string">"."</span>+ods_table_name+sql2+st_time+sql3+ed_time+<span class="string">"\";"</span></span><br><span class="line">		cursor.execute(count_sql)</span><br><span class="line">		res = cursor.fetchone()</span><br><span class="line">		count=str(res[<span class="number">0</span>])</span><br><span class="line">	except:</span><br><span class="line">		print <span class="string">"当前查询数据量失败！"</span></span><br><span class="line">		log_file.write(<span class="string">"当前查询数据量失败\n"</span>)</span><br><span class="line">		mysqlcursor.execute(<span class="string">"update etl_config set last_execute_state=\""</span>+<span class="string">"ABNORMAL"</span>+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">		mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line">	<span class="keyword">if</span> count==<span class="string">'0'</span> :</span><br><span class="line">		print <span class="string">"本次没有变更数据"</span></span><br><span class="line">		###写入日志</span><br><span class="line">		log_file.write(<span class="string">"本次没有变更数据\n"</span>)</span><br><span class="line">		mysqlcursor.execute(<span class="string">"update etl_config set last_execute_state=\""</span>+<span class="string">"NO CHANGE"</span>+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">		mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line">		###写入日志</span><br><span class="line">		log_file.write(<span class="string">"修改当前配置信息表中是否正在执行为FINISHED\n"</span>)</span><br><span class="line">		###修改mysql配置信息表中的是否正在执行</span><br><span class="line">		mysqlcursor.execute(<span class="string">"update etl_config set execute_if_begin=\"FINISHED\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">		mysqlcursor.execute(<span class="string">"commit"</span>)			</span><br><span class="line">	else :</span><br><span class="line">		print <span class="string">"本次抽取变更数据条数为:"</span>+count</span><br><span class="line">		###写入日志</span><br><span class="line">		log_file.write(<span class="string">"本次抽取变更数据条数为:"</span>+count+<span class="string">"\n"</span>)</span><br><span class="line">		try:</span><br><span class="line">			###写入日志</span><br><span class="line">			log_file.write(<span class="string">"当前执行插入语句为："</span>+sql+<span class="string">"\n"</span>)</span><br><span class="line">			###执行抽取语句</span><br><span class="line">			cursor.execute(sql)</span><br><span class="line">			###获取抽取转换成load的label名称</span><br><span class="line">			label_info = cursor._info</span><br><span class="line">			###写入日志</span><br><span class="line">			log_file.write(<span class="string">"当前load任务的信息为："</span>+label_info+<span class="string">"\n"</span>)</span><br><span class="line">			print <span class="string">"get origin label: %s "</span> % label_info</span><br><span class="line"></span><br><span class="line">			label = re.match(r<span class="string">'&#123;\'label\':\'([a-zA-Z0-9]&#123;8&#125;-[a-zA-Z0-9]&#123;4&#125;-[a-zA-Z0-9]&#123;4&#125;-[a-zA-Z0-9]&#123;4&#125;-[a-zA-Z0-9]&#123;12&#125;)\'&#125;'</span>, label_info).group(<span class="number">1</span>)</span><br><span class="line">			###写入日志</span><br><span class="line">			log_file.write(<span class="string">"当前load任务的label名称为："</span>+label_info+<span class="string">"\n"</span>)</span><br><span class="line">			print <span class="string">"get parsed label: %s "</span> % label</span><br><span class="line">			state=<span class="string">""</span></span><br><span class="line">			while  <span class="number">1</span>:</span><br><span class="line">				###等待<span class="number">10</span>秒后查看label的执行状态</span><br><span class="line">				time.sleep(<span class="number">10</span>)</span><br><span class="line">				###写入日志</span><br><span class="line">				log_file.write(<span class="string">"查询当前label标签load任务的执行情况\n"</span>)</span><br><span class="line">				print(<span class="string">"show load where label=\""</span>+label+<span class="string">"\""</span>)</span><br><span class="line">				cursor.execute(<span class="string">"show load where label=\""</span>+label+<span class="string">"\""</span>)</span><br><span class="line">				res = cursor.fetchone()</span><br><span class="line">				###写入日志</span><br><span class="line">				log_file.write(<span class="string">"load执行信息为："</span>+str(res)+<span class="string">"\n"</span>)</span><br><span class="line">				log_file.write(<span class="string">"当前palo load执行状态为："</span>+str(res[<span class="number">2</span>])+<span class="string">"\n"</span>)</span><br><span class="line">				print <span class="string">"load执行状态为"</span>+str(res)</span><br><span class="line">				print <span class="string">"当前palo load执行状态为"</span>+ str(res[<span class="number">2</span>])</span><br><span class="line">				state=str(res[<span class="number">2</span>])</span><br><span class="line">				###如果执行完成就跳出</span><br><span class="line">				<span class="keyword">if</span>  state ==<span class="string">"FINISHED"</span> :</span><br><span class="line">					break</span><br><span class="line">				<span class="keyword">if</span>  state ==<span class="string">"CANCELLED"</span> :</span><br><span class="line">					break</span><br><span class="line">			print <span class="string">"select max(CHANGE_TIME) from "</span>+ods_db+<span class="string">"."</span>+ods_table_name</span><br><span class="line">			cursor.execute(<span class="string">"select max(CHANGE_TIME) from "</span>+ods_db+<span class="string">"."</span>+ods_table_name)</span><br><span class="line">			res = cursor.fetchone()</span><br><span class="line"></span><br><span class="line">			###修改最后的执行时间作为下一次的开始时间，写入到mysql配置表中</span><br><span class="line"></span><br><span class="line">			<span class="keyword">if</span> state ==<span class="string">"FINISHED"</span> :</span><br><span class="line"></span><br><span class="line">				new_max_change_time=str(res[<span class="number">0</span>])</span><br><span class="line">				###写入日志</span><br><span class="line">				log_file.write(<span class="string">"查询当前表中最大变更时间为："</span>+new_max_change_time+<span class="string">"\n"</span>)</span><br><span class="line">				log_file.write(<span class="string">"将当前表中最大变更时间写入到配置信息表中\n"</span>)</span><br><span class="line">				###修改上次执行成功时间</span><br><span class="line">				print <span class="string">"update etl_config set max_change_time=\""</span>+new_max_change_time+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span></span><br><span class="line">				mysqlcursor.execute(<span class="string">"update etl_config set max_change_time=\""</span>+new_max_change_time+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">				mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line">				###修改当前执行状态</span><br><span class="line">				###写入日志</span><br><span class="line">				log_file.write(<span class="string">"修改当前配置信息表中执行状态为SUCCESS\n"</span>)</span><br><span class="line">				print <span class="string">"update etl_config set last_execute_state=\""</span>+<span class="string">"SUCCESS"</span>+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span></span><br><span class="line">				mysqlcursor.execute(<span class="string">"update etl_config set last_execute_state=\""</span>+<span class="string">"SUCCESS"</span>+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">				mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line">				print <span class="string">"执行成功"</span></span><br><span class="line">				###写入日志</span><br><span class="line">				log_file.write(ods_db+<span class="string">"."</span>+ods_table_name+<span class="string">"本次抽取执行成功\n"</span>)</span><br><span class="line">			else :</span><br><span class="line">				###写入日志</span><br><span class="line">				log_file.write(<span class="string">"修改当前配置信息表中执行状态为FAILD\n"</span>)</span><br><span class="line">				##修改当前执行状态</span><br><span class="line">				print <span class="string">"update etl_config set last_execute_state=\""</span>+<span class="string">"FAILD"</span>+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span></span><br><span class="line">				mysqlcursor.execute(<span class="string">"update etl_config set last_execute_state=\""</span>+<span class="string">"FAILD"</span>+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">				mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line">				print <span class="string">"执行失败"</span></span><br><span class="line">				###写入日志</span><br><span class="line">				log_file.write(ods_db+<span class="string">"."</span>+ods_table_name+<span class="string">"本次抽取执行失败\n"</span>)</span><br><span class="line"></span><br><span class="line">			###写入日志</span><br><span class="line">			log_file.write(<span class="string">"修改当前配置信息表中是否正在执行为FINISHED\n"</span>)</span><br><span class="line">			###修改mysql配置信息表中的是否正在执行</span><br><span class="line">			mysqlcursor.execute(<span class="string">"update etl_config set execute_if_begin=\"FINISHED\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">			mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line">		except:</span><br><span class="line">			###写入日志</span><br><span class="line">			log_file.write(ods_db+<span class="string">"."</span>+ods_table_name+<span class="string">"本次抽取执行异常\n"</span>)</span><br><span class="line">			log_file.write(<span class="string">"修改当前配置信息表中是否正在执行为FINISHED\n"</span>)</span><br><span class="line">			log_file.write(<span class="string">"修改当前配置信息表中执行状态为ABNORMAL\n"</span>)</span><br><span class="line">			###修改mysql配置信息表中的是否正在执行</span><br><span class="line">			print <span class="string">"执行异常"</span></span><br><span class="line">			mysqlcursor.execute(<span class="string">"update etl_config set execute_if_begin=\"FINISHED\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">			mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line">			##修改当前执行状态</span><br><span class="line">			print <span class="string">"update etl_config set last_execute_state=\""</span>+<span class="string">"ABNORMAL"</span>+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span></span><br><span class="line">			mysqlcursor.execute(<span class="string">"update etl_config set last_execute_state=\""</span>+<span class="string">"ABNORMAL"</span>+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">			mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line">else :</span><br><span class="line">	###写入日志</span><br><span class="line">	log_file.write(<span class="string">"导入"</span>+ods_db+<span class="string">"."</span>+ods_table_name+<span class="string">"的任务正在执行\n"</span>)</span><br><span class="line">	print <span class="string">"导入"</span>+ods_db+<span class="string">"."</span>+ods_table_name+<span class="string">"的任务正在执行\n"</span></span><br><span class="line">	##修改当前执行状态</span><br><span class="line">	print <span class="string">"update etl_config set last_execute_state=\""</span>+<span class="string">"WAIT"</span>+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span></span><br><span class="line">	###写入日志</span><br><span class="line">	log_file.write(<span class="string">"修改配置信息表中执行状态为WAIT\n"</span>)</span><br><span class="line">	mysqlcursor.execute(<span class="string">"update etl_config set last_execute_state=\""</span>+<span class="string">"WAIT"</span>+<span class="string">"\" where goal_table =\""</span>+ods_table_name+<span class="string">"\" and goal_database=\""</span>+ods_db+<span class="string">"\""</span>)</span><br><span class="line">	mysqlcursor.execute(<span class="string">"commit"</span>)</span><br><span class="line">	###写入日志</span><br><span class="line">	log_file.write(<span class="string">"退出当前执行\n"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">###关闭palo 连接</span><br><span class="line">conn.close()</span><br><span class="line">###关闭mysql连接</span><br><span class="line">mysqlconn.close()</span><br><span class="line">###程序完成执行时间</span><br><span class="line">t2=datetime.datetime.now()</span><br><span class="line">print <span class="string">"程序执行时间为："</span>+str((t2-t1).seconds)+<span class="string">"秒"</span></span><br><span class="line">###写入日志</span><br><span class="line">log_file.write(<span class="string">"程序执行时间为："</span>+str((t2-t1).seconds)+<span class="string">"秒\n"</span>)</span><br><span class="line">log_file.write(<span class="string">"\n\n\n"</span>)</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -651,7 +632,15 @@ ERROR:  Cannot write pid</code></p>
         
         <div class="post-tags">
           
-            <a href="/tags/sqoop2/" rel="tag"># sqoop2</a>
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/hdfs/" rel="tag"># hdfs</a>
+          
+            <a href="/tags/doris/" rel="tag"># doris</a>
+          
+            <a href="/tags/mysql/" rel="tag"># mysql</a>
+          
+            <a href="/tags/日志/" rel="tag"># 日志</a>
           
         </div>
       
@@ -664,8 +653,8 @@ ERROR:  Cannot write pid</code></p>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/30/python安装/" rel="next" title="python安装">
-                <i class="fa fa-chevron-left"></i> python安装
+              <a href="/2019/08/25/python-http获取json数据保存到数据库/" rel="next" title="python http获取json数据保存到数据库">
+                <i class="fa fa-chevron-left"></i> python http获取json数据保存到数据库
               </a>
             
           </div>
@@ -673,10 +662,6 @@ ERROR:  Cannot write pid</code></p>
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/01/awk处理文本/" rel="prev" title="awk处理文本">
-                awk处理文本 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -724,17 +709,8 @@ ERROR:  Cannot write pid</code></p>
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -878,23 +854,6 @@ ERROR:  Cannot write pid</code></p>
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#问题1"><span class="nav-number">1.</span> <span class="nav-text">问题1</span></a></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#问题2"><span class="nav-number"></span> <span class="nav-text">问题2</span></a></li></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
