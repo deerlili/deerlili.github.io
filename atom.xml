@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://deerlili.github.io/"/>
-  <updated>2019-08-25T14:53:42.183Z</updated>
+  <updated>2019-08-27T01:28:25.111Z</updated>
   <id>https://deerlili.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux上安装cx_Oracle</title>
+    <link href="https://deerlili.github.io/2019/08/27/linux%E4%B8%8A%E5%AE%89%E8%A3%85cx-Oracle/"/>
+    <id>https://deerlili.github.io/2019/08/27/linux上安装cx-Oracle/</id>
+    <published>2019-08-27T01:27:05.000Z</published>
+    <updated>2019-08-27T01:28:25.111Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="安装oracle客户端"><a href="#安装oracle客户端" class="headerlink" title="安装oracle客户端"></a>安装oracle客户端</h3><blockquote><p>下载地址：<a href="https://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html</a></p></blockquote><p><code>rpm -ivh oracle-instantclient11.2-basic-11.2.0.4.0-1.x86_64.rpm</code></p><p><code>echo /usr/lib/oracle/11.2/client64/lib/ &gt;&gt; /etc/ld.so.conf</code></p><p><code>ldconfig</code></p><h3 id="安装cx-Oracle"><a href="#安装cx-Oracle" class="headerlink" title="安装cx_Oracle"></a>安装cx_Oracle</h3><blockquote><p>安装pip</p></blockquote><figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">curl </span><span class="string">https:</span>//<span class="string">bootstrap.</span><span class="string">pypa.</span><span class="string">io/</span><span class="built_in">get-pip.py</span> -o <span class="built_in">get-pip.py</span></span><br><span class="line"><span class="built_in">python</span> <span class="built_in">get-pip.py</span></span><br></pre></td></tr></table></figure><blockquote><p>配置pip源码</p></blockquote><ul><li>vi /root/.pip/pip.conf `</li></ul><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[global]</span></span><br><span class="line"><span class="attr">trusted-host</span>=mirrors.aliyun.com</span><br><span class="line"><span class="attr">index-url</span>=http://mirrors.aliyun.com/pypi/simple/</span><br></pre></td></tr></table></figure><blockquote><p>安装cx_Oracle</p></blockquote><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> cx_Oracle</span><br></pre></td></tr></table></figure><h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt; import cx_Oracle</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; oracle_conn=cx_Oracle.connect(<span class="string">'ex/ex123qwe123@192.168.0.143:1521/gwdw'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; oracle_cursor = oracle_conn.cursor()</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; oracle_cursor.execute(<span class="string">"SELECT BILL_NO,CONTAINER_NO FROM EX.FREIGHT_INFO WHERE ROWNUM&lt;=5"</span>)</span><br><span class="line">&lt;cx_Oracle.Cursor on &lt;cx_Oracle.Connection to ex@192.<span class="number">168.0</span>.<span class="number">143</span><span class="symbol">:</span><span class="number">1521</span>/gwdw<span class="meta">&gt;&gt;</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; res = oracle_cursor.fetchall()</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; print res</span><br><span class="line">[(<span class="string">'AXWZA0017794'</span>, <span class="string">'-'</span>), (<span class="string">'AXWZA0017795'</span>, <span class="string">'-'</span>), (<span class="string">'AXWZA0017796'</span>, <span class="string">'-'</span>), (<span class="string">'AXWZA0017797'</span>, <span class="string">'-'</span>), (<span class="string">'AXWZA0017798'</span>, <span class="string">'-'</span>)]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;安装oracle客户端&quot;&gt;&lt;a href=&quot;#安装oracle客户端&quot; class=&quot;headerlink&quot; title=&quot;安装oracle客户端&quot;&gt;&lt;/a&gt;安装oracle客户端&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;下载地址：&lt;a href=&quot;https:/
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+      <category term="linux" scheme="https://deerlili.github.io/tags/linux/"/>
+    
+      <category term="cx_Oracle" scheme="https://deerlili.github.io/tags/cx-Oracle/"/>
+    
+  </entry>
   
   <entry>
     <title>python hdfs上数据同步到doris</title>
@@ -73,9 +103,9 @@
       <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
     
     
-      <category term="oracle" scheme="https://deerlili.github.io/tags/oracle/"/>
-    
       <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+      <category term="oracle" scheme="https://deerlili.github.io/tags/oracle/"/>
     
       <category term="json" scheme="https://deerlili.github.io/tags/json/"/>
     
@@ -513,31 +543,6 @@
     
     
       <category term="linux" scheme="https://deerlili.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sqoop2错误</title>
-    <link href="https://deerlili.github.io/2019/07/30/sqoop2%E9%94%99%E8%AF%AF/"/>
-    <id>https://deerlili.github.io/2019/07/30/sqoop2错误/</id>
-    <published>2019-07-30T15:04:18.000Z</published>
-    <updated>2019-07-30T15:16:08.852Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h4><p>启动sqoop2 server<br><code>Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /var/lib/sqoop2/repository/db</code></p><blockquote><p>解决办法：</p><ol><li>查找进程：<code>ps -aux|grep sqoop2</code></li><li>kill进程号：<code>kill -9 ...</code></li><li>重新启动</li></ol></blockquote><h3 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h3><p><code>/usr/bdp/1.0.0-1/sqoop2/bin/sqoop.sh: line 202: /var/run/sqoop2/sqoop-sqoop2-jetty-server.pid: No such file or directoryERROR:  Cannot write pid</code></p><blockquote><p>解决办法：</p><ol><li>在安装server的机器上建目录和文件</li><li><code>cd /var/run/</code></li><li><code>mkdir sqoop2</code></li><li><code>chown sqoop2:hadoop sqoop2</code></li><li><code>cd sqoop2</code></li><li><code>touch sqoop-sqoop2-jetty-server.pid</code></li><li><code>chown sqoop2:hadoop *</code></li><li>重启</li></ol></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;问题1&quot;&gt;&lt;a href=&quot;#问题1&quot; class=&quot;headerlink&quot; title=&quot;问题1&quot;&gt;&lt;/a&gt;问题1&lt;/h4&gt;&lt;p&gt;启动sqoop2 server&lt;br&gt;&lt;code&gt;Caused by: ERROR XSDB6: Another instance 
-      
-    
-    </summary>
-    
-      <category term="错误" scheme="https://deerlili.github.io/categories/%E9%94%99%E8%AF%AF/"/>
-    
-    
-      <category term="sqoop2" scheme="https://deerlili.github.io/tags/sqoop2/"/>
     
   </entry>
   
