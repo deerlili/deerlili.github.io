@@ -8,8 +8,8 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>linux</tag>
+        <tag>python</tag>
         <tag>cx_Oracle</tag>
       </tags>
   </entry>
@@ -36,8 +36,8 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>oracle</tag>
+        <tag>python</tag>
         <tag>json</tag>
       </tags>
   </entry>
@@ -99,7 +99,7 @@
   <entry>
     <title><![CDATA[oracle时间操作]]></title>
     <url>%2F2019%2F08%2F12%2Foracle%E6%97%B6%E9%97%B4%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[TO_CHAR(SYSDATE, ‘YYYYMM’) = 201902 replace(substr(SYSDATE,0,7),’-‘,’’) = 201902 replace(substr(SYSDATE,0,10),’-‘,’’) = 20190202 TO_CHAR(a.FaHangDate,’YY-MM-dd HH24:mi’) long时间类型转换 1TO_CHAR(UTC/(60*60*24)+ TO_DATE('1970-01-01 08:00:00', 'YYYY-MM-DD HH:MI:SS'), 'YYYY-MM-DD HH24:MI:SS') 1TO_CHAR(UTC/(60*60*24)+ TO_DATE('1970-01-01 08:00:00', 'YYYY-MM-DD HH:MI:SS'), 'YYYY-MM-DD') 1TO_CHAR(UTC/(60*60*24)+ TO_DATE('1970-01-01 08:00:00', 'YYYY-MM-DD HH:MI:SS'), 'HH24') 时间转换成long 1TO_NUMBER(SYSDATE-TO_DATE('1970-01-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'))*24*60 *60 字符串拼接和截取 12把 20190706 12:12:23 转换成 2019-07-06 12:12:23SUBSTR(RKSJ,0,4)||'-'||SUBSTR(RKSJ,5,2)||'-'||SUBSTR(RKSJ,7,2)||SUBSTR(RKSJ,9,9)]]></content>
+    <content type="text"><![CDATA[‘YYYY-MM-DD HH24:MI:SS’ 2019-8-22 5:56:00 –&gt; 2019-08-22 05:56:00TO_DATE(ARRIVE_DATE,&#39;YYYY-MM-DD HH24:MI:SS&#39;) 1234567lpad(regexp_substr(ARRIVE_DATE, '[^-]+', 1,1),4,'0'), lpad(regexp_substr(ARRIVE_DATE, '[^-]+', 1,1),4,'0')||'-'||lpad(regexp_substr(ARRIVE_DATE, '[^-]+', 1,2),2,'0')||'-'||lpad(regexp_substr(regexp_substr(ARRIVE_DATE, '[^-]+', 1,3),'[^ ]+',1,1),2,'0')||' '||lpad(regexp_substr(regexp_substr(ARRIVE_DATE, '[^ ]+', 1,2),'[^:]+',1,1),2,'0')||':'||lpad(regexp_substr(regexp_substr(ARRIVE_DATE, '[^ ]+', 1,2),'[^:]+',1,2),2,'0')||':'||lpad(regexp_substr(regexp_substr(ARRIVE_DATE, '[^ ]+', 1,2),'[^:]+',1,3),2,'0') 123456- TO_CHAR(SYSDATE, 'YYYYMM') = 201902- replace(substr(SYSDATE,0,7),'-','') = 201902- replace(substr(SYSDATE,0,10),'-','') = 20190202- TO_CHAR(a.FaHangDate,'YY-MM-dd HH24:mi')- TO_DATE('2019061118:48','YYYYMMDDHH24:MI')=2019-06-11 18:48:00- TO_DATE('20190706 12:12:23','YYYYMMDD HH24:MI:SS') long时间戳转换成date 11566442167/(60*60*24)+ TO_DATE('1970-01-01 08:00:00', 'YYYY-MM-DD HH:MI:SS') 时间转换成long时间戳 1TO_NUMBER(SYSDATE-TO_DATE('1970-01-01 08:00:00','YYYY-MM-DD HH24:MI:SS'))*24*60*60 计算小时取一位小数 1ROUND(TO_DATE(TO_CHAR(B.UTC/(60*60*24)+TO_DATE('1970-01-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'),'YYYY-MM-DD HH24:MI:SS'),'YYYY-MM-DD HH24:MI:SS')-to_date(REALITY_DEPARTURE_TIME,'yyyy-mm-dd hh24:mi:ss'),1) 字符串拼接和截取 12把 20190706 12:12:23 转换成 2019-07-06 12:12:23SUBSTR(RKSJ,0,4)||'-'||SUBSTR(RKSJ,5,2)||'-'||SUBSTR(RKSJ,7,2)||SUBSTR(RKSJ,9,9)]]></content>
       <categories>
         <category>oracle</category>
       </categories>

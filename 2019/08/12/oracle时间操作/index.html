@@ -148,18 +148,18 @@
   };
 </script>
 
-  <meta name="description" content="TO_CHAR(SYSDATE, ‘YYYYMM’) = 201902 replace(substr(SYSDATE,0,7),’-‘,’’)  = 201902 replace(substr(SYSDATE,0,10),’-‘,’’) = 20190202 TO_CHAR(a.FaHangDate,’YY-MM-dd HH24:mi’)   long时间类型转换  1TO_CHAR(UTC/(">
+  <meta name="description" content="‘YYYY-MM-DD HH24:MI:SS’ 2019-8-22 5:56:00 –&amp;gt; 2019-08-22 05:56:00TO_DATE(ARRIVE_DATE,&amp;#39;YYYY-MM-DD HH24:MI:SS&amp;#39;)    1234567lpad(regexp_substr(ARRIVE_DATE, &apos;[^-]+&apos;, 1,1),4,&apos;0&apos;), lpad(regexp_sub">
 <meta name="keywords" content="oracle">
 <meta property="og:type" content="article">
 <meta property="og:title" content="oracle时间操作">
 <meta property="og:url" content="https://deerlili.github.io/2019/08/12/oracle时间操作/index.html">
 <meta property="og:site_name" content="Deerlili">
-<meta property="og:description" content="TO_CHAR(SYSDATE, ‘YYYYMM’) = 201902 replace(substr(SYSDATE,0,7),’-‘,’’)  = 201902 replace(substr(SYSDATE,0,10),’-‘,’’) = 20190202 TO_CHAR(a.FaHangDate,’YY-MM-dd HH24:mi’)   long时间类型转换  1TO_CHAR(UTC/(">
+<meta property="og:description" content="‘YYYY-MM-DD HH24:MI:SS’ 2019-8-22 5:56:00 –&amp;gt; 2019-08-22 05:56:00TO_DATE(ARRIVE_DATE,&amp;#39;YYYY-MM-DD HH24:MI:SS&amp;#39;)    1234567lpad(regexp_substr(ARRIVE_DATE, &apos;[^-]+&apos;, 1,1),4,&apos;0&apos;), lpad(regexp_sub">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-20T01:49:43.611Z">
+<meta property="og:updated_time" content="2019-08-28T06:21:25.461Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="oracle时间操作">
-<meta name="twitter:description" content="TO_CHAR(SYSDATE, ‘YYYYMM’) = 201902 replace(substr(SYSDATE,0,7),’-‘,’’)  = 201902 replace(substr(SYSDATE,0,10),’-‘,’’) = 20190202 TO_CHAR(a.FaHangDate,’YY-MM-dd HH24:mi’)   long时间类型转换  1TO_CHAR(UTC/(">
+<meta name="twitter:description" content="‘YYYY-MM-DD HH24:MI:SS’ 2019-8-22 5:56:00 –&amp;gt; 2019-08-22 05:56:00TO_DATE(ARRIVE_DATE,&amp;#39;YYYY-MM-DD HH24:MI:SS&amp;#39;)    1234567lpad(regexp_substr(ARRIVE_DATE, &apos;[^-]+&apos;, 1,1),4,&apos;0&apos;), lpad(regexp_sub">
 
 
 
@@ -498,7 +498,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-20 09:49:43" itemprop="dateModified" datetime="2019-08-20T09:49:43+08:00">2019-08-20</time>
+                <time title="修改时间：2019-08-28 14:21:25" itemprop="dateModified" datetime="2019-08-28T14:21:25+08:00">2019-08-28</time>
               </span>
             
           
@@ -575,24 +575,29 @@
 
       
         <ul>
-<li>TO_CHAR(SYSDATE, ‘YYYYMM’) = 201902</li>
-<li>replace(substr(SYSDATE,0,7),’-‘,’’)  = 201902</li>
-<li>replace(substr(SYSDATE,0,10),’-‘,’’) = 20190202</li>
-<li>TO_CHAR(a.FaHangDate,’YY-MM-dd HH24:mi’)</li>
+<li>‘YYYY-MM-DD HH24:MI:SS’<blockquote>
+<p>2019-8-22 5:56:00 –&gt; 2019-08-22 05:56:00<br><code>TO_DATE(ARRIVE_DATE,&#39;YYYY-MM-DD HH24:MI:SS&#39;)</code></p>
+</blockquote>
+</li>
 </ul>
-<blockquote>
-<p>long时间类型转换</p>
-</blockquote>
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_CHAR(<span class="name">UTC/</span>(<span class="number">60</span>*60*<span class="number">24</span>)+ TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH<span class="symbol">:MI</span><span class="symbol">:SS</span>'), 'YYYY-MM-DD HH24<span class="symbol">:MI</span><span class="symbol">:SS</span>')</span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">lpad(regexp_substr(ARRIVE_DATE, <span class="string">'[^-]+'</span>, <span class="number">1</span>,<span class="number">1</span>),<span class="number">4</span>,<span class="string">'0'</span>), </span><br><span class="line">lpad(regexp_substr(ARRIVE_DATE, <span class="string">'[^-]+'</span>, <span class="number">1</span>,<span class="number">1</span>),<span class="number">4</span>,<span class="string">'0'</span>)<span class="params">||</span><span class="string">'-'</span><span class="params">||</span></span><br><span class="line">lpad(regexp_substr(ARRIVE_DATE, <span class="string">'[^-]+'</span>, <span class="number">1</span>,<span class="number">2</span>),<span class="number">2</span>,<span class="string">'0'</span>)<span class="params">||</span><span class="string">'-'</span><span class="params">||</span></span><br><span class="line">lpad(regexp_substr(regexp_substr(ARRIVE_DATE, <span class="string">'[^-]+'</span>, <span class="number">1</span>,<span class="number">3</span>),<span class="string">'[^ ]+'</span>,<span class="number">1</span>,<span class="number">1</span>),<span class="number">2</span>,<span class="string">'0'</span>)<span class="params">||</span><span class="string">' '</span><span class="params">||</span></span><br><span class="line">lpad(regexp_substr(regexp_substr(ARRIVE_DATE, <span class="string">'[^ ]+'</span>, <span class="number">1</span>,<span class="number">2</span>),<span class="string">'[^:]+'</span>,<span class="number">1</span>,<span class="number">1</span>),<span class="number">2</span>,<span class="string">'0'</span>)<span class="params">||</span><span class="string">':'</span><span class="params">||</span></span><br><span class="line">lpad(regexp_substr(regexp_substr(ARRIVE_DATE, <span class="string">'[^ ]+'</span>, <span class="number">1</span>,<span class="number">2</span>),<span class="string">'[^:]+'</span>,<span class="number">1</span>,<span class="number">2</span>),<span class="number">2</span>,<span class="string">'0'</span>)<span class="params">||</span><span class="string">':'</span><span class="params">||</span></span><br><span class="line">lpad(regexp_substr(regexp_substr(ARRIVE_DATE, <span class="string">'[^ ]+'</span>, <span class="number">1</span>,<span class="number">2</span>),<span class="string">'[^:]+'</span>,<span class="number">1</span>,<span class="number">3</span>),<span class="number">2</span>,<span class="string">'0'</span>)</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_CHAR(<span class="name">UTC/</span>(<span class="number">60</span>*60*<span class="number">24</span>)+ TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH<span class="symbol">:MI</span><span class="symbol">:SS</span>'), 'YYYY-MM-DD')</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_CHAR(<span class="name">UTC/</span>(<span class="number">60</span>*60*<span class="number">24</span>)+ TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH<span class="symbol">:MI</span><span class="symbol">:SS</span>'), 'HH24')</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- TO_CHAR(SYSDATE, 'YYYYMM') = 201902</span><br><span class="line">- <span class="keyword">replace</span>(<span class="keyword">substr</span>(<span class="keyword">SYSDATE</span>,<span class="number">0</span>,<span class="number">7</span>),<span class="string">'-'</span>,<span class="string">''</span>)  = <span class="number">201902</span></span><br><span class="line">- <span class="keyword">replace</span>(<span class="keyword">substr</span>(<span class="keyword">SYSDATE</span>,<span class="number">0</span>,<span class="number">10</span>),<span class="string">'-'</span>,<span class="string">''</span>) = <span class="number">20190202</span></span><br><span class="line">- TO_CHAR(a.FaHangDate,<span class="string">'YY-MM-dd HH24:mi'</span>)</span><br><span class="line">- <span class="keyword">TO_DATE</span>(<span class="string">'2019061118:48'</span>,<span class="string">'YYYYMMDDHH24:MI'</span>)=<span class="number">2019</span><span class="number">-06</span><span class="number">-11</span> <span class="number">18</span>:<span class="number">48</span>:<span class="number">00</span></span><br><span class="line">- <span class="keyword">TO_DATE</span>(<span class="string">'20190706 12:12:23'</span>,<span class="string">'YYYYMMDD HH24:MI:SS'</span>)</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>时间转换成long</p>
+<p>long时间戳转换成date</p>
 </blockquote>
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_NUMBER(<span class="name">SYSDATE-TO_DATE</span>('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH24<span class="symbol">:MI</span><span class="symbol">:SS</span>'))*24*60 *60</span><br></pre></td></tr></table></figure>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1566442167</span>/(<span class="number">60</span>*60*<span class="number">24</span>)+ TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH<span class="symbol">:MI</span><span class="symbol">:SS</span>')</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>时间转换成long时间戳</p>
+</blockquote>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TO_NUMBER(<span class="name">SYSDATE-TO_DATE</span>('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>','YYYY-MM-DD HH24<span class="symbol">:MI</span><span class="symbol">:SS</span>'))*24*60*60</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>计算小时取一位小数</p>
+</blockquote>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ROUND(<span class="name">TO_DATE</span>(<span class="name">TO_CHAR</span>(<span class="name">B</span>.UTC/(<span class="number">60</span>*60*<span class="number">24</span>)+TO_DATE('<span class="number">1970</span><span class="number">-01</span><span class="number">-01</span> <span class="number">08</span>:<span class="number">00</span>:<span class="number">00</span>', 'YYYY-MM-DD HH24<span class="symbol">:MI</span><span class="symbol">:SS</span>'),'YYYY-MM-DD HH24<span class="symbol">:MI</span><span class="symbol">:SS</span>'),'YYYY-MM-DD HH24<span class="symbol">:MI</span><span class="symbol">:SS</span>')-to_date(<span class="name">REALITY_DEPARTURE_TIME</span>,'yyyy-mm-dd hh24<span class="symbol">:mi</span><span class="symbol">:ss</span>'),<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>字符串拼接和截取</p>
