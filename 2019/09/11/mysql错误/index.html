@@ -148,18 +148,18 @@
   };
 </script>
 
-  <meta name="description" content="问题1 脚本里面执行sql出现  12Warning: Using a password on the command line interface can be insecure   解决办法执行：/etc/my.cnf  配置 12user=qweasdpassword=qweasdzxc  重启服务器：service mysql restart  修改mysql语句，去掉-uroot -p参">
+  <meta name="description" content="问题1 脚本里面执行sql出现  12Warning: Using a password on the command line interface can be insecure   解决办法执行：/etc/my.cnf 配置  12user=qweasdpassword=qweasdzxc   重启服务器：service mysql restart 修改mysql语句，去掉-uroot -p参">
 <meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql错误">
 <meta property="og:url" content="https://deerlili.github.io/2019/09/11/mysql错误/index.html">
 <meta property="og:site_name" content="Deerlili">
-<meta property="og:description" content="问题1 脚本里面执行sql出现  12Warning: Using a password on the command line interface can be insecure   解决办法执行：/etc/my.cnf  配置 12user=qweasdpassword=qweasdzxc  重启服务器：service mysql restart  修改mysql语句，去掉-uroot -p参">
+<meta property="og:description" content="问题1 脚本里面执行sql出现  12Warning: Using a password on the command line interface can be insecure   解决办法执行：/etc/my.cnf 配置  12user=qweasdpassword=qweasdzxc   重启服务器：service mysql restart 修改mysql语句，去掉-uroot -p参">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-11T02:47:31.730Z">
+<meta property="og:updated_time" content="2019-09-11T02:51:17.090Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql错误">
-<meta name="twitter:description" content="问题1 脚本里面执行sql出现  12Warning: Using a password on the command line interface can be insecure   解决办法执行：/etc/my.cnf  配置 12user=qweasdpassword=qweasdzxc  重启服务器：service mysql restart  修改mysql语句，去掉-uroot -p参">
+<meta name="twitter:description" content="问题1 脚本里面执行sql出现  12Warning: Using a password on the command line interface can be insecure   解决办法执行：/etc/my.cnf 配置  12user=qweasdpassword=qweasdzxc   重启服务器：service mysql restart 修改mysql语句，去掉-uroot -p参">
 
 
 
@@ -483,7 +483,7 @@
                 
               
 
-              <time title="创建时间：2019-09-11 10:46:55 / 修改时间：10:47:31" itemprop="dateCreated datePublished" datetime="2019-09-11T10:46:55+08:00">2019-09-11</time>
+              <time title="创建时间：2019-09-11 10:46:55 / 修改时间：10:51:17" itemprop="dateCreated datePublished" datetime="2019-09-11T10:46:55+08:00">2019-09-11</time>
             </span>
           
 
@@ -570,17 +570,15 @@
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Warning: Using a password on the </span><br><span class="line">command line<span class="built_in"> interface </span>can be insecure</span><br></pre></td></tr></table></figure>
 
 <ol>
-<li><p>解决办法执行：<code>/etc/my.cnf</code></p>
-</li>
-<li><p>配置</p>
+<li>解决办法执行：<code>/etc/my.cnf</code></li>
+<li>配置</li>
+</ol>
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">user</span>=qweasd</span><br><span class="line"><span class="attr">password</span>=qweasdzxc</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重启服务器：service mysql restart</p>
-</li>
-<li><p>修改mysql语句，去掉-uroot -p参数</p>
-</li>
-<li><p>mysql -h 172.30.130.49 -P4040</p>
-</li>
+
+<ol start="3">
+<li>重启服务器：service mysql restart</li>
+<li>修改mysql语句，去掉-uroot -p参数</li>
+<li>mysql -h 172.30.130.49 -P4040</li>
 </ol>
 <h3 id="问题2"><a href="#问题2" class="headerlink" title="问题2"></a>问题2</h3><blockquote>
 <p>执行：<code>/usr/sbin/mysqld --initialize-insecure --user=mysql</code></p>
