@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[docker安装]]></title>
+    <url>%2F2019%2F09%2F11%2Fdocker%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[notepad用法]]></title>
+    <url>%2F2019%2F09%2F11%2Fnotepad%E7%94%A8%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[出去相邻重复的行 ^(.?)$\s+?^(?=.^\1$)]]></content>
+      <categories>
+        <category>notepad</category>
+      </categories>
+      <tags>
+        <tag>notepad</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[mysql错误]]></title>
     <url>%2F2019%2F09%2F11%2Fmysql%E9%94%99%E8%AF%AF%2F</url>
     <content type="text"><![CDATA[问题1 脚本里面执行sql出现 12Warning: Using a password on the command line interface can be insecure 解决办法执行：/etc/my.cnf 配置 12user=qweasdpassword=qweasdzxc 重启服务器：service mysql restart 修改mysql语句，去掉-uroot -p参数 mysql -h 172.30.130.49 -P4040 问题2 执行：/usr/sbin/mysqld --initialize-insecure --user=mysql 12345若报错：TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).[ERROR] --initialize specified but the data directory has files in it. Aborting.[ERROR] Aborting 执行：rm -rf /var/lib/mysql 然后执行：/usr/sbin/mysqld –initialize-insecure –user=mysql 问题3 执行：/usr/sbin/mysqld --initialize-insecure --user=mysql 12若报错：/usr/sbin/mysqld: error while loading shared libraries:libaio.so.1: cannot open shared object file: No such file or directory 执行：yum install -y libaio 然后执行：/usr/sbin/mysqld –initialize-insecure –user=mysql 问题4123错误：Job for mysqld.service failed because the control process exitedwith error code. See "systemctl status mysqld.service" and "journalctl-xe" for details. 查看日志：tail -n 20 /var/log/mysqld.log 1The innodb_system data file ‘ibdata1’ must be writable 通过yum安装的话 5.7版本以前是 chmod -R 777 /usr/local/mysql/data/ 5.7版本以后是 chmod -R 777 /var/lib/mysql 如果不是通过yum安装的话：find / -name ibdata1 chmod -R 777 /var/lib/mysql/ibdata1 问题5 执行./bin/mysqld -- defaults-file=/etc/my.cnf --initialize --user=mysql 1234./bin/mysqld: error while loading shared libraries: libaio.so.1: cannot open shared object file: No such file or directory yum install -y libaio //安装后在初始化就OK了 问题612345678910The length of time in seconds an InnoDB transaction waits for a row lock before giving up. The default value is 50 seconds. A transaction that tries to access a row that is locked by another InnoDB transaction waits at most this many seconds forwrite access to the row before issuing thefollowing error:ERROR 1205 (HY000): Lock wait timeout exceeded;try restarting transaction 从文档中看，这个值是针对innodb引擎的，是innodb中行锁的等待超时时间，默认为50秒。 如果超时，则当前语句会回滚。如果设置innodb_rollback_on_timeout，则会回滚整个事务，否则，只回滚事务等待行锁的这个语句。 解决 123mysql&gt; show global variables like '%timeout%';innodb_lock_wait_timeout默认为50；修改：set global innodb_lock_wait_timeout=100； https://www.jianshu.com/p/a5747a382a0ahttp://gxg353.blog.sohu.com/232999339.html systemctl restart mysqld.service]]></content>
@@ -43,8 +59,8 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>mysql</tag>
         <tag>python</tag>
+        <tag>mysql</tag>
         <tag>hdfs</tag>
         <tag>doris</tag>
         <tag>日志</tag>
