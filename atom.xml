@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://deerlili.github.io/"/>
-  <updated>2019-09-25T06:32:33.155Z</updated>
+  <updated>2019-09-25T07:00:33.859Z</updated>
   <id>https://deerlili.github.io/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>给自己定一个一年的目标</title>
+    <title>给自己定一个一个月的目标</title>
     <link href="https://deerlili.github.io/2019/09/25/%E7%BB%99%E8%87%AA%E5%B7%B1%E5%AE%9A%E4%B8%80%E4%B8%AA%E4%B8%80%E5%B9%B4%E7%9A%84%E7%9B%AE%E6%A0%87/"/>
     <id>https://deerlili.github.io/2019/09/25/给自己定一个一年的目标/</id>
     <published>2019-09-25T06:26:31.000Z</published>
-    <updated>2019-09-25T06:32:33.155Z</updated>
+    <updated>2019-09-25T07:00:33.859Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="时光"><a href="#时光" class="headerlink" title="时光"></a>时光</h3><blockquote><p>一年前到现在经历了什么，是否还记得当时的雄心和目标，在接下来的一年自己的目标又是什么，会不会有所改变。今天在这里写下在接下来一年的目标。</p></blockquote><h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><blockquote></blockquote>]]></content>
+    <content type="html"><![CDATA[<h3 id="时光"><a href="#时光" class="headerlink" title="时光"></a>时光</h3><blockquote><p>一年前到现在经历了什么，是否还记得当时的雄心和目标，在接下来的一年自己的目标又是什么，会不会有所改变。今天在这里写下在接下来一年的目标。</p></blockquote><h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><blockquote><p>在上班时间提高工作效率，在项目时间比较宽松的时候也要快速完成自己的工作部分，了解同事工作的要点，节约更多时间来学习和充实自己。</p></blockquote><h3 id="工作日安排"><a href="#工作日安排" class="headerlink" title="工作日安排"></a>工作日安排</h3><ol><li>6:30-7:00 点起床</li><li>7:00-7:30 背诵软考知识点</li><li>8:40-9:10 背诵软考知识点</li><li>12:30-13:30 一节软考课程</li><li>19:00-19:30 整理以前的知识，写一篇博客</li><li>19:30-21:00 一节软考课程</li><li>21:00-21:30 复习前面一个半小时的课程和整理笔记</li><li>21:30-22:00 休息时间</li><li>22:00-23:00 一节软考课程</li></ol><h3 id="周末安排"><a href="#周末安排" class="headerlink" title="周末安排"></a>周末安排</h3><ol><li>7:30-8:00 点起床</li><li>8:00-8:30 背诵软考知识点</li><li>9:00-10:00 一节软考课程</li><li>10:00-10:10 整理笔记复习课程要点 </li><li>10:30-11:30 一节软考课程</li><li>11:30-12:30 休息时间，吃饭</li><li>12:30-13:00 睡觉</li><li>13:00-14:30 一节软考课程</li><li>14:30-15:00 休息时间</li><li>15:00-16:00 一节软考课程</li><li>16:00-16:30 复制整理笔记时间</li><li>16:30-18:00 休息时间</li><li>18:00-19:00 吃饭时间</li><li>19:00-19:30 博客时间</li><li>19:30-21:00 一节软考课程</li><li>21:00-21:30 复习前面一个半小时的课程和整理笔记</li><li>21:30-22:00 休息时间</li><li>22:00-23:00 一节软考课程</li></ol><h3 id="其他学习"><a href="#其他学习" class="headerlink" title="其他学习"></a>其他学习</h3><blockquote><p>有时候在学习软考比较累的时候，学习一下其他的整理以前的笔记和文档</p></blockquote><h3 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h3><blockquote><p>每天写两篇博客，一篇是整理以前的笔记，另外一篇是当天学习到的新知识或者遇到的问题的解决办法</p></blockquote>]]></content>
     
     <summary type="html">
     
@@ -229,9 +229,9 @@
       <category term="python" scheme="https://deerlili.github.io/categories/python/"/>
     
     
-      <category term="mysql" scheme="https://deerlili.github.io/tags/mysql/"/>
-    
       <category term="python" scheme="https://deerlili.github.io/tags/python/"/>
+    
+      <category term="mysql" scheme="https://deerlili.github.io/tags/mysql/"/>
     
       <category term="hdfs" scheme="https://deerlili.github.io/tags/hdfs/"/>
     
