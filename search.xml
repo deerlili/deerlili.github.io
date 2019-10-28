@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python发送邮件]]></title>
+    <url>%2F2019%2F10%2F28%2Fpython%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[12345678910111213141516171819202122232425262728293031323334353637383940import smtplib from email.mime.text import MIMETextfrom email.header import Header# 邮件主题subject = '成都铁路局-果园港接口'# 邮件服务器地址email_host = 'smtp.163.com' # 发送者邮箱email_user = 'cqports@163.com'# 发送者邮箱密码(不是登录密码，是授权密码)email_pwd = '' # 收件人邮箱，多个账号的话，用逗号隔开mail_str = 'deerlili@163.com,deerlili@qq.com'mail_list = mail_str.split(",")# 邮件内容message = 'GY_TRAIN_INFO分钟没有更新数据！'# 中文需参数‘utf-8'，单字节字符不需要msg = MIMEText(message,'plain','utf-8')# 邮件主题msg['Subject'] = Header(subject, 'utf-8')# 发送者账号,或者备注名称，不填就是莫名发送msg['From'] = email_user# 接收者账号列表,显示你发给哪些些人,在接受方可以看见，不写对方不能看见msg['To'] = mail_str # 创建SMTP服务器，邮箱端口是25smtp = smtplib.SMTP(email_host,port=25) # 发送者的邮箱账号，密码smtp.login(email_user, email_pwd)# 参数分别是发送者，接收者，第三个是把上面的发送邮件的内容变成字符串smtp.sendmail(email_user,mail_list,msg.as_string())# 退出邮箱smtp.quit() print 'email send success.']]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Apsara Clouder专项技能认证]]></title>
     <url>%2F2019%2F10%2F20%2FApsara-Clouder%E4%B8%93%E9%A1%B9%E6%8A%80%E8%83%BD%E8%AE%A4%E8%AF%81%2F</url>
     <content type="text"></content>
@@ -76,8 +87,8 @@
         <category>python</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>mysql</tag>
+        <tag>python</tag>
         <tag>hdfs</tag>
         <tag>doris</tag>
         <tag>日志</tag>
